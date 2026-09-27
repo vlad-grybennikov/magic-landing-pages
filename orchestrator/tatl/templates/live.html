@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Three-Level Suite -- live</title>
+<style>
+:root { --bg:#fff; --fg:#1a1a1a; --line:#dcdcdc; --muted:#6b6b6b;
+        --pass:#219652; --fail:#c0392b; --bar:#e6e6e6; }
+* { box-sizing:border-box; font: inherit; }
+body { margin:0; padding:2rem 1.25rem; background:var(--bg); color:var(--fg);
+       font:14px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; }
+.wrap { max-width:1100px; margin:0 auto; }
+h1 { font-size:1.35rem; margin:0 0 .25rem; }
+h2 { font-size:1rem; margin:2rem 0 .6rem; }
+.meta { color:var(--muted); margin:0 0 1.25rem; }
+.dot { display:inline-block; width:8px; height:8px; border-radius:50%;
+       background:var(--pass); margin-right:.4rem; }
+.dot.live { animation:pulse 1.2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.25} }
+.track { height:10px; border-radius:5px; background:var(--bar); overflow:hidden; }
+.fill { height:100%; background:var(--pass); width:0; transition:width .4s ease; }
+.counts { display:flex; gap:1.5rem; margin:.75rem 0 0; font-variant-numeric:tabular-nums; }
+.counts b { font-size:1.5rem; font-weight:600; display:block; }
+.counts .fail b { color:var(--fail); }
+table { border-collapse:collapse; width:100%; }
+td, th { padding:.4rem .6rem; text-align:left; border-bottom:1px solid var(--line); }
+th { font-size:.8rem; color:var(--muted); font-weight:600; }
+.verdict { font-weight:700; }
+.verdict.ok { color:var(--pass); }
+.verdict.no { color:var(--fail); }
+#log { background:#f7f7f8; border:1px solid var(--line); border-radius:8px;
+       padding:.75rem 1rem; max-height:380px; overflow-y:auto;
+       font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; }
+#log div { padding:.1rem 0; white-space:pre-wrap; }
+#log .error { color:var(--fail); font-weight:600; }
+#log .at { color:var(--muted); }
+.empty { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Three-Level Suite</h1>
+  <p class="meta"><span id="dot" class="dot live"></span><span id="status">connecting…</span></p>
+
+  <div class="track"><div id="fill" class="fill"></div></div>
+  <div class="counts">
+    <div><b id="episodes">0/0</b>episodes</div>
+    <div><b id="passed">0</b>passed</div>
+    <div class="fail"><b id="failed">0</b>failed</div>
+    <div><b id="elapsed">0s</b>elapsed</div>
+  </div>
+
+  <h2>Cases</h2>
+  <table>
+    <thead><tr><th>case</th><th>stage</th><th>verdict</th><th>detail</th></tr></thead>
+    <tbody id="cases"><tr><td colspan="4" class="empty">waiting for the first result…</td></tr></tbody>
+  </table>
+
+  <h2>Log</h2>
+  <div id="log"><div class="empty">waiting…</div></div>
+</div>
+
+<script>
+const el = (id) => document.getElementById(id);
+let stuck = 0;
+
+async function tick() {
+  let state;
+  try {
+    const res = await fetch("live.json?" + Date.now(), { cache: "no-store" });
+    state = await res.json();
+    stuck = 0;
+  } catch {
+    if (++stuck > 3) el("status").textContent = "lost contact with the runner";
+    return;
+  }
+
+  const pct = state.episodes_total
+    ? Math.round((state.episodes_done / state.episodes_total) * 100) : 0;
+  el("fill").style.width = (state.finished ? 100 : pct) + "%";
+  el("episodes").textContent = state.episodes_done + "/" + state.episodes_total;
+  el("passed").textContent = state.passed;
+  el("failed").textContent = state.failed;
+  el("elapsed").textContent = Math.round(state.seconds) + "s";
+  el("status").textContent =
+    state.model + " · " + (state.finished ? "finished" : state.stage);
+  el("dot").className = "dot" + (state.finished ? "" : " live");
+  if (state.finished) el("dot").style.background =
+    state.failed ? "var(--fail)" : "var(--pass)";
+
+  el("cases").innerHTML = state.results.length
+    ? state.results.map((r) => `<tr>
+        <td>${esc(r.name)}</td><td>${esc(r.stage)}</td>
+        <td class="verdict ${r.passed ? "ok" : "no"}">${r.passed ? "pass" : "FAIL"}</td>
+        <td>${esc(r.detail || "")}</td></tr>`).join("")
+    : `<tr><td colspan="4" class="empty">waiting for the first result…</td></tr>`;
+
+  const log = el("log");
+  const atBottom = log.scrollHeight - log.scrollTop - log.clientHeight < 40;
+  log.innerHTML = state.events.map((e) =>
+    `<div class="${e.level}"><span class="at">${String(e.at).padStart(6)}s </span>${esc(e.message)}</div>`
+  ).join("");
+  if (atBottom) log.scrollTop = log.scrollHeight;
+
+  if (state.finished) {
+    clearInterval(timer);
+    el("status").textContent += " -- reload for the full report";
+  }
+}
+
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+const timer = setInterval(tick, 1000);
+tick();
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "probe": "classify",
+  "metric": "slot_accuracy",
+  "cases": [
+    {
+      "input": "Move the testimonials above the pricing",
+      "expect": {
+        "section": "testimonials",
+        "position": "before pricing"
+      }
+    },
+    {
+      "input": "Put the FAQ at the bottom",
+      "expect": {
+        "section": "faq",
+        "position": "bottom"
+      }
+    },
+    {
+      "input": "Make the pricing a table",
+      "expect": {
+        "section": "pricing",
+        "variant": "table-rows"
+      }
+    },
+    {
+      "input": "Switch the FAQ to an accordion",
+      "expect": {
+        "section": "faq",
+        "variant": "accordion"
+      }
+    },
+    {
+      "input": "Add another benefit",
+      "expect": {
+        "section": "benefits"
+      }
+    },
+    {
+      "input": "Remove the second step",
+      "expect": {
+        "section": "process",
+        "path": "items.1"
+      }
+    },
+    {
+      "input": "Drop the third plan",
+      "expect": {
+        "section": "pricing",
+        "path": "plans.2"
+      }
+    },
+    {
+      "input": "Swap the first two steps",
+      "expect": {
+        "section": "process",
+        "path": "items.0",
+        "position": "down"
+      }
+    },
+    {
+      "input": "Use a star icon for the first benefit",
+      "expect": {
+        "section": "benefits",
+        "path": "items.0",
+        "icon": "star"
+      }
+    },
+    {
+      "input": "Change the icon on the second step to a clock",
+      "expect": {
+        "section": "process",
+        "path": "items.1",
+        "icon": "clock"
+      }
+    }
+  ]
+}

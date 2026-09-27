@@ -1,0 +1,1880 @@
+20:51:25 [pipeline] icon vocabulary loaded: 2098 Lucide names (lucide-static 1.45.0)
+20:51:26 [pipeline] ──────── command pipeline start ────────
+20:51:26 [pipeline] transcript: "Create a landing page for Maria's Bakery targeting young families to take onlin…" (lang=en)
+20:51:26 [pipeline] GATE 0 (command) ok: 13 words
+20:51:26 [pipeline] ──────── command pipeline start ────────
+20:51:26 [pipeline] transcript: "I need a website for Maria's Bakery, aimed at young families, so they can order…" (lang=en)
+20:51:26 [pipeline] GATE 0 (command) ok: 14 words
+20:51:26 [pipeline] ──────── command pipeline start ────────
+20:51:26 [pipeline] transcript: "Set up a landing page for Maria's Bakery so young families can place orders on …" (lang=en)
+20:51:26 [pipeline] GATE 0 (command) ok: 16 words
+20:51:29 [pipeline] STEP 1 interpret → action='createPage'
+20:51:29 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:51:29 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+20:51:32 [pipeline] STEP 1 interpret → action='createPage'
+20:51:32 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:51:32 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+20:51:35 [pipeline] STEP 1 interpret → action='createPage'
+20:51:35 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:51:35 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='place orders online'
+20:51:38 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+20:51:38 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:51:38 [pipeline]     OAO 01/30  select_theme
+20:51:38 [pipeline]     OAO 02/30  select_layout
+20:51:38 [pipeline]     OAO 03/30  generate_copy:hero
+20:51:38 [pipeline]     OAO 04/30  select_image:hero
+20:51:38 [pipeline]     OAO 05/30  assemble_section:hero
+20:51:38 [pipeline]     OAO 06/30  generate_copy:about
+20:51:38 [pipeline]     OAO 07/30  select_image:about
+20:51:38 [pipeline]     OAO 08/30  assemble_section:about
+20:51:38 [pipeline]     OAO 09/30  generate_copy:benefits
+20:51:38 [pipeline]     OAO 10/30  select_icon:benefits
+20:51:38 [pipeline]     OAO 11/30  assemble_section:benefits
+20:51:38 [pipeline]     OAO 12/30  generate_copy:services
+20:51:38 [pipeline]     OAO 13/30  select_image:services
+20:51:38 [pipeline]     OAO 14/30  assemble_section:services
+20:51:38 [pipeline]     OAO 15/30  generate_copy:gallery
+20:51:38 [pipeline]     OAO 16/30  select_image:gallery
+20:51:38 [pipeline]     OAO 17/30  assemble_section:gallery
+20:51:38 [pipeline]     OAO 18/30  generate_copy:testimonials
+20:51:38 [pipeline]     OAO 19/30  select_image:testimonials
+20:51:38 [pipeline]     OAO 20/30  assemble_section:testimonials
+20:51:38 [pipeline]     OAO 21/30  generate_copy:promotion
+20:51:38 [pipeline]     OAO 22/30  select_image:promotion
+20:51:38 [pipeline]     OAO 23/30  assemble_section:promotion
+20:51:38 [pipeline]     OAO 24/30  generate_copy:faq
+20:51:38 [pipeline]     OAO 25/30  select_image:faq
+20:51:38 [pipeline]     OAO 26/30  assemble_section:faq
+20:51:38 [pipeline]     OAO 27/30  generate_copy:contact
+20:51:38 [pipeline]     OAO 28/30  select_image:contact
+20:51:38 [pipeline]     OAO 29/30  assemble_section:contact
+20:51:38 [pipeline]     OAO 30/30  assemble_page
+20:51:41 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+20:51:41 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:51:41 [pipeline]     OAO 01/30  select_theme
+20:51:41 [pipeline]     OAO 02/30  select_layout
+20:51:41 [pipeline]     OAO 03/30  generate_copy:hero
+20:51:41 [pipeline]     OAO 04/30  select_image:hero
+20:51:41 [pipeline]     OAO 05/30  assemble_section:hero
+20:51:41 [pipeline]     OAO 06/30  generate_copy:about
+20:51:41 [pipeline]     OAO 07/30  select_image:about
+20:51:41 [pipeline]     OAO 08/30  assemble_section:about
+20:51:41 [pipeline]     OAO 09/30  generate_copy:benefits
+20:51:41 [pipeline]     OAO 10/30  select_icon:benefits
+20:51:41 [pipeline]     OAO 11/30  assemble_section:benefits
+20:51:41 [pipeline]     OAO 12/30  generate_copy:services
+20:51:41 [pipeline]     OAO 13/30  select_image:services
+20:51:41 [pipeline]     OAO 14/30  assemble_section:services
+20:51:41 [pipeline]     OAO 15/30  generate_copy:gallery
+20:51:41 [pipeline]     OAO 16/30  select_image:gallery
+20:51:41 [pipeline]     OAO 17/30  assemble_section:gallery
+20:51:41 [pipeline]     OAO 18/30  generate_copy:testimonials
+20:51:41 [pipeline]     OAO 19/30  select_image:testimonials
+20:51:41 [pipeline]     OAO 20/30  assemble_section:testimonials
+20:51:41 [pipeline]     OAO 21/30  generate_copy:promotion
+20:51:41 [pipeline]     OAO 22/30  select_image:promotion
+20:51:41 [pipeline]     OAO 23/30  assemble_section:promotion
+20:51:41 [pipeline]     OAO 24/30  generate_copy:faq
+20:51:41 [pipeline]     OAO 25/30  select_image:faq
+20:51:41 [pipeline]     OAO 26/30  assemble_section:faq
+20:51:41 [pipeline]     OAO 27/30  generate_copy:contact
+20:51:41 [pipeline]     OAO 28/30  select_image:contact
+20:51:41 [pipeline]     OAO 29/30  assemble_section:contact
+20:51:41 [pipeline]     OAO 30/30  assemble_page
+20:51:43 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+20:51:43 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:51:43 [pipeline]     OAO 01/30  select_theme
+20:51:43 [pipeline]     OAO 02/30  select_layout
+20:51:43 [pipeline]     OAO 03/30  generate_copy:hero
+20:51:43 [pipeline]     OAO 04/30  select_image:hero
+20:51:43 [pipeline]     OAO 05/30  assemble_section:hero
+20:51:43 [pipeline]     OAO 06/30  generate_copy:about
+20:51:43 [pipeline]     OAO 07/30  select_image:about
+20:51:43 [pipeline]     OAO 08/30  assemble_section:about
+20:51:43 [pipeline]     OAO 09/30  generate_copy:benefits
+20:51:43 [pipeline]     OAO 10/30  select_icon:benefits
+20:51:43 [pipeline]     OAO 11/30  assemble_section:benefits
+20:51:43 [pipeline]     OAO 12/30  generate_copy:services
+20:51:43 [pipeline]     OAO 13/30  select_image:services
+20:51:43 [pipeline]     OAO 14/30  assemble_section:services
+20:51:43 [pipeline]     OAO 15/30  generate_copy:gallery
+20:51:43 [pipeline]     OAO 16/30  select_image:gallery
+20:51:43 [pipeline]     OAO 17/30  assemble_section:gallery
+20:51:43 [pipeline]     OAO 18/30  generate_copy:testimonials
+20:51:43 [pipeline]     OAO 19/30  select_image:testimonials
+20:51:43 [pipeline]     OAO 20/30  assemble_section:testimonials
+20:51:43 [pipeline]     OAO 21/30  generate_copy:promotion
+20:51:43 [pipeline]     OAO 22/30  select_image:promotion
+20:51:43 [pipeline]     OAO 23/30  assemble_section:promotion
+20:51:43 [pipeline]     OAO 24/30  generate_copy:faq
+20:51:43 [pipeline]     OAO 25/30  select_image:faq
+20:51:43 [pipeline]     OAO 26/30  assemble_section:faq
+20:51:43 [pipeline]     OAO 27/30  generate_copy:contact
+20:51:43 [pipeline]     OAO 28/30  select_image:contact
+20:51:43 [pipeline]     OAO 29/30  assemble_section:contact
+20:51:43 [pipeline]     OAO 30/30  assemble_page
+20:51:47 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+20:51:50 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+20:51:54 [pipeline] exec 01/30 select_theme → Golden Crumb, warm layout (ok)
+20:52:04 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:52:12 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:52:21 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:52:24 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:52:26 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+20:52:30 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:52:31 [pipeline] CLIP text encoder loaded (478 photos indexed)
+20:52:31 [pipeline] CLIP text encoder loaded (478 photos indexed)
+20:52:31 [pipeline] exec 04/30 select_image:hero → images attached
+20:52:31 [pipeline] exec 04/30 select_image:hero → images attached
+20:52:31 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+20:52:31 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+20:52:31 [pipeline] CLIP text encoder loaded (478 photos indexed)
+20:52:31 [pipeline] exec 04/30 select_image:hero → images attached
+20:52:31 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (full-bleed)
+20:52:36 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+20:52:36 [pipeline] exec 07/30 select_image:about → images attached
+20:52:36 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+20:52:41 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+20:52:41 [pipeline] exec 07/30 select_image:about → images attached
+20:52:41 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+20:52:47 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+20:52:47 [pipeline] exec 07/30 select_image:about → images attached
+20:52:47 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (text-centered)
+20:52:52 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+20:52:52 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+20:52:58 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+20:52:58 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+20:53:05 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+20:53:05 [pipeline]      plan refined: select_icon:benefits → 4 item operation(s)
+20:53:06 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+20:53:06 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+20:53:07 [pipeline] exec 10/33 select_icon:benefits#1 → sun (ok)
+20:53:08 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+20:53:09 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+20:53:10 [pipeline] exec 11/33 select_icon:benefits#2 → leaf (ok)
+20:53:11 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+20:53:11 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+20:53:11 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+20:53:11 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+20:53:13 [pipeline] exec 12/33 select_icon:benefits#3 → truck (ok)
+20:53:18 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+20:53:18 [pipeline] exec 15/32 select_image:services → images attached
+20:53:18 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+20:53:23 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+20:53:23 [pipeline] exec 15/32 select_image:services → images attached
+20:53:23 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+20:53:24 [pipeline] exec 13/33 select_icon:benefits#4 → users (ok)
+20:53:24 [pipeline] exec 14/33 assemble_section:benefits → GATE 3 ok (grid-cards)
+20:53:26 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+20:53:26 [pipeline] exec 18/32 select_image:gallery → images attached
+20:53:26 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+20:53:27 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+20:53:27 [pipeline] exec 18/32 select_image:gallery → images attached
+20:53:27 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+20:53:33 [pipeline] exec 15/33 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+20:53:33 [pipeline] exec 16/33 select_image:services → images attached
+20:53:33 [pipeline] exec 17/33 assemble_section:services → GATE 3 ok (photo-rows)
+20:53:38 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+20:53:38 [pipeline] exec 21/32 select_image:testimonials → images attached
+20:53:38 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+20:53:42 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+20:53:42 [pipeline] exec 21/32 select_image:testimonials → images attached
+20:53:42 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+20:53:45 [pipeline] exec 18/33 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+20:53:45 [pipeline] exec 19/33 select_image:gallery → images attached
+20:53:45 [pipeline] exec 20/33 assemble_section:gallery → GATE 3 ok (masonry)
+20:53:48 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+20:53:48 [pipeline] exec 24/32 select_image:promotion → images attached
+20:53:48 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+20:53:50 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+20:53:50 [pipeline] exec 24/32 select_image:promotion → images attached
+20:53:50 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+20:53:55 [pipeline] exec 21/33 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+20:53:55 [pipeline] exec 22/33 select_image:testimonials → images attached
+20:53:55 [pipeline] exec 23/33 assemble_section:testimonials → GATE 3 ok (cards-grid)
+20:54:02 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:54:02 [pipeline] exec 27/32 select_image:faq → images attached
+20:54:02 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+20:54:08 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:54:08 [pipeline] exec 27/32 select_image:faq → images attached
+20:54:08 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+20:54:11 [pipeline] exec 24/33 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+20:54:11 [pipeline] exec 25/33 select_image:promotion → images attached
+20:54:11 [pipeline] exec 26/33 assemble_section:promotion → GATE 3 ok (tinted-band)
+20:54:16 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+20:54:16 [pipeline] exec 30/32 select_image:contact → images attached
+20:54:16 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+20:54:16 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+20:54:16 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+20:54:16 [pipeline] draft persisted /maria-s-bakery as 4e969831ab1846b7 (unpublished)
+20:54:16 [pipeline] ──────── pipeline done: VALID ────────
+20:54:17 [pipeline] ──────── command pipeline start ────────
+20:54:17 [pipeline] transcript: "Build Maria's Bakery a page targeting young families that takes online orders" (lang=en)
+20:54:17 [pipeline] GATE 0 (command) ok: 11 words
+20:54:21 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+20:54:21 [pipeline] exec 30/32 select_image:contact → images attached
+20:54:21 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+20:54:21 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+20:54:21 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+20:54:21 [pipeline] draft persisted /maria-s-bakery as 8080c08e36c2454b (unpublished)
+20:54:21 [pipeline] ──────── pipeline done: VALID ────────
+20:54:22 [pipeline] ──────── command pipeline start ────────
+20:54:22 [pipeline] transcript: "Create a landing page for Maria's Bakery targeting young families to take onlin…" (lang=en)
+20:54:22 [pipeline] GATE 0 (command) ok: 13 words
+20:54:28 [pipeline] exec 27/33 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:54:28 [pipeline] exec 28/33 select_image:faq → images attached
+20:54:28 [pipeline] exec 29/33 assemble_section:faq → GATE 3 ok (accordion-boxed)
+20:54:32 [pipeline] STEP 1 interpret → action='createPage'
+20:54:32 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:54:32 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+20:54:36 [pipeline] STEP 1 interpret → action='createPage'
+20:54:36 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:54:36 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+20:54:41 [pipeline] exec 30/33 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+20:54:41 [pipeline] exec 31/33 select_image:contact → images attached
+20:54:41 [pipeline] exec 32/33 assemble_section:contact → GATE 3 ok (details-and-cta)
+20:54:41 [pipeline] exec 33/33 assemble_page → GATE 2 ok
+20:54:41 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+20:54:41 [pipeline] draft persisted /maria-s-bakery as de18de27201244fe (unpublished)
+20:54:41 [pipeline] ──────── pipeline done: VALID ────────
+20:54:42 [pipeline] ──────── command pipeline start ────────
+20:54:42 [pipeline] transcript: 'Build a page for Apex Plumbing aimed at homeowners to collect quote requests, w…' (lang=en)
+20:54:42 [pipeline] GATE 0 (command) ok: 18 words
+20:54:44 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+20:54:44 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:54:44 [pipeline]     OAO 01/30  select_theme
+20:54:44 [pipeline]     OAO 02/30  select_layout
+20:54:44 [pipeline]     OAO 03/30  generate_copy:hero
+20:54:44 [pipeline]     OAO 04/30  select_image:hero
+20:54:44 [pipeline]     OAO 05/30  assemble_section:hero
+20:54:44 [pipeline]     OAO 06/30  generate_copy:about
+20:54:44 [pipeline]     OAO 07/30  select_image:about
+20:54:44 [pipeline]     OAO 08/30  assemble_section:about
+20:54:44 [pipeline]     OAO 09/30  generate_copy:benefits
+20:54:44 [pipeline]     OAO 10/30  select_icon:benefits
+20:54:44 [pipeline]     OAO 11/30  assemble_section:benefits
+20:54:44 [pipeline]     OAO 12/30  generate_copy:services
+20:54:44 [pipeline]     OAO 13/30  select_image:services
+20:54:44 [pipeline]     OAO 14/30  assemble_section:services
+20:54:44 [pipeline]     OAO 15/30  generate_copy:gallery
+20:54:44 [pipeline]     OAO 16/30  select_image:gallery
+20:54:44 [pipeline]     OAO 17/30  assemble_section:gallery
+20:54:44 [pipeline]     OAO 18/30  generate_copy:testimonials
+20:54:44 [pipeline]     OAO 19/30  select_image:testimonials
+20:54:44 [pipeline]     OAO 20/30  assemble_section:testimonials
+20:54:44 [pipeline]     OAO 21/30  generate_copy:promotion
+20:54:44 [pipeline]     OAO 22/30  select_image:promotion
+20:54:44 [pipeline]     OAO 23/30  assemble_section:promotion
+20:54:44 [pipeline]     OAO 24/30  generate_copy:faq
+20:54:44 [pipeline]     OAO 25/30  select_image:faq
+20:54:44 [pipeline]     OAO 26/30  assemble_section:faq
+20:54:44 [pipeline]     OAO 27/30  generate_copy:contact
+20:54:44 [pipeline]     OAO 28/30  select_image:contact
+20:54:44 [pipeline]     OAO 29/30  assemble_section:contact
+20:54:44 [pipeline]     OAO 30/30  assemble_page
+20:54:47 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+20:54:47 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:54:47 [pipeline]     OAO 01/30  select_theme
+20:54:47 [pipeline]     OAO 02/30  select_layout
+20:54:47 [pipeline]     OAO 03/30  generate_copy:hero
+20:54:47 [pipeline]     OAO 04/30  select_image:hero
+20:54:47 [pipeline]     OAO 05/30  assemble_section:hero
+20:54:47 [pipeline]     OAO 06/30  generate_copy:about
+20:54:47 [pipeline]     OAO 07/30  select_image:about
+20:54:47 [pipeline]     OAO 08/30  assemble_section:about
+20:54:47 [pipeline]     OAO 09/30  generate_copy:benefits
+20:54:47 [pipeline]     OAO 10/30  select_icon:benefits
+20:54:47 [pipeline]     OAO 11/30  assemble_section:benefits
+20:54:47 [pipeline]     OAO 12/30  generate_copy:services
+20:54:47 [pipeline]     OAO 13/30  select_image:services
+20:54:47 [pipeline]     OAO 14/30  assemble_section:services
+20:54:47 [pipeline]     OAO 15/30  generate_copy:gallery
+20:54:47 [pipeline]     OAO 16/30  select_image:gallery
+20:54:47 [pipeline]     OAO 17/30  assemble_section:gallery
+20:54:47 [pipeline]     OAO 18/30  generate_copy:testimonials
+20:54:47 [pipeline]     OAO 19/30  select_image:testimonials
+20:54:47 [pipeline]     OAO 20/30  assemble_section:testimonials
+20:54:47 [pipeline]     OAO 21/30  generate_copy:promotion
+20:54:47 [pipeline]     OAO 22/30  select_image:promotion
+20:54:47 [pipeline]     OAO 23/30  assemble_section:promotion
+20:54:47 [pipeline]     OAO 24/30  generate_copy:faq
+20:54:47 [pipeline]     OAO 25/30  select_image:faq
+20:54:47 [pipeline]     OAO 26/30  assemble_section:faq
+20:54:47 [pipeline]     OAO 27/30  generate_copy:contact
+20:54:47 [pipeline]     OAO 28/30  select_image:contact
+20:54:47 [pipeline]     OAO 29/30  assemble_section:contact
+20:54:47 [pipeline]     OAO 30/30  assemble_page
+20:54:51 [pipeline] STEP 1 interpret → action='createPage'
+20:54:51 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:54:51 [pipeline] STEP 2/4 brief extracted: business='Apex Plumbing' audience='homeowners' goal='collect quote requests'
+20:54:56 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+20:54:59 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+20:55:01 [pipeline] STEP 3/4 schema generated: 2 sections ['hero', 'faq']
+20:55:01 [pipeline] STEP 4/4 planner produced 9 atomic operations:
+20:55:01 [pipeline]     OAO 01/09  select_theme
+20:55:01 [pipeline]     OAO 02/09  select_layout
+20:55:01 [pipeline]     OAO 03/09  generate_copy:hero
+20:55:01 [pipeline]     OAO 04/09  select_image:hero
+20:55:01 [pipeline]     OAO 05/09  assemble_section:hero
+20:55:01 [pipeline]     OAO 06/09  generate_copy:faq
+20:55:01 [pipeline]     OAO 07/09  select_image:faq
+20:55:01 [pipeline]     OAO 08/09  assemble_section:faq
+20:55:01 [pipeline]     OAO 09/09  assemble_page
+20:55:09 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:55:17 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:55:21 [pipeline] exec 01/9 select_theme → Copper & Slate, bold layout (ok)
+20:55:24 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:55:24 [pipeline] exec 04/30 select_image:hero → images attached
+20:55:24 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+20:55:26 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:55:26 [pipeline] exec 04/30 select_image:hero → images attached
+20:55:26 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+20:55:29 [pipeline] exec 02/9 select_layout → 2 chosen (ok)
+20:55:34 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+20:55:34 [pipeline] exec 07/30 select_image:about → images attached
+20:55:34 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+20:55:39 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+20:55:39 [pipeline] exec 07/30 select_image:about → images attached
+20:55:39 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+20:55:42 [pipeline] exec 03/9 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:55:42 [pipeline] exec 04/9 select_image:hero → images attached
+20:55:42 [pipeline] exec 05/9 assemble_section:hero → GATE 3 ok (full-bleed)
+20:55:47 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+20:55:47 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+20:55:53 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+20:55:53 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+20:56:01 [pipeline] exec 06/9 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:56:01 [pipeline] exec 07/9 select_image:faq → images attached
+20:56:01 [pipeline] exec 08/9 assemble_section:faq → GATE 3 ok (tinted-accordion)
+20:56:01 [pipeline] exec 09/9 assemble_page → GATE 2 ok
+20:56:01 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /apex-plumbing (4 sections)
+20:56:01 [pipeline] draft persisted /apex-plumbing as 052ea259b4fb4298 (unpublished)
+20:56:01 [pipeline] ──────── pipeline done: VALID ────────
+20:56:01 [pipeline] ──────── command pipeline start ────────
+20:56:01 [pipeline] transcript: 'Apex Plumbing needs a page for homeowners to collect quote requests — just a he…' (lang=en)
+20:56:01 [pipeline] GATE 0 (command) ok: 15 words
+20:56:02 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+20:56:02 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+20:56:06 [pipeline] STEP 1 interpret → action='createPage'
+20:56:06 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:56:06 [pipeline] STEP 2/4 brief extracted: business='Apex Plumbing' audience='homeowners' goal='collect quote requests'
+20:56:07 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+20:56:08 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+20:56:10 [pipeline] STEP 3/4 schema generated: 2 sections ['hero', 'faq']
+20:56:10 [pipeline] STEP 4/4 planner produced 9 atomic operations:
+20:56:10 [pipeline]     OAO 01/09  select_theme
+20:56:10 [pipeline]     OAO 02/09  select_layout
+20:56:10 [pipeline]     OAO 03/09  generate_copy:hero
+20:56:10 [pipeline]     OAO 04/09  select_image:hero
+20:56:10 [pipeline]     OAO 05/09  assemble_section:hero
+20:56:10 [pipeline]     OAO 06/09  generate_copy:faq
+20:56:10 [pipeline]     OAO 07/09  select_image:faq
+20:56:10 [pipeline]     OAO 08/09  assemble_section:faq
+20:56:10 [pipeline]     OAO 09/09  assemble_page
+20:56:11 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+20:56:11 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+20:56:11 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+20:56:11 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+20:56:14 [pipeline] exec 01/9 select_theme → Copper & Slate, bold layout (ok)
+20:56:20 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+20:56:20 [pipeline] exec 15/32 select_image:services → images attached
+20:56:20 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+20:56:24 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+20:56:24 [pipeline] exec 15/32 select_image:services → images attached
+20:56:24 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+20:56:27 [pipeline] exec 02/9 select_layout → 2 chosen (ok)
+20:56:29 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+20:56:29 [pipeline] exec 18/32 select_image:gallery → images attached
+20:56:29 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+20:56:30 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+20:56:30 [pipeline] exec 18/32 select_image:gallery → images attached
+20:56:30 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+20:56:33 [pipeline] exec 03/9 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:56:33 [pipeline] exec 04/9 select_image:hero → images attached
+20:56:33 [pipeline] exec 05/9 assemble_section:hero → GATE 3 ok (full-bleed)
+20:56:37 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+20:56:37 [pipeline] exec 21/32 select_image:testimonials → images attached
+20:56:37 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+20:56:41 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+20:56:41 [pipeline] exec 21/32 select_image:testimonials → images attached
+20:56:41 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+20:56:48 [pipeline] exec 06/9 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:56:48 [pipeline] exec 07/9 select_image:faq → images attached
+20:56:48 [pipeline] exec 08/9 assemble_section:faq → GATE 3 ok (tinted-accordion)
+20:56:48 [pipeline] exec 09/9 assemble_page → GATE 2 ok
+20:56:48 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /apex-plumbing (4 sections)
+20:56:48 [pipeline] draft persisted /apex-plumbing as 59c7005e29554c6b (unpublished)
+20:56:48 [pipeline] ──────── pipeline done: VALID ────────
+20:56:48 [pipeline] ──────── command pipeline start ────────
+20:56:48 [pipeline] transcript: 'Put together a page for Apex Plumbing aimed at homeowners, only a hero and ques…' (lang=en)
+20:56:48 [pipeline] GATE 0 (command) ok: 18 words
+20:56:51 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+20:56:51 [pipeline] exec 24/32 select_image:promotion → images attached
+20:56:51 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+20:56:53 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+20:56:53 [pipeline] exec 24/32 select_image:promotion → images attached
+20:56:53 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+20:56:57 [pipeline] STEP 1 interpret → action='createPage'
+20:56:57 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:56:57 [pipeline] STEP 2/4 brief extracted: business='Apex Plumbing' audience='homeowners' goal='gather quote requests'
+20:57:04 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:57:04 [pipeline] exec 27/32 select_image:faq → images attached
+20:57:04 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+20:57:09 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:57:09 [pipeline] exec 27/32 select_image:faq → images attached
+20:57:09 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+20:57:11 [pipeline] STEP 3/4 schema generated: 2 sections ['hero', 'faq']
+20:57:11 [pipeline] STEP 4/4 planner produced 9 atomic operations:
+20:57:11 [pipeline]     OAO 01/09  select_theme
+20:57:11 [pipeline]     OAO 02/09  select_layout
+20:57:11 [pipeline]     OAO 03/09  generate_copy:hero
+20:57:11 [pipeline]     OAO 04/09  select_image:hero
+20:57:11 [pipeline]     OAO 05/09  assemble_section:hero
+20:57:11 [pipeline]     OAO 06/09  generate_copy:faq
+20:57:11 [pipeline]     OAO 07/09  select_image:faq
+20:57:11 [pipeline]     OAO 08/09  assemble_section:faq
+20:57:11 [pipeline]     OAO 09/09  assemble_page
+20:57:17 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+20:57:17 [pipeline] exec 30/32 select_image:contact → images attached
+20:57:17 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+20:57:17 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+20:57:17 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+20:57:17 [pipeline] draft persisted /maria-s-bakery as f89b0d7307bd49f6 (unpublished)
+20:57:17 [pipeline] ──────── pipeline done: VALID ────────
+20:57:17 [pipeline] ──────── command pipeline start ────────
+20:57:17 [pipeline] transcript: 'For Apex Plumbing: a homeowner-facing page collecting quote requests, hero and …' (lang=en)
+20:57:17 [pipeline] GATE 0 (command) ok: 13 words
+20:57:22 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+20:57:22 [pipeline] exec 30/32 select_image:contact → images attached
+20:57:22 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+20:57:22 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+20:57:22 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+20:57:22 [pipeline] draft persisted /maria-s-bakery as af11cbf8772f45f8 (unpublished)
+20:57:22 [pipeline] ──────── pipeline done: VALID ────────
+20:57:22 [pipeline] ──────── command pipeline start ────────
+20:57:22 [pipeline] transcript: 'Build a page for Apex Plumbing aimed at homeowners to collect quote requests, w…' (lang=en)
+20:57:22 [pipeline] GATE 0 (command) ok: 18 words
+20:57:26 [pipeline] exec 01/9 select_theme → Copper & Slate, bold layout (ok)
+20:57:31 [pipeline] STEP 1 interpret → action='createPage'
+20:57:31 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:57:31 [pipeline] STEP 2/4 brief extracted: business='Apex Plumbing' audience='homeowner' goal='collect quote requests'
+20:57:35 [pipeline] STEP 1 interpret → action='createPage'
+20:57:35 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:57:35 [pipeline] STEP 2/4 brief extracted: business='Apex Plumbing' audience='homeowners' goal='collect quote requests'
+20:57:38 [pipeline] exec 02/9 select_layout → 2 chosen (ok)
+20:57:40 [pipeline] STEP 3/4 schema generated: 2 sections ['hero', 'faq']
+20:57:40 [pipeline] STEP 4/4 planner produced 9 atomic operations:
+20:57:40 [pipeline]     OAO 01/09  select_theme
+20:57:40 [pipeline]     OAO 02/09  select_layout
+20:57:40 [pipeline]     OAO 03/09  generate_copy:hero
+20:57:40 [pipeline]     OAO 04/09  select_image:hero
+20:57:40 [pipeline]     OAO 05/09  assemble_section:hero
+20:57:40 [pipeline]     OAO 06/09  generate_copy:faq
+20:57:40 [pipeline]     OAO 07/09  select_image:faq
+20:57:40 [pipeline]     OAO 08/09  assemble_section:faq
+20:57:40 [pipeline]     OAO 09/09  assemble_page
+20:57:42 [pipeline] STEP 3/4 schema generated: 2 sections ['hero', 'faq']
+20:57:42 [pipeline] STEP 4/4 planner produced 9 atomic operations:
+20:57:42 [pipeline]     OAO 01/09  select_theme
+20:57:42 [pipeline]     OAO 02/09  select_layout
+20:57:42 [pipeline]     OAO 03/09  generate_copy:hero
+20:57:42 [pipeline]     OAO 04/09  select_image:hero
+20:57:42 [pipeline]     OAO 05/09  assemble_section:hero
+20:57:42 [pipeline]     OAO 06/09  generate_copy:faq
+20:57:42 [pipeline]     OAO 07/09  select_image:faq
+20:57:42 [pipeline]     OAO 08/09  assemble_section:faq
+20:57:42 [pipeline]     OAO 09/09  assemble_page
+20:57:45 [pipeline] exec 03/9 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:57:45 [pipeline] exec 04/9 select_image:hero → images attached
+20:57:45 [pipeline] exec 05/9 assemble_section:hero → GATE 3 ok (full-bleed)
+20:57:49 [pipeline] exec 01/9 select_theme → Copper & Slate, bold layout (ok)
+20:57:54 [pipeline] exec 01/9 select_theme → Copper & Slate, bold layout (ok)
+20:58:01 [pipeline] exec 06/9 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:58:01 [pipeline] exec 07/9 select_image:faq → images attached
+20:58:01 [pipeline] exec 08/9 assemble_section:faq → GATE 3 ok (two-column-static)
+20:58:01 [pipeline] exec 09/9 assemble_page → GATE 2 ok
+20:58:01 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /apex-plumbing (4 sections)
+20:58:01 [pipeline] draft persisted /apex-plumbing as a989d5e6dde14710 (unpublished)
+20:58:01 [pipeline] ──────── pipeline done: VALID ────────
+20:58:01 [pipeline] ──────── command pipeline start ────────
+20:58:01 [pipeline] transcript: 'Make a landing page for GreenLeaf Yoga Studio for busy professionals to sign up…' (lang=en)
+20:58:01 [pipeline] GATE 0 (command) ok: 21 words
+20:58:04 [pipeline] exec 02/9 select_layout → 2 chosen (ok)
+20:58:08 [pipeline] exec 02/9 select_layout → 2 chosen (ok)
+20:58:12 [pipeline] STEP 1 interpret → action='createPage'
+20:58:12 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:58:12 [pipeline] STEP 2/4 brief extracted: business='GreenLeaf Yoga Studio' audience='busy professionals' goal='sign up for classes'
+20:58:15 [pipeline] exec 03/9 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:58:15 [pipeline] exec 04/9 select_image:hero → images attached
+20:58:15 [pipeline] exec 05/9 assemble_section:hero → GATE 3 ok (full-bleed)
+20:58:18 [pipeline] exec 03/9 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:58:18 [pipeline] exec 04/9 select_image:hero → images attached
+20:58:18 [pipeline] exec 05/9 assemble_section:hero → GATE 3 ok (full-bleed)
+20:58:21 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact']
+20:58:21 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:58:21 [pipeline]     OAO 01/30  select_theme
+20:58:21 [pipeline]     OAO 02/30  select_layout
+20:58:21 [pipeline]     OAO 03/30  generate_copy:hero
+20:58:21 [pipeline]     OAO 04/30  select_image:hero
+20:58:21 [pipeline]     OAO 05/30  assemble_section:hero
+20:58:21 [pipeline]     OAO 06/30  generate_copy:about
+20:58:21 [pipeline]     OAO 07/30  select_image:about
+20:58:21 [pipeline]     OAO 08/30  assemble_section:about
+20:58:21 [pipeline]     OAO 09/30  generate_copy:benefits
+20:58:21 [pipeline]     OAO 10/30  select_icon:benefits
+20:58:21 [pipeline]     OAO 11/30  assemble_section:benefits
+20:58:21 [pipeline]     OAO 12/30  generate_copy:process
+20:58:21 [pipeline]     OAO 13/30  select_icon:process
+20:58:21 [pipeline]     OAO 14/30  assemble_section:process
+20:58:21 [pipeline]     OAO 15/30  generate_copy:testimonials
+20:58:21 [pipeline]     OAO 16/30  select_image:testimonials
+20:58:21 [pipeline]     OAO 17/30  assemble_section:testimonials
+20:58:21 [pipeline]     OAO 18/30  generate_copy:pricing
+20:58:21 [pipeline]     OAO 19/30  select_image:pricing
+20:58:21 [pipeline]     OAO 20/30  assemble_section:pricing
+20:58:21 [pipeline]     OAO 21/30  generate_copy:promotion
+20:58:21 [pipeline]     OAO 22/30  select_image:promotion
+20:58:21 [pipeline]     OAO 23/30  assemble_section:promotion
+20:58:21 [pipeline]     OAO 24/30  generate_copy:faq
+20:58:21 [pipeline]     OAO 25/30  select_image:faq
+20:58:21 [pipeline]     OAO 26/30  assemble_section:faq
+20:58:21 [pipeline]     OAO 27/30  generate_copy:contact
+20:58:21 [pipeline]     OAO 28/30  select_image:contact
+20:58:21 [pipeline]     OAO 29/30  assemble_section:contact
+20:58:21 [pipeline]     OAO 30/30  assemble_page
+20:58:28 [pipeline] exec 06/9 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:58:28 [pipeline] exec 07/9 select_image:faq → images attached
+20:58:28 [pipeline] exec 08/9 assemble_section:faq → GATE 3 ok (two-column-static)
+20:58:28 [pipeline] exec 09/9 assemble_page → GATE 2 ok
+20:58:28 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /apex-plumbing (4 sections)
+20:58:28 [pipeline] draft persisted /apex-plumbing as 04bf8ba538af4ee6 (unpublished)
+20:58:28 [pipeline] ──────── pipeline done: VALID ────────
+20:58:28 [pipeline] ──────── command pipeline start ────────
+20:58:28 [pipeline] transcript: 'GreenLeaf Yoga Studio wants a page for busy professionals to sign up for classe…' (lang=en)
+20:58:28 [pipeline] GATE 0 (command) ok: 19 words
+20:58:35 [pipeline] exec 06/9 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+20:58:35 [pipeline] exec 07/9 select_image:faq → images attached
+20:58:35 [pipeline] exec 08/9 assemble_section:faq → GATE 3 ok (tinted-accordion)
+20:58:35 [pipeline] exec 09/9 assemble_page → GATE 2 ok
+20:58:35 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /apex-plumbing (4 sections)
+20:58:35 [pipeline] draft persisted /apex-plumbing as 50203624bcd54fcb (unpublished)
+20:58:35 [pipeline] ──────── pipeline done: VALID ────────
+20:58:36 [pipeline] ──────── command pipeline start ────────
+20:58:36 [pipeline] transcript: 'Create a page for GreenLeaf Yoga Studio targeting busy professionals joining cl…' (lang=en)
+20:58:36 [pipeline] GATE 0 (command) ok: 15 words
+20:58:40 [pipeline] exec 01/30 select_theme → Moss & Morning, warm layout (ok)
+20:58:45 [pipeline] STEP 1 interpret → action='createPage'
+20:58:45 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:58:45 [pipeline] STEP 2/4 brief extracted: business='GreenLeaf Yoga Studio' audience='busy professionals' goal='sign up for classes'
+20:58:50 [pipeline] STEP 1 interpret → action='createPage'
+20:58:50 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+20:58:50 [pipeline] STEP 2/4 brief extracted: business='GreenLeaf Yoga Studio' audience='busy professionals' goal='attract new students to yoga classes'
+20:59:01 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:59:04 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'process', 'testimonials', 'promotion', 'faq', 'contact']
+20:59:04 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:59:04 [pipeline]     OAO 01/30  select_theme
+20:59:04 [pipeline]     OAO 02/30  select_layout
+20:59:04 [pipeline]     OAO 03/30  generate_copy:hero
+20:59:04 [pipeline]     OAO 04/30  select_image:hero
+20:59:04 [pipeline]     OAO 05/30  assemble_section:hero
+20:59:04 [pipeline]     OAO 06/30  generate_copy:about
+20:59:04 [pipeline]     OAO 07/30  select_image:about
+20:59:04 [pipeline]     OAO 08/30  assemble_section:about
+20:59:04 [pipeline]     OAO 09/30  generate_copy:benefits
+20:59:04 [pipeline]     OAO 10/30  select_icon:benefits
+20:59:04 [pipeline]     OAO 11/30  assemble_section:benefits
+20:59:04 [pipeline]     OAO 12/30  generate_copy:services
+20:59:04 [pipeline]     OAO 13/30  select_image:services
+20:59:04 [pipeline]     OAO 14/30  assemble_section:services
+20:59:04 [pipeline]     OAO 15/30  generate_copy:process
+20:59:04 [pipeline]     OAO 16/30  select_icon:process
+20:59:04 [pipeline]     OAO 17/30  assemble_section:process
+20:59:04 [pipeline]     OAO 18/30  generate_copy:testimonials
+20:59:04 [pipeline]     OAO 19/30  select_image:testimonials
+20:59:04 [pipeline]     OAO 20/30  assemble_section:testimonials
+20:59:04 [pipeline]     OAO 21/30  generate_copy:promotion
+20:59:04 [pipeline]     OAO 22/30  select_image:promotion
+20:59:04 [pipeline]     OAO 23/30  assemble_section:promotion
+20:59:04 [pipeline]     OAO 24/30  generate_copy:faq
+20:59:04 [pipeline]     OAO 25/30  select_image:faq
+20:59:04 [pipeline]     OAO 26/30  assemble_section:faq
+20:59:04 [pipeline]     OAO 27/30  generate_copy:contact
+20:59:04 [pipeline]     OAO 28/30  select_image:contact
+20:59:04 [pipeline]     OAO 29/30  assemble_section:contact
+20:59:04 [pipeline]     OAO 30/30  assemble_page
+20:59:07 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact']
+20:59:07 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+20:59:07 [pipeline]     OAO 01/30  select_theme
+20:59:07 [pipeline]     OAO 02/30  select_layout
+20:59:07 [pipeline]     OAO 03/30  generate_copy:hero
+20:59:07 [pipeline]     OAO 04/30  select_image:hero
+20:59:07 [pipeline]     OAO 05/30  assemble_section:hero
+20:59:07 [pipeline]     OAO 06/30  generate_copy:about
+20:59:07 [pipeline]     OAO 07/30  select_image:about
+20:59:07 [pipeline]     OAO 08/30  assemble_section:about
+20:59:07 [pipeline]     OAO 09/30  generate_copy:benefits
+20:59:07 [pipeline]     OAO 10/30  select_icon:benefits
+20:59:07 [pipeline]     OAO 11/30  assemble_section:benefits
+20:59:07 [pipeline]     OAO 12/30  generate_copy:process
+20:59:07 [pipeline]     OAO 13/30  select_icon:process
+20:59:07 [pipeline]     OAO 14/30  assemble_section:process
+20:59:07 [pipeline]     OAO 15/30  generate_copy:testimonials
+20:59:07 [pipeline]     OAO 16/30  select_image:testimonials
+20:59:07 [pipeline]     OAO 17/30  assemble_section:testimonials
+20:59:07 [pipeline]     OAO 18/30  generate_copy:pricing
+20:59:07 [pipeline]     OAO 19/30  select_image:pricing
+20:59:07 [pipeline]     OAO 20/30  assemble_section:pricing
+20:59:07 [pipeline]     OAO 21/30  generate_copy:promotion
+20:59:07 [pipeline]     OAO 22/30  select_image:promotion
+20:59:07 [pipeline]     OAO 23/30  assemble_section:promotion
+20:59:07 [pipeline]     OAO 24/30  generate_copy:faq
+20:59:07 [pipeline]     OAO 25/30  select_image:faq
+20:59:07 [pipeline]     OAO 26/30  assemble_section:faq
+20:59:07 [pipeline]     OAO 27/30  generate_copy:contact
+20:59:07 [pipeline]     OAO 28/30  select_image:contact
+20:59:07 [pipeline]     OAO 29/30  assemble_section:contact
+20:59:07 [pipeline]     OAO 30/30  assemble_page
+20:59:10 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:59:10 [pipeline] exec 04/30 select_image:hero → images attached
+20:59:10 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (split-right)
+20:59:13 [pipeline] exec 01/30 select_theme → Moss & Morning, warm layout (ok)
+20:59:18 [pipeline] exec 01/30 select_theme → Moss & Morning, warm layout (ok)
+20:59:27 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+20:59:27 [pipeline] exec 07/30 select_image:about → images attached
+20:59:27 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-left)
+20:59:36 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:59:46 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+20:59:53 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+20:59:53 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+20:59:56 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+20:59:56 [pipeline] exec 04/30 select_image:hero → images attached
+20:59:56 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (split-left)
+20:59:59 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:00:00 [pipeline] exec 04/30 select_image:hero → images attached
+21:00:00 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (overlay-card)
+21:00:01 [pipeline] exec 10/32 select_icon:benefits#1 → brain-circuit (ok)
+21:00:09 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:00:09 [pipeline] exec 07/30 select_image:about → images attached
+21:00:09 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+21:00:17 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:00:17 [pipeline] exec 07/30 select_image:about → images attached
+21:00:17 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+21:00:18 [pipeline] exec 11/32 select_icon:benefits#2 → clock (ok)
+21:00:24 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:00:24 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:00:29 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:00:29 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:00:30 [pipeline] exec 12/32 select_icon:benefits#3 → users (ok)
+21:00:30 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:00:31 [pipeline] exec 10/32 select_icon:benefits#1 → brain-circuit (ok)
+21:00:33 [pipeline] exec 10/32 select_icon:benefits#1 → focus (ok)
+21:00:40 [pipeline] exec 14/32 generate_copy:process → copy fields: ['type', 'heading', 'subhead', 'items']
+21:00:40 [pipeline]      plan refined: select_icon:process → 4 item operation(s)
+21:00:41 [pipeline] exec 11/32 select_icon:benefits#2 → clock (ok)
+21:00:42 [pipeline] exec 11/32 select_icon:benefits#2 → hand-heart (ok)
+21:00:43 [pipeline] exec 15/35 select_icon:process#1 → clock (ok)
+21:00:45 [pipeline] exec 12/32 select_icon:benefits#3 → users (ok)
+21:00:45 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (grid-cards)
+21:00:46 [pipeline] exec 12/32 select_icon:benefits#3 → moon (ok)
+21:00:46 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (grid-cards)
+21:00:47 [pipeline] exec 16/35 select_icon:process#2 → smartphone (ok)
+21:00:55 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+21:00:55 [pipeline] exec 15/32 select_image:services → images attached
+21:00:55 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (feature-first)
+21:01:02 [pipeline] exec 14/32 generate_copy:process → copy fields: ['type', 'heading', 'subhead', 'items']
+21:01:02 [pipeline]      plan refined: select_icon:process → 4 item operation(s)
+21:01:03 [pipeline] exec 17/35 select_icon:process#3 → leaf (ok)
+21:01:11 [pipeline] exec 17/32 generate_copy:process → copy fields: ['type', 'heading', 'subhead', 'items']
+21:01:11 [pipeline]      plan refined: select_icon:process → 4 item operation(s)
+21:01:12 [pipeline] exec 15/35 select_icon:process#1 → calendar-clock (ok)
+21:01:13 [pipeline] exec 18/35 select_icon:process#4 → hand-heart (ok)
+21:01:13 [pipeline] exec 19/35 assemble_section:process → GATE 3 ok (timeline-vertical)
+21:01:14 [pipeline] exec 18/35 select_icon:process#1 → clock (ok)
+21:01:15 [pipeline] exec 16/35 select_icon:process#2 → door-open (ok)
+21:01:21 [pipeline] exec 20/35 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:01:21 [pipeline] exec 21/35 select_image:testimonials → images attached
+21:01:21 [pipeline] exec 22/35 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:01:22 [pipeline] exec 19/35 select_icon:process#2 → smartphone (ok)
+21:01:23 [pipeline] exec 17/35 select_icon:process#3 → hand-heart (ok)
+21:01:34 [pipeline] exec 23/35 generate_copy:pricing → copy fields: ['type', 'heading', 'subhead', 'plans']
+21:01:34 [pipeline] exec 24/35 select_image:pricing → images attached
+21:01:34 [pipeline] exec 25/35 assemble_section:pricing → GATE 3 ok (featured-center)
+21:01:35 [pipeline] exec 20/35 select_icon:process#3 → leaf (ok)
+21:01:36 [pipeline] exec 18/35 select_icon:process#4 → lightbulb (ok)
+21:01:36 [pipeline] exec 19/35 assemble_section:process → GATE 3 ok (timeline-vertical)
+21:01:39 [pipeline] exec 26/35 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:01:39 [pipeline] exec 27/35 select_image:promotion → images attached
+21:01:39 [pipeline] exec 28/35 assemble_section:promotion → GATE 3 ok (boxed-accent)
+21:01:40 [pipeline] exec 21/35 select_icon:process#4 → hand-heart (ok)
+21:01:40 [pipeline] exec 22/35 assemble_section:process → GATE 3 ok (timeline-vertical)
+21:01:48 [pipeline] exec 20/35 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:01:48 [pipeline] exec 21/35 select_image:testimonials → images attached
+21:01:48 [pipeline] exec 22/35 assemble_section:testimonials → GATE 3 ok (tinted-cards)
+21:01:55 [pipeline] exec 29/35 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:01:55 [pipeline] exec 30/35 select_image:faq → images attached
+21:01:55 [pipeline] exec 31/35 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:02:00 [pipeline] exec 23/35 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:02:00 [pipeline] exec 24/35 select_image:testimonials → images attached
+21:02:00 [pipeline] exec 25/35 assemble_section:testimonials → GATE 3 ok (single-quote)
+21:02:10 [pipeline] exec 23/35 generate_copy:pricing → copy fields: ['type', 'heading', 'subhead', 'plans']
+21:02:10 [pipeline] exec 24/35 select_image:pricing → images attached
+21:02:10 [pipeline] exec 25/35 assemble_section:pricing → GATE 3 ok (three-cards)
+21:02:16 [pipeline] exec 32/35 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:02:16 [pipeline] exec 33/35 select_image:contact → images attached
+21:02:16 [pipeline] exec 34/35 assemble_section:contact → GATE 3 ok (details-and-cta)
+21:02:16 [pipeline] exec 35/35 assemble_page → GATE 2 ok
+21:02:16 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /greenleaf-yoga-studio (11 sections)
+21:02:16 [pipeline] draft persisted /greenleaf-yoga-studio as 07841a25d0bf4003 (unpublished)
+21:02:16 [pipeline] ──────── pipeline done: VALID ────────
+21:02:16 [pipeline] ──────── command pipeline start ────────
+21:02:16 [pipeline] transcript: 'Landing page for GreenLeaf Yoga Studio, busy professionals signing up for class…' (lang=en)
+21:02:16 [pipeline] GATE 0 (command) ok: 17 words
+21:02:18 [pipeline] exec 26/35 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:02:18 [pipeline] exec 27/35 select_image:promotion → images attached
+21:02:18 [pipeline] exec 28/35 assemble_section:promotion → GATE 3 ok (boxed-accent)
+21:02:21 [pipeline] exec 26/35 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:02:21 [pipeline] exec 27/35 select_image:promotion → images attached
+21:02:21 [pipeline] exec 28/35 assemble_section:promotion → GATE 3 ok (boxed-accent)
+21:02:26 [pipeline] STEP 1 interpret → action='createPage'
+21:02:26 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+21:02:26 [pipeline] STEP 2/4 brief extracted: business='GreenLeaf Yoga Studio' audience='busy professionals' goal='sign up for classes'
+21:02:32 [pipeline] exec 29/35 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:02:32 [pipeline] exec 30/35 select_image:faq → images attached
+21:02:32 [pipeline] exec 31/35 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:02:40 [pipeline] exec 29/35 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:02:40 [pipeline] exec 30/35 select_image:faq → images attached
+21:02:40 [pipeline] exec 31/35 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:02:43 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact']
+21:02:43 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+21:02:43 [pipeline]     OAO 01/30  select_theme
+21:02:43 [pipeline]     OAO 02/30  select_layout
+21:02:43 [pipeline]     OAO 03/30  generate_copy:hero
+21:02:43 [pipeline]     OAO 04/30  select_image:hero
+21:02:43 [pipeline]     OAO 05/30  assemble_section:hero
+21:02:43 [pipeline]     OAO 06/30  generate_copy:about
+21:02:43 [pipeline]     OAO 07/30  select_image:about
+21:02:43 [pipeline]     OAO 08/30  assemble_section:about
+21:02:43 [pipeline]     OAO 09/30  generate_copy:benefits
+21:02:43 [pipeline]     OAO 10/30  select_icon:benefits
+21:02:43 [pipeline]     OAO 11/30  assemble_section:benefits
+21:02:43 [pipeline]     OAO 12/30  generate_copy:process
+21:02:43 [pipeline]     OAO 13/30  select_icon:process
+21:02:43 [pipeline]     OAO 14/30  assemble_section:process
+21:02:43 [pipeline]     OAO 15/30  generate_copy:testimonials
+21:02:43 [pipeline]     OAO 16/30  select_image:testimonials
+21:02:43 [pipeline]     OAO 17/30  assemble_section:testimonials
+21:02:43 [pipeline]     OAO 18/30  generate_copy:pricing
+21:02:43 [pipeline]     OAO 19/30  select_image:pricing
+21:02:43 [pipeline]     OAO 20/30  assemble_section:pricing
+21:02:43 [pipeline]     OAO 21/30  generate_copy:promotion
+21:02:43 [pipeline]     OAO 22/30  select_image:promotion
+21:02:43 [pipeline]     OAO 23/30  assemble_section:promotion
+21:02:43 [pipeline]     OAO 24/30  generate_copy:faq
+21:02:43 [pipeline]     OAO 25/30  select_image:faq
+21:02:43 [pipeline]     OAO 26/30  assemble_section:faq
+21:02:43 [pipeline]     OAO 27/30  generate_copy:contact
+21:02:43 [pipeline]     OAO 28/30  select_image:contact
+21:02:43 [pipeline]     OAO 29/30  assemble_section:contact
+21:02:43 [pipeline]     OAO 30/30  assemble_page
+21:02:50 [pipeline] exec 32/35 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:02:50 [pipeline] exec 33/35 select_image:contact → images attached
+21:02:50 [pipeline] exec 34/35 assemble_section:contact → GATE 3 ok (centered-details)
+21:02:50 [pipeline] exec 35/35 assemble_page → GATE 2 ok
+21:02:50 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /greenleaf-yoga-studio (11 sections)
+21:02:50 [pipeline] draft persisted /greenleaf-yoga-studio as 96216a2056694bac (unpublished)
+21:02:50 [pipeline] ──────── pipeline done: VALID ────────
+21:02:50 [pipeline] ──────── command pipeline start ────────
+21:02:50 [pipeline] transcript: 'Make a landing page for GreenLeaf Yoga Studio for busy professionals to sign up…' (lang=en)
+21:02:50 [pipeline] GATE 0 (command) ok: 21 words
+21:02:55 [pipeline] exec 32/35 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:02:55 [pipeline] exec 33/35 select_image:contact → images attached
+21:02:55 [pipeline] exec 34/35 assemble_section:contact → GATE 3 ok (details-and-cta)
+21:02:55 [pipeline] exec 35/35 assemble_page → GATE 2 ok
+21:02:55 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /greenleaf-yoga-studio (11 sections)
+21:02:55 [pipeline] draft persisted /greenleaf-yoga-studio as a46353afbdd141df (unpublished)
+21:02:55 [pipeline] ──────── pipeline done: VALID ────────
+21:02:56 [pipeline] ──────── command pipeline start ────────
+21:02:56 [pipeline] transcript: "Create a landing page for Maria's Bakery targeting young families to take onlin…" (lang=en)
+21:02:56 [pipeline] GATE 0 (command) ok: 13 words
+21:03:01 [pipeline] exec 01/30 select_theme → Moss & Morning, warm layout (ok)
+21:03:05 [pipeline] STEP 1 interpret → action='createPage'
+21:03:05 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+21:03:05 [pipeline] STEP 2/4 brief extracted: business='GreenLeaf Yoga Studio' audience='busy professionals' goal='sign up for classes'
+21:03:09 [pipeline] STEP 1 interpret → action='createPage'
+21:03:09 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+21:03:09 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+21:03:17 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+21:03:19 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact']
+21:03:19 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+21:03:19 [pipeline]     OAO 01/30  select_theme
+21:03:19 [pipeline]     OAO 02/30  select_layout
+21:03:19 [pipeline]     OAO 03/30  generate_copy:hero
+21:03:19 [pipeline]     OAO 04/30  select_image:hero
+21:03:19 [pipeline]     OAO 05/30  assemble_section:hero
+21:03:19 [pipeline]     OAO 06/30  generate_copy:about
+21:03:19 [pipeline]     OAO 07/30  select_image:about
+21:03:19 [pipeline]     OAO 08/30  assemble_section:about
+21:03:19 [pipeline]     OAO 09/30  generate_copy:benefits
+21:03:19 [pipeline]     OAO 10/30  select_icon:benefits
+21:03:19 [pipeline]     OAO 11/30  assemble_section:benefits
+21:03:19 [pipeline]     OAO 12/30  generate_copy:process
+21:03:19 [pipeline]     OAO 13/30  select_icon:process
+21:03:19 [pipeline]     OAO 14/30  assemble_section:process
+21:03:19 [pipeline]     OAO 15/30  generate_copy:testimonials
+21:03:19 [pipeline]     OAO 16/30  select_image:testimonials
+21:03:19 [pipeline]     OAO 17/30  assemble_section:testimonials
+21:03:19 [pipeline]     OAO 18/30  generate_copy:pricing
+21:03:19 [pipeline]     OAO 19/30  select_image:pricing
+21:03:19 [pipeline]     OAO 20/30  assemble_section:pricing
+21:03:19 [pipeline]     OAO 21/30  generate_copy:promotion
+21:03:19 [pipeline]     OAO 22/30  select_image:promotion
+21:03:19 [pipeline]     OAO 23/30  assemble_section:promotion
+21:03:19 [pipeline]     OAO 24/30  generate_copy:faq
+21:03:19 [pipeline]     OAO 25/30  select_image:faq
+21:03:19 [pipeline]     OAO 26/30  assemble_section:faq
+21:03:19 [pipeline]     OAO 27/30  generate_copy:contact
+21:03:19 [pipeline]     OAO 28/30  select_image:contact
+21:03:19 [pipeline]     OAO 29/30  assemble_section:contact
+21:03:19 [pipeline]     OAO 30/30  assemble_page
+21:03:22 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+21:03:22 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+21:03:22 [pipeline]     OAO 01/30  select_theme
+21:03:22 [pipeline]     OAO 02/30  select_layout
+21:03:22 [pipeline]     OAO 03/30  generate_copy:hero
+21:03:22 [pipeline]     OAO 04/30  select_image:hero
+21:03:22 [pipeline]     OAO 05/30  assemble_section:hero
+21:03:22 [pipeline]     OAO 06/30  generate_copy:about
+21:03:22 [pipeline]     OAO 07/30  select_image:about
+21:03:22 [pipeline]     OAO 08/30  assemble_section:about
+21:03:22 [pipeline]     OAO 09/30  generate_copy:benefits
+21:03:22 [pipeline]     OAO 10/30  select_icon:benefits
+21:03:22 [pipeline]     OAO 11/30  assemble_section:benefits
+21:03:22 [pipeline]     OAO 12/30  generate_copy:services
+21:03:22 [pipeline]     OAO 13/30  select_image:services
+21:03:22 [pipeline]     OAO 14/30  assemble_section:services
+21:03:22 [pipeline]     OAO 15/30  generate_copy:gallery
+21:03:22 [pipeline]     OAO 16/30  select_image:gallery
+21:03:22 [pipeline]     OAO 17/30  assemble_section:gallery
+21:03:22 [pipeline]     OAO 18/30  generate_copy:testimonials
+21:03:22 [pipeline]     OAO 19/30  select_image:testimonials
+21:03:22 [pipeline]     OAO 20/30  assemble_section:testimonials
+21:03:22 [pipeline]     OAO 21/30  generate_copy:promotion
+21:03:22 [pipeline]     OAO 22/30  select_image:promotion
+21:03:22 [pipeline]     OAO 23/30  assemble_section:promotion
+21:03:22 [pipeline]     OAO 24/30  generate_copy:faq
+21:03:22 [pipeline]     OAO 25/30  select_image:faq
+21:03:22 [pipeline]     OAO 26/30  assemble_section:faq
+21:03:22 [pipeline]     OAO 27/30  generate_copy:contact
+21:03:22 [pipeline]     OAO 28/30  select_image:contact
+21:03:22 [pipeline]     OAO 29/30  assemble_section:contact
+21:03:22 [pipeline]     OAO 30/30  assemble_page
+21:03:25 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:03:25 [pipeline] exec 04/30 select_image:hero → images attached
+21:03:25 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (split-right)
+21:03:28 [pipeline] exec 01/30 select_theme → Moss & Morning, warm layout (ok)
+21:03:32 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+21:03:39 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:03:39 [pipeline] exec 07/30 select_image:about → images attached
+21:03:39 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-left)
+21:03:47 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+21:03:56 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+21:04:02 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:04:02 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:04:05 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:04:05 [pipeline] exec 04/30 select_image:hero → images attached
+21:04:05 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (split-right)
+21:04:07 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:04:07 [pipeline] exec 04/30 select_image:hero → images attached
+21:04:07 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+21:04:08 [pipeline] exec 10/32 select_icon:benefits#1 → brain-circuit (ok)
+21:04:15 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:04:15 [pipeline] exec 07/30 select_image:about → images attached
+21:04:15 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-left)
+21:04:20 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:04:20 [pipeline] exec 07/30 select_image:about → images attached
+21:04:20 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+21:04:21 [pipeline] exec 11/32 select_icon:benefits#2 → clock (ok)
+21:04:28 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:04:28 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:04:34 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:04:34 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:04:35 [pipeline] exec 12/32 select_icon:benefits#3 → users (ok)
+21:04:35 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:04:36 [pipeline] exec 10/32 select_icon:benefits#1 → brain-circuit (ok)
+21:04:38 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+21:04:45 [pipeline] exec 14/32 generate_copy:process → copy fields: ['type', 'heading', 'subhead', 'items']
+21:04:45 [pipeline]      plan refined: select_icon:process → 4 item operation(s)
+21:04:46 [pipeline] exec 11/32 select_icon:benefits#2 → clock (ok)
+21:04:47 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+21:04:48 [pipeline] exec 15/35 select_icon:process#1 → clock (ok)
+21:04:49 [pipeline] exec 12/32 select_icon:benefits#3 → users (ok)
+21:04:49 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:04:50 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+21:04:50 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:04:51 [pipeline] exec 16/35 select_icon:process#2 → smartphone (ok)
+21:04:58 [pipeline] exec 14/32 generate_copy:process → copy fields: ['type', 'heading', 'subhead', 'items']
+21:04:58 [pipeline]      plan refined: select_icon:process → 4 item operation(s)
+21:05:03 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+21:05:03 [pipeline] exec 15/32 select_image:services → images attached
+21:05:03 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+21:05:04 [pipeline] exec 17/35 select_icon:process#3 → leaf (ok)
+21:05:06 [pipeline] exec 15/35 select_icon:process#1 → clock (ok)
+21:05:08 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+21:05:08 [pipeline] exec 18/32 select_image:gallery → images attached
+21:05:08 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+21:05:09 [pipeline] exec 18/35 select_icon:process#4 → hand-heart (ok)
+21:05:09 [pipeline] exec 19/35 assemble_section:process → GATE 3 ok (timeline-vertical)
+21:05:10 [pipeline] exec 16/35 select_icon:process#2 → smartphone (ok)
+21:05:14 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:05:14 [pipeline] exec 21/32 select_image:testimonials → images attached
+21:05:14 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:05:20 [pipeline] exec 20/35 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:05:20 [pipeline] exec 21/35 select_image:testimonials → images attached
+21:05:20 [pipeline] exec 22/35 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:05:21 [pipeline] exec 17/35 select_icon:process#3 → leaf (ok)
+21:05:24 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:05:24 [pipeline] exec 24/32 select_image:promotion → images attached
+21:05:24 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+21:05:35 [pipeline] exec 23/35 generate_copy:pricing → copy fields: ['type', 'heading', 'subhead', 'plans']
+21:05:35 [pipeline] exec 24/35 select_image:pricing → images attached
+21:05:35 [pipeline] exec 25/35 assemble_section:pricing → GATE 3 ok (featured-center)
+21:05:36 [pipeline] exec 18/35 select_icon:process#4 → hand-heart (ok)
+21:05:36 [pipeline] exec 19/35 assemble_section:process → GATE 3 ok (timeline-vertical)
+21:05:42 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:05:42 [pipeline] exec 27/32 select_image:faq → images attached
+21:05:42 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:05:45 [pipeline] exec 26/35 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:05:45 [pipeline] exec 27/35 select_image:promotion → images attached
+21:05:45 [pipeline] exec 28/35 assemble_section:promotion → GATE 3 ok (boxed-accent)
+21:05:50 [pipeline] exec 20/35 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:05:50 [pipeline] exec 21/35 select_image:testimonials → images attached
+21:05:50 [pipeline] exec 22/35 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:05:56 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:05:56 [pipeline] exec 30/32 select_image:contact → images attached
+21:05:56 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+21:05:56 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+21:05:56 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+21:05:56 [pipeline] draft persisted /maria-s-bakery-2 as 8f7ca104a2c64316 (unpublished)
+21:05:56 [pipeline] ──────── pipeline done: VALID ────────
+21:05:56 [pipeline] ──────── command pipeline start ────────
+21:05:56 [pipeline] transcript: "I need another page for Maria's Bakery, still targeting young families for onli…" (lang=en)
+21:05:56 [pipeline] GATE 0 (command) ok: 13 words
+21:06:02 [pipeline] exec 29/35 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:06:02 [pipeline] exec 30/35 select_image:faq → images attached
+21:06:02 [pipeline] exec 31/35 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:06:13 [pipeline] exec 23/35 generate_copy:pricing → copy fields: ['type', 'heading', 'subhead', 'plans']
+21:06:13 [pipeline] exec 24/35 select_image:pricing → images attached
+21:06:13 [pipeline] exec 25/35 assemble_section:pricing → GATE 3 ok (featured-center)
+21:06:17 [pipeline] STEP 1 interpret → action='createPage'
+21:06:17 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+21:06:17 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+21:06:22 [pipeline] exec 32/35 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:06:22 [pipeline] exec 33/35 select_image:contact → images attached
+21:06:22 [pipeline] exec 34/35 assemble_section:contact → GATE 3 ok (details-and-cta)
+21:06:22 [pipeline] exec 35/35 assemble_page → GATE 2 ok
+21:06:22 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /greenleaf-yoga-studio (11 sections)
+21:06:22 [pipeline] draft persisted /greenleaf-yoga-studio as 3bf2db20a8fe4182 (unpublished)
+21:06:22 [pipeline] ──────── pipeline done: VALID ────────
+21:06:23 [pipeline] ──────── command pipeline start ────────
+21:06:23 [pipeline] transcript: "Set up a second Maria's Bakery page aimed at young families to take online orde…" (lang=en)
+21:06:23 [pipeline] GATE 0 (command) ok: 14 words
+21:06:25 [pipeline] exec 26/35 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:06:25 [pipeline] exec 27/35 select_image:promotion → images attached
+21:06:25 [pipeline] exec 28/35 assemble_section:promotion → GATE 3 ok (boxed-accent)
+21:06:28 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+21:06:28 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+21:06:28 [pipeline]     OAO 01/30  select_theme
+21:06:28 [pipeline]     OAO 02/30  select_layout
+21:06:28 [pipeline]     OAO 03/30  generate_copy:hero
+21:06:28 [pipeline]     OAO 04/30  select_image:hero
+21:06:28 [pipeline]     OAO 05/30  assemble_section:hero
+21:06:28 [pipeline]     OAO 06/30  generate_copy:about
+21:06:28 [pipeline]     OAO 07/30  select_image:about
+21:06:28 [pipeline]     OAO 08/30  assemble_section:about
+21:06:28 [pipeline]     OAO 09/30  generate_copy:benefits
+21:06:28 [pipeline]     OAO 10/30  select_icon:benefits
+21:06:28 [pipeline]     OAO 11/30  assemble_section:benefits
+21:06:28 [pipeline]     OAO 12/30  generate_copy:services
+21:06:28 [pipeline]     OAO 13/30  select_image:services
+21:06:28 [pipeline]     OAO 14/30  assemble_section:services
+21:06:28 [pipeline]     OAO 15/30  generate_copy:gallery
+21:06:28 [pipeline]     OAO 16/30  select_image:gallery
+21:06:28 [pipeline]     OAO 17/30  assemble_section:gallery
+21:06:28 [pipeline]     OAO 18/30  generate_copy:testimonials
+21:06:28 [pipeline]     OAO 19/30  select_image:testimonials
+21:06:28 [pipeline]     OAO 20/30  assemble_section:testimonials
+21:06:28 [pipeline]     OAO 21/30  generate_copy:promotion
+21:06:28 [pipeline]     OAO 22/30  select_image:promotion
+21:06:28 [pipeline]     OAO 23/30  assemble_section:promotion
+21:06:28 [pipeline]     OAO 24/30  generate_copy:faq
+21:06:28 [pipeline]     OAO 25/30  select_image:faq
+21:06:28 [pipeline]     OAO 26/30  assemble_section:faq
+21:06:28 [pipeline]     OAO 27/30  generate_copy:contact
+21:06:28 [pipeline]     OAO 28/30  select_image:contact
+21:06:28 [pipeline]     OAO 29/30  assemble_section:contact
+21:06:28 [pipeline]     OAO 30/30  assemble_page
+21:06:31 [pipeline] STEP 1 interpret → action='createPage'
+21:06:31 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+21:06:31 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+21:06:38 [pipeline] exec 29/35 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:06:38 [pipeline] exec 30/35 select_image:faq → images attached
+21:06:38 [pipeline] exec 31/35 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:06:40 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+21:06:43 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+21:06:43 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+21:06:43 [pipeline]     OAO 01/30  select_theme
+21:06:43 [pipeline]     OAO 02/30  select_layout
+21:06:43 [pipeline]     OAO 03/30  generate_copy:hero
+21:06:43 [pipeline]     OAO 04/30  select_image:hero
+21:06:43 [pipeline]     OAO 05/30  assemble_section:hero
+21:06:43 [pipeline]     OAO 06/30  generate_copy:about
+21:06:43 [pipeline]     OAO 07/30  select_image:about
+21:06:43 [pipeline]     OAO 08/30  assemble_section:about
+21:06:43 [pipeline]     OAO 09/30  generate_copy:benefits
+21:06:43 [pipeline]     OAO 10/30  select_icon:benefits
+21:06:43 [pipeline]     OAO 11/30  assemble_section:benefits
+21:06:43 [pipeline]     OAO 12/30  generate_copy:services
+21:06:43 [pipeline]     OAO 13/30  select_image:services
+21:06:43 [pipeline]     OAO 14/30  assemble_section:services
+21:06:43 [pipeline]     OAO 15/30  generate_copy:gallery
+21:06:43 [pipeline]     OAO 16/30  select_image:gallery
+21:06:43 [pipeline]     OAO 17/30  assemble_section:gallery
+21:06:43 [pipeline]     OAO 18/30  generate_copy:testimonials
+21:06:43 [pipeline]     OAO 19/30  select_image:testimonials
+21:06:43 [pipeline]     OAO 20/30  assemble_section:testimonials
+21:06:43 [pipeline]     OAO 21/30  generate_copy:promotion
+21:06:43 [pipeline]     OAO 22/30  select_image:promotion
+21:06:43 [pipeline]     OAO 23/30  assemble_section:promotion
+21:06:43 [pipeline]     OAO 24/30  generate_copy:faq
+21:06:43 [pipeline]     OAO 25/30  select_image:faq
+21:06:43 [pipeline]     OAO 26/30  assemble_section:faq
+21:06:43 [pipeline]     OAO 27/30  generate_copy:contact
+21:06:43 [pipeline]     OAO 28/30  select_image:contact
+21:06:43 [pipeline]     OAO 29/30  assemble_section:contact
+21:06:43 [pipeline]     OAO 30/30  assemble_page
+21:06:49 [pipeline] exec 32/35 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:06:49 [pipeline] exec 33/35 select_image:contact → images attached
+21:06:49 [pipeline] exec 34/35 assemble_section:contact → GATE 3 ok (details-and-cta)
+21:06:49 [pipeline] exec 35/35 assemble_page → GATE 2 ok
+21:06:49 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /greenleaf-yoga-studio (11 sections)
+21:06:49 [pipeline] draft persisted /greenleaf-yoga-studio as ca1fed9cf09745ab (unpublished)
+21:06:49 [pipeline] ──────── pipeline done: VALID ────────
+21:06:49 [pipeline] ──────── command pipeline start ────────
+21:06:49 [pipeline] transcript: "Create a landing page for Maria's Bakery targeting young families to take onlin…" (lang=en)
+21:06:49 [pipeline] GATE 0 (command) ok: 13 words
+21:06:56 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+21:06:59 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+21:07:03 [pipeline] STEP 1 interpret → action='createPage'
+21:07:03 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+21:07:03 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+21:07:06 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:07:06 [pipeline] exec 04/30 select_image:hero → images attached
+21:07:06 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+21:07:13 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+21:07:17 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+21:07:17 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+21:07:17 [pipeline]     OAO 01/30  select_theme
+21:07:17 [pipeline]     OAO 02/30  select_layout
+21:07:17 [pipeline]     OAO 03/30  generate_copy:hero
+21:07:17 [pipeline]     OAO 04/30  select_image:hero
+21:07:17 [pipeline]     OAO 05/30  assemble_section:hero
+21:07:17 [pipeline]     OAO 06/30  generate_copy:about
+21:07:17 [pipeline]     OAO 07/30  select_image:about
+21:07:17 [pipeline]     OAO 08/30  assemble_section:about
+21:07:17 [pipeline]     OAO 09/30  generate_copy:benefits
+21:07:17 [pipeline]     OAO 10/30  select_icon:benefits
+21:07:17 [pipeline]     OAO 11/30  assemble_section:benefits
+21:07:17 [pipeline]     OAO 12/30  generate_copy:services
+21:07:17 [pipeline]     OAO 13/30  select_image:services
+21:07:17 [pipeline]     OAO 14/30  assemble_section:services
+21:07:17 [pipeline]     OAO 15/30  generate_copy:gallery
+21:07:17 [pipeline]     OAO 16/30  select_image:gallery
+21:07:17 [pipeline]     OAO 17/30  assemble_section:gallery
+21:07:17 [pipeline]     OAO 18/30  generate_copy:testimonials
+21:07:17 [pipeline]     OAO 19/30  select_image:testimonials
+21:07:17 [pipeline]     OAO 20/30  assemble_section:testimonials
+21:07:17 [pipeline]     OAO 21/30  generate_copy:promotion
+21:07:17 [pipeline]     OAO 22/30  select_image:promotion
+21:07:17 [pipeline]     OAO 23/30  assemble_section:promotion
+21:07:17 [pipeline]     OAO 24/30  generate_copy:faq
+21:07:17 [pipeline]     OAO 25/30  select_image:faq
+21:07:17 [pipeline]     OAO 26/30  assemble_section:faq
+21:07:17 [pipeline]     OAO 27/30  generate_copy:contact
+21:07:17 [pipeline]     OAO 28/30  select_image:contact
+21:07:17 [pipeline]     OAO 29/30  assemble_section:contact
+21:07:17 [pipeline]     OAO 30/30  assemble_page
+21:07:24 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:07:24 [pipeline] exec 07/30 select_image:about → images attached
+21:07:24 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+21:07:26 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:07:26 [pipeline] exec 04/30 select_image:hero → images attached
+21:07:26 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+21:07:29 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+21:07:35 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:07:35 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:07:40 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:07:40 [pipeline] exec 07/30 select_image:about → images attached
+21:07:40 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+21:07:48 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+21:07:49 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+21:07:55 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:07:55 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:07:57 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:07:57 [pipeline] exec 04/30 select_image:hero → images attached
+21:07:57 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+21:07:58 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+21:08:00 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+21:08:04 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:08:04 [pipeline] exec 07/30 select_image:about → images attached
+21:08:04 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+21:08:05 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+21:08:05 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:08:06 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+21:08:12 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:08:12 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:08:17 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+21:08:18 [pipeline] exec 15/32 select_image:services → images attached
+21:08:18 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+21:08:19 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+21:08:19 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:08:20 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+21:08:22 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+21:08:22 [pipeline] exec 18/32 select_image:gallery → images attached
+21:08:22 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+21:08:27 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+21:08:27 [pipeline] exec 15/32 select_image:services → images attached
+21:08:27 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+21:08:28 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+21:08:33 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:08:33 [pipeline] exec 21/32 select_image:testimonials → images attached
+21:08:33 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:08:35 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+21:08:35 [pipeline] exec 18/32 select_image:gallery → images attached
+21:08:35 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+21:08:36 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+21:08:36 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:08:39 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:08:39 [pipeline] exec 24/32 select_image:promotion → images attached
+21:08:39 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+21:08:43 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:08:43 [pipeline] exec 21/32 select_image:testimonials → images attached
+21:08:43 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:08:49 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+21:08:49 [pipeline] exec 15/32 select_image:services → images attached
+21:08:49 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+21:08:56 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:08:56 [pipeline] exec 27/32 select_image:faq → images attached
+21:08:56 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:08:58 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:08:58 [pipeline] exec 24/32 select_image:promotion → images attached
+21:08:58 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+21:09:00 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+21:09:01 [pipeline] exec 18/32 select_image:gallery → images attached
+21:09:01 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+21:09:06 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:09:06 [pipeline] exec 30/32 select_image:contact → images attached
+21:09:06 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+21:09:06 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+21:09:06 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+21:09:06 [pipeline] draft persisted /maria-s-bakery-2 as defffad375d44b0a (unpublished)
+21:09:06 [pipeline] ──────── pipeline done: VALID ────────
+21:09:07 [pipeline] ──────── command pipeline start ────────
+21:09:07 [pipeline] transcript: "I need another page for Maria's Bakery, still targeting young families for onli…" (lang=en)
+21:09:07 [pipeline] GATE 0 (command) ok: 13 words
+21:09:14 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:09:14 [pipeline] exec 27/32 select_image:faq → images attached
+21:09:14 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:09:18 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:09:18 [pipeline] exec 21/32 select_image:testimonials → images attached
+21:09:18 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:09:22 [pipeline] STEP 1 interpret → action='createPage'
+21:09:22 [pipeline] GATE 1 (intent) ok: 'createPage' is allowed
+21:09:22 [pipeline] STEP 2/4 brief extracted: business="Maria's Bakery" audience='young families' goal='take online orders'
+21:09:27 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:09:27 [pipeline] exec 30/32 select_image:contact → images attached
+21:09:27 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+21:09:27 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+21:09:27 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+21:09:27 [pipeline] draft persisted /maria-s-bakery-2 as 1f325e488f18459e (unpublished)
+21:09:27 [pipeline] ──────── pipeline done: VALID ────────
+21:09:27 [pipeline] ──────── command pipeline start ────────
+21:09:27 [pipeline] transcript: 'What is the weather forecast for Paris tomorrow afternoon?' (lang=en)
+21:09:27 [pipeline] GATE 0 (command) ok: 9 words
+21:09:30 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:09:30 [pipeline] exec 24/32 select_image:promotion → images attached
+21:09:30 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+21:09:32 [pipeline] STEP 3/4 schema generated: 9 sections ['hero', 'about', 'benefits', 'services', 'gallery', 'testimonials', 'promotion', 'faq', 'contact']
+21:09:32 [pipeline] STEP 4/4 planner produced 30 atomic operations:
+21:09:32 [pipeline]     OAO 01/30  select_theme
+21:09:32 [pipeline]     OAO 02/30  select_layout
+21:09:32 [pipeline]     OAO 03/30  generate_copy:hero
+21:09:32 [pipeline]     OAO 04/30  select_image:hero
+21:09:32 [pipeline]     OAO 05/30  assemble_section:hero
+21:09:32 [pipeline]     OAO 06/30  generate_copy:about
+21:09:32 [pipeline]     OAO 07/30  select_image:about
+21:09:32 [pipeline]     OAO 08/30  assemble_section:about
+21:09:32 [pipeline]     OAO 09/30  generate_copy:benefits
+21:09:32 [pipeline]     OAO 10/30  select_icon:benefits
+21:09:32 [pipeline]     OAO 11/30  assemble_section:benefits
+21:09:32 [pipeline]     OAO 12/30  generate_copy:services
+21:09:32 [pipeline]     OAO 13/30  select_image:services
+21:09:32 [pipeline]     OAO 14/30  assemble_section:services
+21:09:32 [pipeline]     OAO 15/30  generate_copy:gallery
+21:09:32 [pipeline]     OAO 16/30  select_image:gallery
+21:09:32 [pipeline]     OAO 17/30  assemble_section:gallery
+21:09:32 [pipeline]     OAO 18/30  generate_copy:testimonials
+21:09:32 [pipeline]     OAO 19/30  select_image:testimonials
+21:09:32 [pipeline]     OAO 20/30  assemble_section:testimonials
+21:09:32 [pipeline]     OAO 21/30  generate_copy:promotion
+21:09:32 [pipeline]     OAO 22/30  select_image:promotion
+21:09:32 [pipeline]     OAO 23/30  assemble_section:promotion
+21:09:32 [pipeline]     OAO 24/30  generate_copy:faq
+21:09:32 [pipeline]     OAO 25/30  select_image:faq
+21:09:32 [pipeline]     OAO 26/30  assemble_section:faq
+21:09:32 [pipeline]     OAO 27/30  generate_copy:contact
+21:09:32 [pipeline]     OAO 28/30  select_image:contact
+21:09:32 [pipeline]     OAO 29/30  assemble_section:contact
+21:09:32 [pipeline]     OAO 30/30  assemble_page
+21:09:34 [pipeline] STEP 1 interpret → action='unsupported'
+21:09:34 [pipeline] GATE 1 (intent) REJECTED: 'unsupported' not in allowed actions ['addItem', 'addSection', 'approveSection', 'createPage', 'editContent', 'moveItem', 'moveSection', 'regenerateSection', 'removeItem', 'removeSection', 'replaceImage', 'setIcon', 'setName', 'setTheme', 'setVariant']
+21:09:35 [pipeline] ──────── command pipeline start ────────
+21:09:35 [pipeline] transcript: 'How much does a first-class stamp cost these days?' (lang=en)
+21:09:35 [pipeline] GATE 0 (command) ok: 9 words
+21:09:41 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:09:41 [pipeline] exec 27/32 select_image:faq → images attached
+21:09:41 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:09:44 [pipeline] exec 01/30 select_theme → Golden Crumb, organic layout (ok)
+21:09:47 [pipeline] STEP 1 interpret → action='unsupported'
+21:09:47 [pipeline] GATE 1 (intent) REJECTED: 'unsupported' not in allowed actions ['addItem', 'addSection', 'approveSection', 'createPage', 'editContent', 'moveItem', 'moveSection', 'regenerateSection', 'removeItem', 'removeSection', 'replaceImage', 'setIcon', 'setName', 'setTheme', 'setVariant']
+21:09:48 [pipeline] ──────── command pipeline start ────────
+21:09:48 [pipeline] transcript: 'Book me a table at the Italian place for Friday night' (lang=en)
+21:09:48 [pipeline] GATE 0 (command) ok: 10 words
+21:09:52 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:09:52 [pipeline] exec 30/32 select_image:contact → images attached
+21:09:52 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+21:09:52 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+21:09:52 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+21:09:52 [pipeline] draft persisted /maria-s-bakery-2 as e2210f576f204c55 (unpublished)
+21:09:52 [pipeline] ──────── pipeline done: VALID ────────
+21:09:53 [pipeline] ──────── command pipeline start ────────
+21:09:53 [pipeline] transcript: 'What time does the last train to Manchester leave?' (lang=en)
+21:09:53 [pipeline] GATE 0 (command) ok: 9 words
+21:10:02 [pipeline] exec 02/30 select_layout → 9 chosen (ok)
+21:10:03 [pipeline] STEP 1 interpret → action='unsupported'
+21:10:03 [pipeline] GATE 1 (intent) REJECTED: 'unsupported' not in allowed actions ['addItem', 'addSection', 'approveSection', 'createPage', 'editContent', 'moveItem', 'moveSection', 'regenerateSection', 'removeItem', 'removeSection', 'replaceImage', 'setIcon', 'setName', 'setTheme', 'setVariant']
+21:10:04 [pipeline] ──────── command pipeline start ────────
+21:10:04 [pipeline] transcript: 'What is the weather forecast for Paris tomorrow afternoon?' (lang=en)
+21:10:04 [pipeline] GATE 0 (command) ok: 9 words
+21:10:05 [pipeline] STEP 1 interpret → action='unsupported'
+21:10:05 [pipeline] GATE 1 (intent) REJECTED: 'unsupported' not in allowed actions ['addItem', 'addSection', 'approveSection', 'createPage', 'editContent', 'moveItem', 'moveSection', 'regenerateSection', 'removeItem', 'removeSection', 'replaceImage', 'setIcon', 'setName', 'setTheme', 'setVariant']
+21:10:06 [pipeline] ──────── command pipeline start ────────
+21:10:06 [pipeline] transcript: 'Thank you.' (lang=en)
+21:10:06 [pipeline] GATE 0 (command) REJECTED: likely silence/hallucination: 'Thank you.'
+21:10:06 [pipeline] ──────── command pipeline start ────────
+21:10:06 [pipeline] transcript: 'Thanks for watching.' (lang=en)
+21:10:06 [pipeline] GATE 0 (command) REJECTED: likely silence/hallucination: 'Thanks for watching.'
+21:10:06 [pipeline] ──────── command pipeline start ────────
+21:10:06 [pipeline] transcript: 'Um.' (lang=en)
+21:10:06 [pipeline] GATE 0 (command) REJECTED: transcript too short/unclear: 'Um.'
+21:10:07 [pipeline] ──────── command pipeline start ────────
+21:10:07 [pipeline] transcript: 'Okay' (lang=en)
+21:10:07 [pipeline] GATE 0 (command) REJECTED: transcript too short/unclear: 'Okay'
+21:10:07 [pipeline] ──────── command pipeline start ────────
+21:10:07 [pipeline] transcript: 'Thank you.' (lang=en)
+21:10:07 [pipeline] GATE 0 (command) REJECTED: likely silence/hallucination: 'Thank you.'
+21:10:07 [pipeline] ──────── command pipeline start ────────
+21:10:07 [pipeline] transcript: 'Change the hero headline to Baked Before Sunrise' (lang=en)
+21:10:07 [pipeline] GATE 0 (command) ok: 8 words
+21:10:08 [pipeline] exec 03/30 generate_copy:hero → copy fields: ['type', 'headline', 'subhead', 'button']
+21:10:08 [pipeline] exec 04/30 select_image:hero → images attached
+21:10:08 [pipeline] exec 05/30 assemble_section:hero → GATE 3 ok (collage)
+21:10:10 [pipeline] STEP 1 interpret → action='unsupported'
+21:10:10 [pipeline] GATE 1 (intent) REJECTED: 'unsupported' not in allowed actions ['addItem', 'addSection', 'approveSection', 'createPage', 'editContent', 'moveItem', 'moveSection', 'regenerateSection', 'removeItem', 'removeSection', 'replaceImage', 'setIcon', 'setName', 'setTheme', 'setVariant']
+21:10:10 [pipeline] ──────── command pipeline start ────────
+21:10:10 [pipeline] transcript: 'Set the hero headline to Baked Before Sunrise' (lang=en)
+21:10:10 [pipeline] GATE 0 (command) ok: 8 words
+21:10:13 [pipeline] STEP 1 interpret → action='editContent'
+21:10:13 [pipeline] GATE 1 (intent) ok: 'editContent' is allowed
+21:10:13 [pipeline] ['editContent'] → Edited hero headline (v2)
+21:10:13 [pipeline] ──────── command pipeline start ────────
+21:10:13 [pipeline] transcript: 'The hero heading should read Baked Before Sunrise' (lang=en)
+21:10:13 [pipeline] GATE 0 (command) ok: 8 words
+21:10:18 [pipeline] exec 06/30 generate_copy:about → copy fields: ['type', 'heading', 'eyebrow', 'body', 'button']
+21:10:18 [pipeline] exec 07/30 select_image:about → images attached
+21:10:18 [pipeline] exec 08/30 assemble_section:about → GATE 3 ok (image-offset)
+21:10:22 [pipeline] STEP 1 interpret → action='editContent'
+21:10:22 [pipeline] GATE 1 (intent) ok: 'editContent' is allowed
+21:10:22 [pipeline] ['editContent'] → Edited hero headline (v2)
+21:10:22 [pipeline] ──────── command pipeline start ────────
+21:10:22 [pipeline] transcript: 'Reword the hero headline as Baked Before Sunrise' (lang=en)
+21:10:22 [pipeline] GATE 0 (command) ok: 8 words
+21:10:25 [pipeline] STEP 1 interpret → action='editContent'
+21:10:25 [pipeline] GATE 1 (intent) ok: 'editContent' is allowed
+21:10:25 [pipeline] ['editContent'] → Edited hero headline (v2)
+21:10:27 [pipeline] ──────── command pipeline start ────────
+21:10:27 [pipeline] transcript: 'Change the hero headline to Baked Before Sunrise' (lang=en)
+21:10:27 [pipeline] GATE 0 (command) ok: 8 words
+21:10:31 [pipeline] exec 09/30 generate_copy:benefits → copy fields: ['type', 'heading', 'items']
+21:10:31 [pipeline]      plan refined: select_icon:benefits → 3 item operation(s)
+21:10:35 [pipeline] STEP 1 interpret → action='editContent'
+21:10:35 [pipeline] GATE 1 (intent) ok: 'editContent' is allowed
+21:10:35 [pipeline] ['editContent'] → Edited hero headline (v2)
+21:10:35 [pipeline] ──────── command pipeline start ────────
+21:10:35 [pipeline] transcript: 'Add a testimonials section' (lang=en)
+21:10:35 [pipeline] GATE 0 (command) ok: 3 words
+21:10:38 [pipeline] STEP 1 interpret → action='editContent'
+21:10:38 [pipeline] GATE 1 (intent) ok: 'editContent' is allowed
+21:10:38 [pipeline] ['editContent'] → Edited hero headline (v2)
+21:10:38 [pipeline] ──────── command pipeline start ────────
+21:10:38 [pipeline] transcript: "I'd like a section with customer reviews" (lang=en)
+21:10:38 [pipeline] GATE 0 (command) ok: 5 words
+21:10:39 [pipeline] exec 10/32 select_icon:benefits#1 → sun (ok)
+21:10:41 [pipeline] STEP 1 interpret → action='addSection'
+21:10:41 [pipeline] GATE 1 (intent) ok: 'addSection' is allowed
+21:10:44 [pipeline] STEP 1 interpret → action='addSection'
+21:10:44 [pipeline] GATE 1 (intent) ok: 'addSection' is allowed
+21:10:45 [pipeline] exec 11/32 select_icon:benefits#2 → wheat (ok)
+21:10:50 [pipeline] ['addSection'] → Added testimonials section (v2)
+21:10:50 [pipeline] ──────── command pipeline start ────────
+21:10:50 [pipeline] transcript: 'Put some testimonials on the page' (lang=en)
+21:10:50 [pipeline] GATE 0 (command) ok: 6 words
+21:10:53 [pipeline] ['addSection'] → Added testimonials section (v2)
+21:10:53 [pipeline] ──────── command pipeline start ────────
+21:10:53 [pipeline] transcript: 'Include a reviews section' (lang=en)
+21:10:53 [pipeline] GATE 0 (command) ok: 3 words
+21:10:54 [pipeline] exec 12/32 select_icon:benefits#3 → clock (ok)
+21:10:54 [pipeline] exec 13/32 assemble_section:benefits → GATE 3 ok (tinted-cards)
+21:10:57 [pipeline] STEP 1 interpret → action='addSection'
+21:10:57 [pipeline] GATE 1 (intent) ok: 'addSection' is allowed
+21:10:59 [pipeline] STEP 1 interpret → action='addSection'
+21:10:59 [pipeline] GATE 1 (intent) ok: 'addSection' is allowed
+21:11:04 [pipeline] exec 14/32 generate_copy:services → copy fields: ['type', 'heading', 'subhead', 'items']
+21:11:04 [pipeline] exec 15/32 select_image:services → images attached
+21:11:04 [pipeline] exec 16/32 assemble_section:services → GATE 3 ok (rail)
+21:11:08 [pipeline] ['addSection'] → Added testimonials section (v2)
+21:11:08 [pipeline] ──────── command pipeline start ────────
+21:11:08 [pipeline] transcript: 'Add a testimonials section' (lang=en)
+21:11:08 [pipeline] GATE 0 (command) ok: 3 words
+21:11:11 [pipeline] ['addSection'] → Added testimonials section (v2)
+21:11:12 [pipeline] ──────── command pipeline start ────────
+21:11:12 [pipeline] transcript: 'Remove the FAQ section' (lang=en)
+21:11:12 [pipeline] GATE 0 (command) ok: 4 words
+21:11:14 [pipeline] exec 17/32 generate_copy:gallery → copy fields: ['type', 'heading', 'subhead']
+21:11:14 [pipeline] exec 18/32 select_image:gallery → images attached
+21:11:14 [pipeline] exec 19/32 assemble_section:gallery → GATE 3 ok (mosaic)
+21:11:16 [pipeline] STEP 1 interpret → action='addSection'
+21:11:16 [pipeline] GATE 1 (intent) ok: 'addSection' is allowed
+21:11:18 [pipeline] STEP 1 interpret → action='removeSection'
+21:11:18 [pipeline] GATE 1 (intent) ok: 'removeSection' is allowed
+21:11:18 [pipeline] ['removeSection'] → Removed faq section (v2)
+21:11:18 [pipeline] ──────── command pipeline start ────────
+21:11:18 [pipeline] transcript: 'Delete the FAQ' (lang=en)
+21:11:18 [pipeline] GATE 0 (command) ok: 3 words
+21:11:22 [pipeline] exec 20/32 generate_copy:testimonials → copy fields: ['type', 'heading', 'items']
+21:11:22 [pipeline] exec 21/32 select_image:testimonials → images attached
+21:11:22 [pipeline] exec 22/32 assemble_section:testimonials → GATE 3 ok (masonry-quotes)
+21:11:26 [pipeline] ['addSection'] → Added testimonials section (v2)
+21:11:26 [pipeline] ──────── command pipeline start ────────
+21:11:26 [pipeline] transcript: 'Take the questions section off the page' (lang=en)
+21:11:26 [pipeline] GATE 0 (command) ok: 7 words
+21:11:28 [pipeline] STEP 1 interpret → action='removeSection'
+21:11:28 [pipeline] GATE 1 (intent) ok: 'removeSection' is allowed
+21:11:28 [pipeline] ['removeSection'] → Removed faq section (v2)
+21:11:28 [pipeline] ──────── command pipeline start ────────
+21:11:28 [pipeline] transcript: 'Get rid of the FAQ block' (lang=en)
+21:11:28 [pipeline] GATE 0 (command) ok: 6 words
+21:11:31 [pipeline] exec 23/32 generate_copy:promotion → copy fields: ['type', 'title', 'description', 'button']
+21:11:31 [pipeline] exec 24/32 select_image:promotion → images attached
+21:11:31 [pipeline] exec 25/32 assemble_section:promotion → GATE 3 ok (split-rule)
+21:11:33 [pipeline] STEP 1 interpret → action='removeSection'
+21:11:33 [pipeline] GATE 1 (intent) ok: 'removeSection' is allowed
+21:11:33 [pipeline] ['removeSection'] → Removed faq section (v2)
+21:11:33 [pipeline] ──────── command pipeline start ────────
+21:11:33 [pipeline] transcript: 'Remove the FAQ section' (lang=en)
+21:11:33 [pipeline] GATE 0 (command) ok: 4 words
+21:11:35 [pipeline] STEP 1 interpret → action='removeSection'
+21:11:35 [pipeline] GATE 1 (intent) ok: 'removeSection' is allowed
+21:11:35 [pipeline] ['removeSection'] → Removed faq section (v2)
+21:11:36 [pipeline] ──────── command pipeline start ────────
+21:11:36 [pipeline] transcript: 'Make the page green and fresh' (lang=en)
+21:11:36 [pipeline] GATE 0 (command) ok: 6 words
+21:11:42 [pipeline] exec 26/32 generate_copy:faq → copy fields: ['type', 'heading', 'items']
+21:11:42 [pipeline] exec 27/32 select_image:faq → images attached
+21:11:42 [pipeline] exec 28/32 assemble_section:faq → GATE 3 ok (tinted-accordion)
+21:11:44 [pipeline] STEP 1 interpret → action='removeSection'
+21:11:44 [pipeline] GATE 1 (intent) ok: 'removeSection' is allowed
+21:11:44 [pipeline] ['removeSection'] → Removed faq section (v2)
+21:11:45 [pipeline] ──────── command pipeline start ────────
+21:11:45 [pipeline] transcript: 'Give the page a fresh green look' (lang=en)
+21:11:45 [pipeline] GATE 0 (command) ok: 6 words
+21:11:47 [pipeline] STEP 1 interpret → action='setTheme'
+21:11:47 [pipeline] GATE 1 (intent) ok: 'setTheme' is allowed
+21:11:53 [pipeline] exec 29/32 generate_copy:contact → copy fields: ['type', 'heading', 'description', 'details', 'button']
+21:11:53 [pipeline] exec 30/32 select_image:contact → images attached
+21:11:53 [pipeline] exec 31/32 assemble_section:contact → GATE 3 ok (with-photo)
+21:11:53 [pipeline] exec 32/32 assemble_page → GATE 2 ok
+21:11:53 [pipeline] gates: intent=ok operations=ok theme=ok layout=ok schema=ok → page /maria-s-bakery (11 sections)
+21:11:53 [pipeline] draft persisted /maria-s-bakery-2 as d089d26692ad4d27 (unpublished)
+21:11:53 [pipeline] ──────── pipeline done: VALID ────────
+21:11:53 [pipeline] ──────── command pipeline start ────────
+21:11:53 [pipeline] transcript: 'Use a green colour scheme for this page' (lang=en)
+21:11:53 [pipeline] GATE 0 (command) ok: 7 words
+21:11:55 [pipeline] STEP 1 interpret → action='setTheme'
+21:11:55 [pipeline] GATE 1 (intent) ok: 'setTheme' is allowed
+21:12:00 [pipeline] ['setTheme'] → Applied Sage & Sprout palette (v2)
+21:12:00 [pipeline] ──────── command pipeline start ────────
+21:12:00 [pipeline] transcript: 'Change the colours to something green' (lang=en)
+21:12:00 [pipeline] GATE 0 (command) ok: 6 words
+21:12:03 [pipeline] STEP 1 interpret → action='setTheme'
+21:12:03 [pipeline] GATE 1 (intent) ok: 'setTheme' is allowed
+21:12:08 [pipeline] ['setTheme'] → Applied Sage & Sprout palette (v2)
+21:12:08 [pipeline] ──────── command pipeline start ────────
+21:12:08 [pipeline] transcript: 'Make the page green and fresh' (lang=en)
+21:12:08 [pipeline] GATE 0 (command) ok: 6 words
+21:12:10 [pipeline] STEP 1 interpret → action='setTheme'
+21:12:10 [pipeline] GATE 1 (intent) ok: 'setTheme' is allowed
+21:12:14 [pipeline] ['setTheme'] → Applied Sage & Sprout palette (v2)
+21:12:14 [pipeline] ──────── command pipeline start ────────
+21:12:14 [pipeline] transcript: 'Swap the hero photo' (lang=en)
+21:12:14 [pipeline] GATE 0 (command) ok: 4 words
+21:12:17 [pipeline] STEP 1 interpret → action='setTheme'
+21:12:17 [pipeline] GATE 1 (intent) ok: 'setTheme' is allowed
+21:12:21 [pipeline] ['setTheme'] → Applied Sage & Sprout palette (v2)
+21:12:21 [pipeline] ──────── command pipeline start ────────
+21:12:21 [pipeline] transcript: 'Change the picture in the hero' (lang=en)
+21:12:21 [pipeline] GATE 0 (command) ok: 6 words
+21:12:24 [pipeline] STEP 1 interpret → action='replaceImage'
+21:12:24 [pipeline] GATE 1 (intent) ok: 'replaceImage' is allowed
+21:12:24 [pipeline] ['replaceImage'] → Replaced hero image (v2)
+21:12:24 [pipeline] ──────── command pipeline start ────────
+21:12:24 [pipeline] transcript: 'Use a different hero image' (lang=en)
+21:12:24 [pipeline] GATE 0 (command) ok: 4 words
+21:12:28 [pipeline] ['setTheme'] → Applied Sage & Sprout palette (v2)
+21:12:28 [pipeline] ──────── command pipeline start ────────
+21:12:28 [pipeline] transcript: 'Put another photo on the banner' (lang=en)
+21:12:28 [pipeline] GATE 0 (command) ok: 6 words
+21:12:31 [pipeline] STEP 1 interpret → action='replaceImage'
+21:12:31 [pipeline] GATE 1 (intent) ok: 'replaceImage' is allowed
+21:12:31 [pipeline] ['replaceImage'] → Replaced hero image (v2)
+21:12:31 [pipeline] ──────── command pipeline start ────────
+21:12:31 [pipeline] transcript: 'Swap the hero photo' (lang=en)
+21:12:31 [pipeline] GATE 0 (command) ok: 4 words
+21:12:34 [pipeline] STEP 1 interpret → action='replaceImage'
+21:12:34 [pipeline] GATE 1 (intent) ok: 'replaceImage' is allowed
+21:12:34 [pipeline] ['replaceImage'] → Replaced hero image (v2)
+21:12:34 [pipeline] ──────── command pipeline start ────────
+21:12:34 [pipeline] transcript: 'Show the hero full bleed' (lang=en)
+21:12:34 [pipeline] GATE 0 (command) ok: 5 words
+21:12:37 [pipeline] STEP 1 interpret → action='addSection'
+21:12:37 [pipeline] GATE 1 (intent) ok: 'addSection' is allowed
+21:12:37 [pipeline] type not extracted → inferred 'hero' from the wording
+21:12:40 [pipeline] STEP 1 interpret → action='replaceImage'
+21:12:40 [pipeline] GATE 1 (intent) ok: 'replaceImage' is allowed
+21:12:40 [pipeline] ['replaceImage'] → Replaced hero image (v2)
+21:12:40 [pipeline] ──────── command pipeline start ────────
+21:12:40 [pipeline] transcript: 'Make the hero full-bleed' (lang=en)
+21:12:40 [pipeline] GATE 0 (command) ok: 5 words
+21:12:43 [pipeline] STEP 1 interpret → action='setVariant'
+21:12:43 [pipeline] GATE 1 (intent) ok: 'setVariant' is allowed
+21:12:43 [pipeline] ['setVariant'] → Changed hero layout to full-bleed (v2)
+21:12:44 [pipeline] ──────── command pipeline start ────────
+21:12:44 [pipeline] transcript: 'Switch the hero to the full-bleed layout' (lang=en)
+21:12:44 [pipeline] GATE 0 (command) ok: 8 words
+21:12:46 [pipeline] edit rejected: This page already has a hero section -- say "rewrite the hero" to redo it, or edit it in the panel.
+21:12:46 [pipeline] ──────── command pipeline start ────────
+21:12:46 [pipeline] transcript: 'Try the full bleed layout on the hero' (lang=en)
+21:12:46 [pipeline] GATE 0 (command) ok: 8 words
+21:12:49 [pipeline] STEP 1 interpret → action='setVariant'
+21:12:49 [pipeline] GATE 1 (intent) ok: 'setVariant' is allowed
+21:12:49 [pipeline] variant not extracted → inferred 'full-bleed' from the wording
+21:12:49 [pipeline] ['setVariant'] → Changed hero layout to full-bleed (v2)
+21:12:49 [pipeline] ──────── command pipeline start ────────
+21:12:49 [pipeline] transcript: 'Show the hero full bleed' (lang=en)
+21:12:49 [pipeline] GATE 0 (command) ok: 5 words
+21:12:52 [pipeline] STEP 1 interpret → action='setVariant'
+21:12:52 [pipeline] GATE 1 (intent) ok: 'setVariant' is allowed
+21:12:52 [pipeline] ['setVariant'] → Changed hero layout to full-bleed (v2)
+21:12:52 [pipeline] ──────── command pipeline start ────────
+21:12:52 [pipeline] transcript: 'Move the FAQ up' (lang=en)
+21:12:52 [pipeline] GATE 0 (command) ok: 4 words
+21:12:55 [pipeline] STEP 1 interpret → action='setVariant'
+21:12:55 [pipeline] GATE 1 (intent) ok: 'setVariant' is allowed
+21:12:55 [pipeline] ['setVariant'] → Changed hero layout to full-bleed (v2)
+21:12:56 [pipeline] ──────── command pipeline start ────────
+21:12:56 [pipeline] transcript: 'Move the questions section up one' (lang=en)
+21:12:56 [pipeline] GATE 0 (command) ok: 6 words
+21:12:58 [pipeline] STEP 1 interpret → action='setVariant'
+21:12:58 [pipeline] GATE 1 (intent) ok: 'setVariant' is allowed
+21:12:58 [pipeline] ['setVariant'] → Changed hero layout to full-bleed (v2)
+21:12:59 [pipeline] ──────── command pipeline start ────────
+21:12:59 [pipeline] transcript: 'Shift the FAQ higher' (lang=en)
+21:12:59 [pipeline] GATE 0 (command) ok: 4 words
+21:13:01 [pipeline] STEP 1 interpret → action='moveSection'
+21:13:01 [pipeline] GATE 1 (intent) ok: 'moveSection' is allowed
+21:13:01 [pipeline] ['moveSection'] → Moved faq section (v2)
+21:13:02 [pipeline] ──────── command pipeline start ────────
+21:13:02 [pipeline] transcript: 'FAQ one step up' (lang=en)
+21:13:02 [pipeline] GATE 0 (command) ok: 4 words
+21:13:04 [pipeline] STEP 1 interpret → action='moveSection'
+21:13:04 [pipeline] GATE 1 (intent) ok: 'moveSection' is allowed
+21:13:04 [pipeline] ['moveSection'] → Moved faq section (v2)
+21:13:05 [pipeline] ──────── command pipeline start ────────
+21:13:05 [pipeline] transcript: 'Move the FAQ up' (lang=en)
+21:13:05 [pipeline] GATE 0 (command) ok: 4 words
+21:13:08 [pipeline] STEP 1 interpret → action='moveSection'
+21:13:08 [pipeline] GATE 1 (intent) ok: 'moveSection' is allowed
+21:13:08 [pipeline] ['moveSection'] → Moved faq section (v2)
+21:13:08 [pipeline] ──────── command pipeline start ────────
+21:13:08 [pipeline] transcript: 'Add another benefit' (lang=en)
+21:13:08 [pipeline] GATE 0 (command) ok: 3 words
+21:13:11 [pipeline] STEP 1 interpret → action='moveItem'
+21:13:11 [pipeline] GATE 1 (intent) ok: 'moveItem' is allowed
+21:13:11 [pipeline] ['moveItem'] → Moved question 2 to 1 (v2)
+21:13:11 [pipeline] ──────── command pipeline start ────────
+21:13:11 [pipeline] transcript: 'Add one more benefit' (lang=en)
+21:13:11 [pipeline] GATE 0 (command) ok: 4 words
+21:13:14 [pipeline] STEP 1 interpret → action='moveSection'
+21:13:14 [pipeline] GATE 1 (intent) ok: 'moveSection' is allowed
+21:13:14 [pipeline] ['moveSection'] → Moved faq section (v2)
+21:13:15 [pipeline] ──────── command pipeline start ────────
+21:13:15 [pipeline] transcript: 'Put a fourth benefit in' (lang=en)
+21:13:15 [pipeline] GATE 0 (command) ok: 4 words
+21:13:18 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+21:13:21 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+21:13:24 [pipeline] STEP 1 interpret → action='addItem'
+21:13:24 [pipeline] GATE 1 (intent) ok: 'addItem' is allowed
+21:13:24 [pipeline] ['addItem'] → Added benefit 4 (v2)
+21:13:24 [pipeline] ──────── command pipeline start ────────
+21:13:24 [pipeline] transcript: 'Another entry in the benefits list' (lang=en)
+21:13:24 [pipeline] GATE 0 (command) ok: 6 words
+21:13:27 [pipeline] STEP 1 interpret → action='addItem'
+21:13:27 [pipeline] GATE 1 (intent) ok: 'addItem' is allowed
+21:13:27 [pipeline] section not extracted → inferred 'benefits' from the wording
+21:13:27 [pipeline] ['addItem'] → Added benefit 4 (v2)
+21:13:27 [pipeline] ──────── command pipeline start ────────
+21:13:27 [pipeline] transcript: 'Add another benefit' (lang=en)
+21:13:27 [pipeline] GATE 0 (command) ok: 3 words
+21:13:30 [pipeline] STEP 1 interpret → action='addItem'
+21:13:30 [pipeline] GATE 1 (intent) ok: 'addItem' is allowed
+21:13:30 [pipeline] section not extracted → inferred 'benefits' from the wording
+21:13:30 [pipeline] ['addItem'] → Added benefit 4 (v2)
+21:13:30 [pipeline] ──────── command pipeline start ────────
+21:13:30 [pipeline] transcript: 'Remove the second question' (lang=en)
+21:13:30 [pipeline] GATE 0 (command) ok: 4 words
+21:13:32 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+21:13:35 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+21:13:38 [pipeline] STEP 1 interpret → action='removeItem'
+21:13:38 [pipeline] GATE 1 (intent) ok: 'removeItem' is allowed
+21:13:38 [pipeline] ['removeItem'] → Removed question 2 (v2)
+21:13:38 [pipeline] ──────── command pipeline start ────────
+21:13:38 [pipeline] transcript: 'Take out the second FAQ entry' (lang=en)
+21:13:38 [pipeline] GATE 0 (command) ok: 6 words
+21:13:41 [pipeline] STEP 1 interpret → action='addItem'
+21:13:41 [pipeline] GATE 1 (intent) ok: 'addItem' is allowed
+21:13:41 [pipeline] section not extracted → inferred 'benefits' from the wording
+21:13:41 [pipeline] ['addItem'] → Added benefit 4 (v2)
+21:13:42 [pipeline] ──────── command pipeline start ────────
+21:13:42 [pipeline] transcript: 'Delete the second question in the FAQ' (lang=en)
+21:13:42 [pipeline] GATE 0 (command) ok: 7 words
+21:13:44 [pipeline] STEP 1 interpret → action='addItem'
+21:13:44 [pipeline] GATE 1 (intent) ok: 'addItem' is allowed
+21:13:44 [pipeline] section not extracted → inferred 'benefits' from the wording
+21:13:44 [pipeline] ['addItem'] → Added benefit 4 (v2)
+21:13:45 [pipeline] ──────── command pipeline start ────────
+21:13:45 [pipeline] transcript: 'Drop question two' (lang=en)
+21:13:45 [pipeline] GATE 0 (command) ok: 3 words
+21:13:47 [pipeline] STEP 1 interpret → action='removeItem'
+21:13:47 [pipeline] GATE 1 (intent) ok: 'removeItem' is allowed
+21:13:47 [pipeline] ['removeItem'] → Removed question 2 (v2)
+21:13:47 [pipeline] ──────── command pipeline start ────────
+21:13:47 [pipeline] transcript: 'Remove the second question' (lang=en)
+21:13:47 [pipeline] GATE 0 (command) ok: 4 words
+21:13:50 [pipeline] STEP 1 interpret → action='removeItem'
+21:13:50 [pipeline] GATE 1 (intent) ok: 'removeItem' is allowed
+21:13:50 [pipeline] ['removeItem'] → Removed question 2 (v2)
+21:13:50 [pipeline] ──────── command pipeline start ────────
+21:13:50 [pipeline] transcript: 'Swap the first two steps' (lang=en)
+21:13:50 [pipeline] GATE 0 (command) ok: 5 words
+21:13:53 [pipeline] STEP 1 interpret → action='removeItem'
+21:13:53 [pipeline] GATE 1 (intent) ok: 'removeItem' is allowed
+21:13:53 [pipeline] ['removeItem'] → Removed question 2 (v2)
+21:13:53 [pipeline] ──────── command pipeline start ────────
+21:13:53 [pipeline] transcript: 'Move the first step down one' (lang=en)
+21:13:53 [pipeline] GATE 0 (command) ok: 6 words
+21:13:56 [pipeline] STEP 1 interpret → action='removeItem'
+21:13:56 [pipeline] GATE 1 (intent) ok: 'removeItem' is allowed
+21:13:56 [pipeline] ['removeItem'] → Removed question 2 (v2)
+21:13:56 [pipeline] ──────── command pipeline start ────────
+21:13:56 [pipeline] transcript: 'Put Order online after We bake' (lang=en)
+21:13:56 [pipeline] GATE 0 (command) ok: 6 words
+21:14:00 [pipeline] STEP 1 interpret → action='moveItem'
+21:14:00 [pipeline] GATE 1 (intent) ok: 'moveItem' is allowed
+21:14:00 [pipeline] ['moveItem'] → Moved step 1 to 2 (v2)
+21:14:01 [pipeline] ──────── command pipeline start ────────
+21:14:01 [pipeline] transcript: 'The first step should be second' (lang=en)
+21:14:01 [pipeline] GATE 0 (command) ok: 6 words
+21:14:03 [pipeline] STEP 1 interpret → action='moveItem'
+21:14:03 [pipeline] GATE 1 (intent) ok: 'moveItem' is allowed
+21:14:03 [pipeline] section not extracted → inferred 'process' from the wording
+21:14:03 [pipeline] ['moveItem'] → Moved step 1 to 2 (v2)
+21:14:04 [pipeline] ──────── command pipeline start ────────
+21:14:04 [pipeline] transcript: 'Swap the first two steps' (lang=en)
+21:14:04 [pipeline] GATE 0 (command) ok: 5 words
+21:14:07 [pipeline] STEP 1 interpret → action='moveItem'
+21:14:07 [pipeline] GATE 1 (intent) ok: 'moveItem' is allowed
+21:14:07 [pipeline] ['moveItem'] → Moved step 1 to 2 (v2)
+21:14:07 [pipeline] ──────── command pipeline start ────────
+21:14:07 [pipeline] transcript: 'Use a star icon for the first benefit' (lang=en)
+21:14:07 [pipeline] GATE 0 (command) ok: 7 words
+21:14:11 [pipeline] STEP 1 interpret → action='moveItem'
+21:14:11 [pipeline] GATE 1 (intent) ok: 'moveItem' is allowed
+21:14:11 [pipeline] section not extracted → inferred 'process' from the wording
+21:14:11 [pipeline] ['moveItem'] → Moved step 1 to 2 (v2)
+21:14:11 [pipeline] ──────── command pipeline start ────────
+21:14:11 [pipeline] transcript: "Change the first benefit's icon to a star" (lang=en)
+21:14:11 [pipeline] GATE 0 (command) ok: 7 words
+21:14:14 [pipeline] STEP 1 interpret → action='moveItem'
+21:14:14 [pipeline] GATE 1 (intent) ok: 'moveItem' is allowed
+21:14:14 [pipeline] ['moveItem'] → Moved step 1 to 2 (v2)
+21:14:14 [pipeline] ──────── command pipeline start ────────
+21:14:14 [pipeline] transcript: 'Put a star on the first benefit' (lang=en)
+21:14:14 [pipeline] GATE 0 (command) ok: 6 words
+21:14:17 [pipeline] STEP 1 interpret → action='setIcon'
+21:14:17 [pipeline] GATE 1 (intent) ok: 'setIcon' is allowed
+21:14:17 [pipeline] ['setIcon'] → Replaced benefits items 0 icon (v2)
+21:14:18 [pipeline] ──────── command pipeline start ────────
+21:14:18 [pipeline] transcript: 'The first benefit should have a star icon' (lang=en)
+21:14:18 [pipeline] GATE 0 (command) ok: 7 words
+21:14:21 [pipeline] STEP 1 interpret → action='setIcon'
+21:14:21 [pipeline] GATE 1 (intent) ok: 'setIcon' is allowed
+21:14:21 [pipeline] ['setIcon'] → Replaced benefits items 0 icon (v2)
+21:14:21 [pipeline] ──────── command pipeline start ────────
+21:14:21 [pipeline] transcript: 'Use a star icon for the first benefit' (lang=en)
+21:14:21 [pipeline] GATE 0 (command) ok: 7 words
+21:14:24 [pipeline] STEP 1 interpret → action='setIcon'
+21:14:24 [pipeline] GATE 1 (intent) ok: 'setIcon' is allowed
+21:14:24 [pipeline] ['setIcon'] → Replaced benefits items 0 icon (v2)
+21:14:24 [pipeline] ──────── command pipeline start ────────
+21:14:24 [pipeline] transcript: 'Make these reviews sound more real' (lang=en)
+21:14:24 [pipeline] GATE 0 (command) ok: 6 words
+21:14:27 [pipeline] STEP 1 interpret → action='setIcon'
+21:14:27 [pipeline] GATE 1 (intent) ok: 'setIcon' is allowed
+21:14:27 [pipeline] ['setIcon'] → Replaced benefits items 0 icon (v2)
+21:14:28 [pipeline] ──────── command pipeline start ────────
+21:14:28 [pipeline] transcript: 'Generate real reviews here' (lang=en)
+21:14:28 [pipeline] GATE 0 (command) ok: 4 words
+21:14:31 [pipeline] STEP 1 interpret → action='setIcon'
+21:14:31 [pipeline] GATE 1 (intent) ok: 'setIcon' is allowed
+21:14:31 [pipeline] ['setIcon'] → Replaced benefits items 0 icon (v2)
+21:14:31 [pipeline] ──────── command pipeline start ────────
+21:14:31 [pipeline] transcript: 'Can you change the reviews in this section to be more real' (lang=en)
+21:14:31 [pipeline] GATE 0 (command) ok: 12 words
+21:14:34 [pipeline] STEP 1 interpret → action='regenerateSection'
+21:14:34 [pipeline] GATE 1 (intent) ok: 'regenerateSection' is allowed
+21:14:38 [pipeline] STEP 1 interpret → action='regenerateSection'
+21:14:38 [pipeline] GATE 1 (intent) ok: 'regenerateSection' is allowed
+21:14:41 [pipeline] STEP 1 interpret → action='regenerateSection'
+21:14:41 [pipeline] GATE 1 (intent) ok: 'regenerateSection' is allowed
+21:14:46 [pipeline] ['regenerateSection'] → Rewrote every testimonial in testimonials (v2)
+21:14:46 [pipeline] ──────── command pipeline start ────────
+21:14:46 [pipeline] transcript: 'Rewrite the reviews so they feel more real' (lang=en)
+21:14:46 [pipeline] GATE 0 (command) ok: 8 words
+21:14:51 [pipeline] ['regenerateSection'] → Rewrote every testimonial in testimonials (v2)
+21:14:51 [pipeline] ──────── command pipeline start ────────
+21:14:51 [pipeline] transcript: 'Make these reviews sound more real' (lang=en)
+21:14:51 [pipeline] GATE 0 (command) ok: 6 words
+21:14:55 [pipeline] ['regenerateSection'] → Rewrote testimonials (v2)
+21:14:58 [pipeline] STEP 1 interpret → action='regenerateSection'
+21:14:58 [pipeline] GATE 1 (intent) ok: 'regenerateSection' is allowed
+21:15:02 [pipeline] STEP 1 interpret → action='regenerateSection'
+21:15:02 [pipeline] GATE 1 (intent) ok: 'regenerateSection' is allowed
+21:15:06 [pipeline] ['regenerateSection'] → Rewrote testimonials (v2)
+21:15:10 [pipeline] ['regenerateSection'] → Rewrote every testimonial in testimonials (v2)
+[32mPASS[0m  create_page_default [2m(outcome)[0m
+[32mPASS[0m  create_page_named_sections [2m(outcome)[0m
+[31mFAIL[0m  create_page_promotion_cue [2m(outcome)[0m
+      [31massertion failed[0m
+[32mPASS[0m  create_page_collision [2m(outcome)[0m
+[32mPASS[0m  reject_unsupported_intent [2m(outcome)[0m
+[32mPASS[0m  reject_unclear_command [2m(outcome)[0m
+[32mPASS[0m  edit_headline [2m(outcome)[0m
+[32mPASS[0m  add_section [2m(outcome)[0m
+[32mPASS[0m  remove_section [2m(outcome)[0m
+[32mPASS[0m  set_theme [2m(outcome)[0m
+[31mFAIL[0m  replace_image [2m(outcome)[0m
+      [31m["pages//maria-s-bakery.section_images: expected {'$changed': True}, got 'hero:/images/placeholder-hero.jpg'"][0m
+[32mPASS[0m  set_variant [2m(outcome)[0m
+[31mFAIL[0m  move_section [2m(outcome)[0m
+      [31m["pages//maria-s-bakery.section_variants: expected 'hero:-,benefits:-,process:-,faq:-,testimonials:-', got 'hero:-,benefits:-,process:-,testimonials:-[0m
+[32mPASS[0m  add_item [2m(outcome)[0m
+[32mPASS[0m  remove_item [2m(outcome)[0m
+[32mPASS[0m  move_item [2m(outcome)[0m
+[32mPASS[0m  set_icon [2m(outcome)[0m
+[31mFAIL[0m  rewrite_reviews [2m(outcome)[0m
+      [31m["pages//maria-s-bakery.section_variants: expected 'hero:-,benefits:-,process:-,testimonials:-,faq:-', got 'hero:-,benefits:-,process:-,testimonials:b[0m
+[32mPASS[0m  create_page_default [2m(path)[0m
+[32mPASS[0m  create_page_collision [2m(path)[0m
+[32mPASS[0m  create_page_named_sections [2m(path)[0m
+[32mPASS[0m  create_page_promotion_cue [2m(path)[0m
+[32mPASS[0m  reject_unsupported_intent [2m(path)[0m
+[32mPASS[0m  reject_unclear_command [2m(path)[0m
+[32mPASS[0m  edit_headline [2m(path)[0m
+[32mPASS[0m  set_theme [2m(path)[0m
+[32mPASS[0m  add_section [2m(path)[0m
+[32mPASS[0m  remove_section [2m(path)[0m
+[31mFAIL[0m  replace_image [2m(path)[0m
+      [31mmissing operations: ['assemble_page', 'replace_image', 'save_draft'][0m
+[32mPASS[0m  set_variant [2m(path)[0m
+[31mFAIL[0m  move_section [2m(path)[0m
+      [31mmissing operations: ['move_section'][0m
+[32mPASS[0m  add_item [2m(path)[0m
+[32mPASS[0m  remove_item [2m(path)[0m
+[32mPASS[0m  move_item [2m(path)[0m
+[32mPASS[0m  set_icon [2m(path)[0m
+[32mPASS[0m  rewrite_reviews [2m(path)[0m
+[32mPASS[0m  create_page_default [2m(component)[0m
+[32mPASS[0m  create_page_named_sections [2m(component)[0m
+[31mFAIL[0m  create_page_promotion_cue [2m(component)[0m
+      [31m["sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact'] for[0m
+[32mPASS[0m  create_page_collision [2m(component)[0m
+[32mPASS[0m  reject_unsupported_intent [2m(component)[0m
+[32mPASS[0m  reject_unclear_command [2m(component)[0m
+21:19:21 [pipeline] interpret returned 'replaceImage' with no arguments, asking once more
+21:23:20 [pipeline] interpret returned 'moveSection' with no arguments, asking once more
+21:23:57 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+21:24:12 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+[32mPASS[0m  intent_classification [2m(component)[0m
+[32mPASS[0m  brief_slots [2m(component)[0m
+[31mFAIL[0m  section_planning [2m(component)[0m
+      [31merrors: [{'input': 'a landing page for a bakery with a hero and an FAQ', 'expected': 'hero,faq', 'predicted': 'hero,about,benefits,services,gallery,te[0m
+[32mPASS[0m  image_recall_at_5 [2m(component)[0m
+[32mPASS[0m  image_recall_at_1 [2m(component)[0m
+[32mPASS[0m  edit_headline [2m(component)[0m
+[32mPASS[0m  set_theme [2m(component)[0m
+[32mPASS[0m  add_section [2m(component)[0m
+[32mPASS[0m  remove_section [2m(component)[0m
+[31mFAIL[0m  replace_image [2m(component)[0m
+      [31m["intent: expected 'replaceImage', got 'addSection' for 'Put another photo on the banner'", "slot section: expected 'hero', got None for 'Put another [0m
+[32mPASS[0m  set_variant [2m(component)[0m
+[31mFAIL[0m  move_section [2m(component)[0m
+      [31m["intent: expected 'moveSection', got 'moveItem' for 'FAQ one step up'"][0m
+21:28:30 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+21:28:37 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+21:28:45 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+[31mFAIL[0m  add_item [2m(component)[0m
+      [31m["slot section: expected 'benefits', got None for 'Add another benefit'", "slot section: expected 'benefits', got None for 'Add one more benefit'", "s[0m
+[32mPASS[0m  remove_item [2m(component)[0m
+[32mPASS[0m  move_item [2m(component)[0m
+[32mPASS[0m  set_icon [2m(component)[0m
+[32mPASS[0m  rewrite_reviews [2m(component)[0m
+[32mPASS[0m  edit_slots [2m(component)[0m
+[32mPASS[0m  rewrite_slots [2m(component)[0m
+21:31:08 [pipeline] interpret returned 'addItem' with no arguments, asking once more
+[32mPASS[0m  structure_slots [2m(component)[0m
+
+==============================================================================
+THREE-LEVEL SUITE -- qwen3.5:latest   90 episodes   2402.4s
+==============================================================================
+                                    scope      Outcome                         Path                                      Component                
+  case                            n     runs    pass^5   node F1   edge F1    order    redund.    policy    intent    slots    sections   image   
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  create_page_default             4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;68;149;78m[97m   0.91  [0m [48;2;89;149;71m[97m   0.86  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m 
+  create_page_named_sections      4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;72;149;77m[97m   0.90  [0m [48;2;228;117;26m[97m   0.38  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;133;148;56m[97m   0.75  [0m 
+✗ create_page_promotion_cue       4     0/5   [48;2;192;57;43m[97m   0.00  [0m [48;2;89;149;71m[97m   0.86  [0m [48;2;200;150;30m[97m   0.60  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;192;57;43m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m 
+  create_page_collision           3     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;202;148;30m[97m   0.59  [0m [48;2;228;107;28m[97m   0.32  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --    [48;2;33;150;90m[97m   1.00  [0m 
+  reject_unsupported_intent       4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --        --    
+  reject_unclear_command          4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --        --    
+  edit_headline                   4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --    
+  add_section                     4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;59;149;81m[97m   0.93  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --    
+  remove_section                  4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --    
+  set_theme                       4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --    
+✗ replace_image                   4     4/5   [48;2;192;57;43m[97m   0.00  [0m [48;2;68;149;78m[97m   0.91  [0m [48;2;111;148;64m[97m   0.80  [0m [48;2;92;148;70m[97m   0.85  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;49;150;85m[97m   0.96  [0m [48;2;133;148;56m[97m   0.75  [0m [48;2;133;148;56m[97m   0.75  [0m     --        --    
+  set_variant                     4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;82;149;74m[97m   0.88  [0m     --        --    
+✗ move_section                    4     4/5   [48;2;192;57;43m[97m   0.00  [0m [48;2;49;150;85m[97m   0.96  [0m [48;2;72;149;77m[97m   0.90  [0m [48;2;85;149;73m[97m   0.87  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;133;148;56m[97m   0.75  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --    
+✗ add_item                        4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;141;149;53m[97m   0.73  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;221;96;31m[97m   0.25  [0m     --        --    
+  remove_item                     4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --    
+  move_item                       4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;98;148;68m[97m   0.83  [0m     --        --    
+  set_icon                        4     5/5   [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m     --        --    
+✗ rewrite_reviews                 4     3/5   [48;2;192;57;43m[97m   0.00  [0m [48;2;59;149;81m[97m   0.93  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   0.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;33;150;90m[97m   1.00  [0m [48;2;98;148;68m[97m   0.83  [0m     --        --    
+  intent_classification          173     --       --        --        --        --        --        --    [48;2;49;150;85m[97m   0.96  [0m     --        --        --    
+  brief_slots                     10     --       --        --        --        --        --        --        --    [48;2;33;150;90m[97m   1.00  [0m     --        --    
+✗ section_planning                9      --       --        --        --        --        --        --    [48;2;216;90;33m[97m   0.21  [0m     --        --        --    
+  image_recall_at_5               30     --       --        --        --        --        --        --        --        --        --    [48;2;72;149;77m[97m   0.90  [0m 
+  image_recall_at_1               30     --       --        --        --        --        --        --        --        --        --    [48;2;126;148;58m[97m   0.77  [0m 
+  edit_slots                      10     --       --        --        --        --        --        --        --    [48;2;33;150;90m[97m   1.00  [0m     --        --    
+  rewrite_slots                   10     --       --        --        --        --        --        --        --    [48;2;33;150;90m[97m   1.00  [0m     --        --    
+  structure_slots                 10     --       --        --        --        --        --        --        --    [48;2;86;149;72m[97m   0.86  [0m     --        --    
+
+51 passed, 11 failed   (26 cases)
+
+FAILURES
+------------------------------------------------------------------------------
+create_page_promotion_cue (outcome): assertion failed
+    pages//greenleaf-yoga-studio.section_types: expected 'header,hero,promotion,footer', got 'header,hero,about,benefits,process,testimonials,pricing,promotion,faq,contact,footer'
+    pages//greenleaf-yoga-studio.n_sections: expected 4, got 11
+replace_image (outcome): ["pages//maria-s-bakery.section_images: expected {'$changed': True}, got 'hero:/images/placeholder-hero.jpg'"]
+    pages//maria-s-bakery.section_images: expected {'$changed': True}, got 'hero:/images/placeholder-hero.jpg'
+move_section (outcome): ["pages//maria-s-bakery.section_variants: expected 'hero:-,benefits:-,process:-,faq:-,testimonials:-', got 'hero:-,benefits:-,process:-,testimonials:-,faq:-'", "pages//maria-s-bakery.item_counts: expected 'benefits:3,process:3,faq:2,testimonials:1', got 'benefits:3,process:3,testimonials:1,faq:2'", "pages//maria-s-bakery.item_heads: expected 'benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;faq:Do you deliver?|Gluten free?;testimonials:Dana', got 'benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;testimonials:Dana;faq:Gluten free?|Do you deliver?'", 'pages//maria-s-bakery.section_heads: expected "hero:Fresh bread daily;benefits:Why Maria\'s;process:How it works;faq:Questions;testimonials:What people say", got "hero:Fresh bread daily;benefits:Why Maria\'s;process:How it works;testimonials:What people say;faq:Questions"', "pages//maria-s-bakery.section_types: expected 'hero,benefits,process,faq,testimonials', got 'hero,benefits,process,testimonials,faq'"]
+    pages//maria-s-bakery.section_variants: expected 'hero:-,benefits:-,process:-,faq:-,testimonials:-', got 'hero:-,benefits:-,process:-,testimonials:-,faq:-'
+    pages//maria-s-bakery.item_counts: expected 'benefits:3,process:3,faq:2,testimonials:1', got 'benefits:3,process:3,testimonials:1,faq:2'
+    pages//maria-s-bakery.item_heads: expected 'benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;faq:Do you deliver?|Gluten free?;testimonials:Dana', got 'benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;testimonials:Dana;faq:Gluten free?|Do you deliver?'
+    pages//maria-s-bakery.section_heads: expected "hero:Fresh bread daily;benefits:Why Maria's;process:How it works;faq:Questions;testimonials:What people say", got "hero:Fresh bread daily;benefits:Why Maria's;process:How it works;testimonials:What people say;faq:Questions"
+rewrite_reviews (outcome): ["pages//maria-s-bakery.section_variants: expected 'hero:-,benefits:-,process:-,testimonials:-,faq:-', got 'hero:-,benefits:-,process:-,testimonials:bordered-list,faq:-'"]
+    pages//maria-s-bakery.section_variants: expected 'hero:-,benefits:-,process:-,testimonials:-,faq:-', got 'hero:-,benefits:-,process:-,testimonials:bordered-list,faq:-'
+replace_image (path): missing operations: ['assemble_page', 'replace_image', 'save_draft']
+    missing operations: assemble_page, replace_image, save_draft
+    policy: generate_copy was executed
+move_section (path): missing operations: ['move_section']
+    missing operations: move_section
+create_page_promotion_cue (component): ["sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact'] for 'Make a landing page for GreenLeaf Yoga S'", "sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'services', 'process', 'testimonials', 'promotion', 'faq', 'contact'] for 'GreenLeaf Yoga Studio wants a page for b'", "sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact'] for 'Create a page for GreenLeaf Yoga Studio '", "sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact'] for 'Landing page for GreenLeaf Yoga Studio, '"]
+    sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact'] for 'Make a landing page for GreenLeaf Yoga S'
+    sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'services', 'process', 'testimonials', 'promotion', 'faq', 'contact'] for 'GreenLeaf Yoga Studio wants a page for b'
+    sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact'] for 'Create a page for GreenLeaf Yoga Studio '
+    sections: expected ['hero', 'promotion'], got ['hero', 'about', 'benefits', 'process', 'testimonials', 'pricing', 'promotion', 'faq', 'contact'] for 'Landing page for GreenLeaf Yoga Studio, '
+section_planning (component): errors: [{'input': 'a landing page for a bakery with a hero and an FAQ', 'expected': 'hero,faq', 'predicted': 'hero,about,benefits,services,gallery,testimonials,promotion,faq'}, {'input': 'a page for a yoga studio with a hero and a special introductory offer', 'expected': 'hero,promotion', 'predicted': 'hero,about,benefits,process,testimonials,pricing,promotion,faq,contact'}, {'input': 'a page for a plumber with a hero, benefits and customer reviews', 'expected': 'hero,benefits,testimonials', 'predicted': 'hero,benefits,services,process,testimonials,faq,contact'}, {'input': 'a page for a law firm with benefits and frequently asked questions', 'expected': 'benefits,faq', 'predicted': 'hero,about,benefits,services,process,testimonials,team,faq'}, {'input': 'a page for a gym with a hero, a discount and an FAQ', 'expected': 'hero,promotion,faq', 'predicted': 'hero,about,benefits,services,process,testimonials,promotion,faq'}]
+    hero,faq -> hero,about,benefits,services,gallery,testimonials,promotion,faq   'a landing page for a bakery with a hero and an F'
+    hero,promotion -> hero,about,benefits,process,testimonials,pricing,promotion,faq,contact   'a page for a yoga studio with a hero and a speci'
+    hero,benefits,testimonials -> hero,benefits,services,process,testimonials,faq,contact   'a page for a plumber with a hero, benefits and c'
+    benefits,faq -> hero,about,benefits,services,process,testimonials,team,faq   'a page for a law firm with benefits and frequent'
+    hero,promotion,faq -> hero,about,benefits,services,process,testimonials,promotion,faq   'a page for a gym with a hero, a discount and an '
+replace_image (component): ["intent: expected 'replaceImage', got 'addSection' for 'Put another photo on the banner'", "slot section: expected 'hero', got None for 'Put another photo on the banner'"]
+    intent: expected 'replaceImage', got 'addSection' for 'Put another photo on the banner'
+    slot section: expected 'hero', got None for 'Put another photo on the banner'
+move_section (component): ["intent: expected 'moveSection', got 'moveItem' for 'FAQ one step up'"]
+    intent: expected 'moveSection', got 'moveItem' for 'FAQ one step up'
+add_item (component): ["slot section: expected 'benefits', got None for 'Add another benefit'", "slot section: expected 'benefits', got None for 'Add one more benefit'", "slot section: expected 'benefits', got None for 'Another entry in the benefits list'"]
+    slot section: expected 'benefits', got None for 'Add another benefit'
+    slot section: expected 'benefits', got None for 'Add one more benefit'
+    slot section: expected 'benefits', got None for 'Another entry in the benefits list'
+
+TELEMETRY
+------------------------------------------------------------------------------
+model_calls
+                            calls  first_attempt_valid  retried_valid  exhausted
+    total                     376                  376              0          0
+model_calls / by_stage
+                            calls  first_attempt_valid  retried_valid  exhausted
+    Interpretation             89                   89              0          0
+    SectionPlan                20                   20              0          0
+    ThemeChoice                25                   25              0          0
+    LayoutPlan                 20                   20              0          0
+    HeroCopy                   21                   21              0          0
+    AboutCopy                  15                   15              0          0
+    BenefitsCopy               15                   15              0          0
+    IconChoice                 66                   66              0          0
+    ServicesCopy               11                   11              0          0
+    GalleryCopy                10                   10              0          0
+    TestimonialsCopy           25                   25              0          0
+    PromotionCopy              15                   15              0          0
+    FAQCopy                    20                   20              0          0
+    ContactCopy                15                   15              0          0
+    ProcessCopy                 5                    5              0          0
+    PricingCopy                 4                    4              0          0
+step_status
+                             ok  attached
+                            346       136
+
+json  /Users/vlad/cm3070-final/orchestrator/reports/report-qwen3.5-latest.json
+html  /Users/vlad/cm3070-final/orchestrator/reports/report-qwen3.5-latest.html

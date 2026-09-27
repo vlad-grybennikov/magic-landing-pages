@@ -1,0 +1,24 @@
+{
+  "instruction": "Thank you.",
+  "variants": [
+    "Thanks for watching.",
+    "Um.",
+    "Okay"
+  ],
+  "setup": [],
+  "require": [],
+  "policies": [
+    {
+      "forbid": "interpret"
+    },
+    {
+      "forbid": "generate_copy"
+    },
+    {
+      "forbid": "assemble_page"
+    },
+    {
+      "forbid": "save_draft"
+    }
+  ]
+}

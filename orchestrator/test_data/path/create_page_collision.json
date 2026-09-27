@@ -1,0 +1,83 @@
+{
+  "instruction": "Create a landing page for Maria's Bakery targeting young families to take online orders",
+  "variants": [
+    "I need another page for Maria's Bakery, still targeting young families for online orders",
+    "Set up a second Maria's Bakery page aimed at young families to take online orders"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "The original published page",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        }
+      ]
+    }
+  ],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "generate_schema"
+    },
+    {
+      "tool": "select_theme"
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft",
+      "where": {
+        "url": "/maria-s-bakery-2"
+      }
+    }
+  ],
+  "flows": [
+    [
+      "generate_schema",
+      "plan"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "interpret",
+      "select_theme"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "before": [
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    }
+  ]
+}

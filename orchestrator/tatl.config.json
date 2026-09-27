@@ -1,0 +1,76 @@
+{
+  "adapter": "mlp_adapter:MlpAdapter",
+  "suite_dir": "suite",
+  "data_dir": "test_data",
+  "out_dir": "reports",
+  "workers": 3,
+  "matrix": [
+    {
+      "key": "n",
+      "label": "n",
+      "group": "scope",
+      "format": "count",
+      "width": 5
+    },
+    {
+      "key": "runs",
+      "label": "runs",
+      "group": "scope",
+      "format": "ratio",
+      "width": 7
+    },
+    {
+      "key": "pass_k",
+      "label": "pass^{k}",
+      "group": "Outcome"
+    },
+    {
+      "key": "node_f1",
+      "label": "node F1",
+      "group": "Path"
+    },
+    {
+      "key": "edge_f1",
+      "label": "edge F1",
+      "group": "Path"
+    },
+    {
+      "key": "order",
+      "label": "order",
+      "group": "Path"
+    },
+    {
+      "key": "redundancy",
+      "label": "redund.",
+      "group": "Path",
+      "good": 0.0,
+      "bad": 0.5,
+      "inverted": true
+    },
+    {
+      "key": "policies",
+      "label": "policy",
+      "group": "Path"
+    },
+    {
+      "key": "intent",
+      "label": "intent",
+      "group": "Component"
+    },
+    {
+      "key": "slots",
+      "label": "slots",
+      "group": "Component"
+    },
+    {
+      "key": "sections",
+      "label": "sections",
+      "group": "Component"
+    },
+    {
+      "key": "image",
+      "label": "image",
+      "group": "Component"
+    }
+  ]
+}

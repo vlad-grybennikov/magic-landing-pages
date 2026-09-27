@@ -1,0 +1,21 @@
+{
+  "instruction": "Build a page for Apex Plumbing aimed at homeowners to collect quote requests, with just a hero and an FAQ",
+  "variants": [
+    "Apex Plumbing needs a page for homeowners to collect quote requests \u2014 just a hero and an FAQ",
+    "Put together a page for Apex Plumbing aimed at homeowners, only a hero and questions section, to gather quote requests",
+    "For Apex Plumbing: a homeowner-facing page collecting quote requests, hero and FAQ only"
+  ],
+  "expect": {
+    "intent": "createPage",
+    "slots": {
+      "business": "Apex Plumbing",
+      "audience": "homeowners",
+      "goal": "collect quote requests"
+    },
+    "sections": [
+      "hero",
+      "faq"
+    ],
+    "image": "plumber working"
+  }
+}

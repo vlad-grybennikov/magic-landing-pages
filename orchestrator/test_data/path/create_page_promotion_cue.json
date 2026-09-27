@@ -1,0 +1,147 @@
+{
+  "instruction": "Make a landing page for GreenLeaf Yoga Studio for busy professionals to sign up for classes, with a hero and a special introductory offer",
+  "variants": [
+    "GreenLeaf Yoga Studio wants a page for busy professionals to sign up for classes, with a hero and an introductory deal",
+    "Create a page for GreenLeaf Yoga Studio targeting busy professionals joining classes, hero plus a starter discount",
+    "Landing page for GreenLeaf Yoga Studio, busy professionals signing up for classes, a hero and a first-timer offer"
+  ],
+  "setup": [],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "generate_schema"
+    },
+    {
+      "tool": "plan"
+    },
+    {
+      "tool": "select_theme"
+    },
+    {
+      "tool": "generate_copy",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "select_image",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "assemble_section",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "generate_copy",
+      "where": {
+        "section": "promotion"
+      }
+    },
+    {
+      "tool": "select_image",
+      "where": {
+        "section": "promotion"
+      }
+    },
+    {
+      "tool": "assemble_section",
+      "where": {
+        "section": "promotion"
+      }
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft"
+    }
+  ],
+  "flows": [
+    [
+      "generate_schema",
+      "plan"
+    ],
+    [
+      "generate_schema",
+      "generate_copy"
+    ],
+    [
+      "generate_schema",
+      "select_image"
+    ],
+    [
+      "generate_schema",
+      "assemble_section"
+    ],
+    [
+      "generate_schema",
+      "assemble_page"
+    ],
+    [
+      "interpret",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "interpret",
+      "select_theme"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "before": [
+    [
+      "interpret",
+      "generate_schema"
+    ],
+    [
+      "generate_schema",
+      "plan"
+    ],
+    [
+      "plan",
+      "generate_copy"
+    ],
+    [
+      "generate_copy",
+      "assemble_section"
+    ],
+    [
+      "assemble_section",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    },
+    {
+      "require_before": [
+        "interpret",
+        "generate_schema"
+      ]
+    }
+  ]
+}

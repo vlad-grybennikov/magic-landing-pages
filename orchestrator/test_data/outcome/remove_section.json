@@ -1,0 +1,53 @@
+{
+  "instruction": "Remove the FAQ section",
+  "variants": [
+    "Delete the FAQ",
+    "Take the questions section off the page",
+    "Get rid of the FAQ block"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "expect": {
+    "changed": {
+      "pages": {
+        "/maria-s-bakery": {
+          "publish": false,
+          "section_types": "hero",
+          "n_sections": 1,
+          "section_variants": "hero:-",
+          "item_counts": "",
+          "item_heads": "",
+          "section_heads": "hero:Fresh bread daily"
+        }
+      }
+    }
+  }
+}

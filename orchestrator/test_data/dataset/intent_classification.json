@@ -1,0 +1,698 @@
+{
+  "probe": "classify",
+  "metric": "macro_f1",
+  "cases": [
+    {
+      "input": "Create a landing page for Maria's Bakery targeting young families",
+      "expect": "createPage"
+    },
+    {
+      "input": "Build a page for Apex Plumbing aimed at homeowners to collect quote requests",
+      "expect": "createPage"
+    },
+    {
+      "input": "Make a landing page for GreenLeaf Yoga Studio for busy professionals",
+      "expect": "createPage"
+    },
+    {
+      "input": "I want a site for Nordvik Dental Clinic with a button to book an appointment",
+      "expect": "createPage"
+    },
+    {
+      "input": "Design a page for Lumina Photography to showcase wedding portfolios and take bookings",
+      "expect": "createPage"
+    },
+    {
+      "input": "Launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp",
+      "expect": "createPage"
+    },
+    {
+      "input": "Set up a page for Bella Vista Trattoria so customers can reserve a table online",
+      "expect": "createPage"
+    },
+    {
+      "input": "Create a page for PetPals Grooming targeting dog owners in Brighton",
+      "expect": "createPage"
+    },
+    {
+      "input": "Build a landing page for Aurora Fitness offering a free seven day trial membership",
+      "expect": "createPage"
+    },
+    {
+      "input": "Make a site for Hendricks and Pearce Law Firm focused on small business clients",
+      "expect": "createPage"
+    },
+    {
+      "input": "I need a page for Saffron and Sage Catering for corporate events and weddings",
+      "expect": "createPage"
+    },
+    {
+      "input": "Home Canada installs windows and doors in Toronto, please create a landing page for local homeowners with a hero and an FAQ",
+      "expect": "createPage"
+    },
+    {
+      "input": "Put together a landing page for Willowbrook Veterinary Hospital with an emergency contact number",
+      "expect": "createPage"
+    },
+    {
+      "input": "Start a new page for Echo Sound Studios renting rehearsal rooms to local bands",
+      "expect": "createPage"
+    },
+    {
+      "input": "We need a website for Verdant Landscaping offering free garden consultations",
+      "expect": "createPage"
+    },
+    {
+      "input": "Change the headline to Fresh Bread Every Morning",
+      "expect": "editContent"
+    },
+    {
+      "input": "Edit the hero headline",
+      "expect": "editContent"
+    },
+    {
+      "input": "Update the promotion description to mention free delivery",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Rewrite the button label to say Book Now",
+      "expect": "editContent"
+    },
+    {
+      "input": "Can you reword the benefits heading",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Set the hero subhead to Open seven days a week",
+      "expect": "editContent"
+    },
+    {
+      "input": "Make the FAQ heading say Common Questions",
+      "expect": "editContent"
+    },
+    {
+      "input": "Fix the typo in the promotion title",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "The headline should read Trusted Local Installers instead",
+      "expect": "editContent"
+    },
+    {
+      "input": "Change the call to action text on the hero button",
+      "expect": "editContent"
+    },
+    {
+      "input": "Please update the testimonials heading to What Our Clients Say",
+      "expect": "editContent"
+    },
+    {
+      "input": "Shorten the hero headline",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Replace the hero image",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Swap the hero photo for something brighter",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Change the picture in the hero section",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Use a different image for the hero",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Pick a new photo showing a team at work",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "The hero image doesn't fit, find another one",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Update the benefits icons",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Replace the photo with one of a kitchen",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Give me a different hero picture with more people in it",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Change the hero image to something with outdoor scenery",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Find a better photo for the hero banner",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Swap out that image please",
+      "expect": "replaceImage"
+    },
+    {
+      "input": "Add an FAQ section",
+      "expect": "addSection"
+    },
+    {
+      "input": "Add a testimonials section at the bottom",
+      "expect": "addSection"
+    },
+    {
+      "input": "Insert a promotion section after the hero",
+      "expect": "addSection"
+    },
+    {
+      "input": "Can you add a benefits section",
+      "expect": "addSection"
+    },
+    {
+      "input": "I'd like a section with customer reviews",
+      "expect": "addSection"
+    },
+    {
+      "input": "Put a frequently asked questions block on the page",
+      "expect": "addSection"
+    },
+    {
+      "input": "Include a special offer section",
+      "expect": "addSection"
+    },
+    {
+      "input": "Append a testimonials block",
+      "expect": "addSection"
+    },
+    {
+      "input": "Add another section for our benefits",
+      "expect": "addSection"
+    },
+    {
+      "input": "Stick an FAQ at the end of the page",
+      "expect": "addSection"
+    },
+    {
+      "input": "We should have a promotion section too",
+      "expect": "addSection"
+    },
+    {
+      "input": "Create a new benefits section below the hero",
+      "expect": "addSection"
+    },
+    {
+      "input": "But I want a longer version, can't you add more sections?",
+      "expect": "addSection"
+    },
+    {
+      "input": "Add more sections to the page",
+      "expect": "addSection"
+    },
+    {
+      "input": "This feels short, fill it out a bit",
+      "expect": "addSection"
+    },
+    {
+      "input": "Make the page longer",
+      "expect": "addSection"
+    },
+    {
+      "input": "Remove the testimonials section",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Delete the FAQ",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Take out the promotion section",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Get rid of the benefits block",
+      "expect": "removeSection"
+    },
+    {
+      "input": "I don't want the testimonials any more",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Drop the FAQ section from the page",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Remove the special offer block",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Delete the section with the customer reviews",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Can you take the promotion off the page",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Lose the benefits section",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Erase the FAQ block",
+      "expect": "removeSection"
+    },
+    {
+      "input": "The testimonials should go",
+      "expect": "removeSection"
+    },
+    {
+      "input": "Make the page green",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Use a warmer colour scheme",
+      "expect": "setTheme"
+    },
+    {
+      "input": "These colours are too loud, calm them down",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Change the palette to something more premium",
+      "expect": "setTheme"
+    },
+    {
+      "input": "I want the buttons in a darker blue",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Our brand colour is navy, use that on the page",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Make the page background a soft cream",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Try a different colour scheme",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Set the main colour to hex 2f6f4e",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Switch the page to a softer palette",
+      "expect": "setTheme"
+    },
+    {
+      "input": "Give the page a fresh green and cream look",
+      "expect": "setTheme"
+    },
+    {
+      "input": "That blue doesn't suit a bakery, pick better colours",
+      "expect": "setTheme"
+    },
+    {
+      "input": "What is the weather forecast for Paris tomorrow",
+      "expect": "unsupported"
+    },
+    {
+      "input": "How much does this cost per month",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Send an email to my accountant about the invoice",
+      "expect": "unsupported"
+    },
+    {
+      "input": "What time is it in Tokyo right now",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Book me a flight to Berlin next Tuesday",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Tell me a joke about programmers",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Who won the football match last night",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Translate this document into German",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Set a reminder for my dentist appointment",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Play some music while I work",
+      "expect": "unsupported"
+    },
+    {
+      "input": "What is the capital of Australia",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Order me a pizza for lunch",
+      "expect": "unsupported"
+    },
+    {
+      "input": "Rewrite the testimonials",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Generate real reviews here",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Can you make these reviews sound more real",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Redo the about section, warmer this time",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Regenerate the benefits copy",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Have another go at the hero text",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Write the services section again",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "These testimonials read fake, do them over",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Fresh copy for the promotion please",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Rephrase the whole FAQ",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Change the first review to say Best croissants in Leeds",
+      "expect": "editContent"
+    },
+    {
+      "input": "Put order@coffeehug.com as the email",
+      "expect": "editContent"
+    },
+    {
+      "input": "The opening hours are 8 to 6 on weekdays",
+      "expect": "editContent"
+    },
+    {
+      "input": "Rename the Standard plan to Essential",
+      "expect": "editContent"
+    },
+    {
+      "input": "Make the hero button say Order now",
+      "expect": "editContent"
+    },
+    {
+      "input": "Set the delivery answer to Yes, within five miles",
+      "expect": "editContent"
+    },
+    {
+      "input": "Update the reviews to something real",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Can you change the reviews in this section to be more real",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Can you change the review content",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Make it sound more real",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Give the FAQ answers a friendlier tone",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Punchier hero copy please",
+      "expect": "regenerateSection"
+    },
+    {
+      "input": "Move the testimonials above the pricing",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Put the FAQ at the bottom",
+      "expect": "moveSection"
+    },
+    {
+      "input": "That gallery needs to be higher up",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Shift the benefits down one",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Bring the contact section to the top",
+      "expect": "moveSection"
+    },
+    {
+      "input": "The pricing should come after the testimonials",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Send the promotion further down the page",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Move how it works up above the benefits",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Put the team section last",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Swap the about and services sections around",
+      "expect": "moveSection"
+    },
+    {
+      "input": "Try a different layout for the hero",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Make the pricing a table",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Show the gallery as a masonry grid",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Lay the benefits out as cards",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Give the testimonials a different look",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Switch the FAQ to an accordion",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Try the split layout on the hero",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Can the process be a timeline",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Make the about section text only",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Arrange the services differently",
+      "expect": "setVariant"
+    },
+    {
+      "input": "Add another benefit",
+      "expect": "addItem"
+    },
+    {
+      "input": "Put a fourth step in how it works",
+      "expect": "addItem"
+    },
+    {
+      "input": "Add one more question to the FAQ",
+      "expect": "addItem"
+    },
+    {
+      "input": "Another plan in the pricing",
+      "expect": "addItem"
+    },
+    {
+      "input": "Add a team member",
+      "expect": "addItem"
+    },
+    {
+      "input": "One more testimonial please",
+      "expect": "addItem"
+    },
+    {
+      "input": "Add a row to the contact details",
+      "expect": "addItem"
+    },
+    {
+      "input": "Add another service",
+      "expect": "addItem"
+    },
+    {
+      "input": "Add another paragraph to the about section",
+      "expect": "addItem"
+    },
+    {
+      "input": "Add a link to the header",
+      "expect": "addItem"
+    },
+    {
+      "input": "Remove the second step",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Take the last benefit out",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Delete the question about delivery",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Drop the third plan",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Remove the opening hours from the contact details",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Get rid of the second testimonial",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Take out the fourth benefit",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Delete step three",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Remove the last FAQ entry",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Lose the second team member",
+      "expect": "removeItem"
+    },
+    {
+      "input": "Swap the first two steps",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Move the last benefit to the top",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Put the delivery question first",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Move the standard plan to the end",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Shift the second step down",
+      "expect": "moveItem"
+    },
+    {
+      "input": "The third benefit should be first",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Move Dana's review up",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Put the phone number above the email",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Move the fourth question up one",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Swap the first and last plans",
+      "expect": "moveItem"
+    },
+    {
+      "input": "Use a star icon for the first benefit",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Change the icon on the second step to a clock",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Put a heart icon on the third benefit",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Swap the first benefit's icon for a leaf",
+      "expect": "setIcon"
+    },
+    {
+      "input": "The delivery step should have a truck icon",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Give the second benefit a shield icon",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Use a coffee cup icon for the first benefit",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Change the icon of the last step",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Make the first benefit icon a sparkle",
+      "expect": "setIcon"
+    },
+    {
+      "input": "Set the icon on benefit two to a checkmark",
+      "expect": "setIcon"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --line: #dcdcdc;
+  --muted: #6b6b6b;
+  --fail: #c0392b;
+}
+
+* { box-sizing: border-box; font: inherit;}
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Roboto, sans-serif;
+}
+
+.wrap { max-width: 1180px; margin: 0 auto; }
+
+h1 { font-size: 1.35rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.05rem; margin: 2rem 0 .75rem; }
+.meta { color: var(--muted); margin: 0 0 1.5rem; }
+
+.scroll { overflow-x: auto; }
+
+table { border-collapse: separate; border-spacing: 3px; }
+th, td { padding: .5rem .6rem; text-align: center; white-space: nowrap; }
+th { font-weight: 600; font-size: .8rem; }
+th.group { font-size: .95rem; padding-bottom: .1rem; }
+
+td.case, th.case {
+  text-align: left;
+  font-size: .85rem;
+}
+
+td.cell {
+  color: #fff;
+  border-radius: 3px;
+  font-variant-numeric: tabular-nums;
+  min-width: 64px;
+}
+td.blank { color: var(--muted); }
+
+.sep { border-left: 2px solid var(--fg); }
+
+.bad { color: var(--fail); font-weight: 700; }
+
+.datasets td.left { text-align: left; color: var(--muted); }
+.datasets td { font-variant-numeric: tabular-nums; }
+
+.failures li { margin-bottom: .6rem; }
+.failures code {
+  background: rgba(128, 128, 128, .14);
+  padding: .1rem .3rem;
+  border-radius: 3px;
+  font-family: inherit;
+  font-weight: 600;
+}
+.doc { color: var(--muted); font-size: .85rem; }
+
+.telemetry h3 { font-size: .85rem; font-weight: 600; margin: 1.25rem 0 .25rem; }
+.telemetry td { font-variant-numeric: tabular-nums; }

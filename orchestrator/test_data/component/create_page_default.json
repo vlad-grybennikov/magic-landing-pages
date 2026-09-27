@@ -1,0 +1,50 @@
+{
+  "instruction": "Create a landing page for Maria's Bakery targeting young families to take online orders",
+  "variants": [
+    {
+      "text": "I need a website for Maria's Bakery, aimed at young families, so they can order online",
+      "slots": {
+        "goal": {
+          "$any": [
+            "take online orders",
+            "order online"
+          ]
+        }
+      }
+    },
+    {
+      "text": "Set up a landing page for Maria's Bakery so young families can place orders on the web",
+      "slots": {
+        "goal": {
+          "$any": [
+            "take online orders",
+            "place orders on the web",
+            "place orders online"
+          ]
+        }
+      }
+    },
+    "Build Maria's Bakery a page targeting young families that takes online orders"
+  ],
+  "expect": {
+    "intent": "createPage",
+    "slots": {
+      "business": "Maria's Bakery",
+      "audience": "young families",
+      "goal": "take online orders"
+    },
+    "sections": {
+      "$contains": [
+        "hero",
+        "benefits",
+        "testimonials",
+        "faq"
+      ],
+      "$between": [
+        5,
+        9
+      ]
+    },
+    "image": "bakery"
+  }
+}

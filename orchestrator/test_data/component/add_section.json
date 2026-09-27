@@ -1,0 +1,14 @@
+{
+  "instruction": "Add a testimonials section",
+  "variants": [
+    "I'd like a section with customer reviews",
+    "Put some testimonials on the page",
+    "Include a reviews section"
+  ],
+  "expect": {
+    "intent": "addSection",
+    "slots": {
+      "type": "testimonials"
+    }
+  }
+}

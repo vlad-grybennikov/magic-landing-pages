@@ -1,0 +1,16 @@
+{
+  "instruction": "Use a star icon for the first benefit",
+  "variants": [
+    "Change the first benefit's icon to a star",
+    "Put a star on the first benefit",
+    "The first benefit should have a star icon"
+  ],
+  "expect": {
+    "intent": "setIcon",
+    "slots": {
+      "section": "benefits",
+      "path": "items.0",
+      "icon": "star"
+    }
+  }
+}

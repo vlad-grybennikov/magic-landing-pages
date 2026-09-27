@@ -1,0 +1,165 @@
+{
+  "instruction": "Swap the first two steps",
+  "variants": [
+    "Move the first step down one",
+    "Put Order online after We bake",
+    "The first step should be second"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "benefits",
+          "heading": "Why Maria's",
+          "items": [
+            {
+              "icon": {
+                "src": "/images/quality.svg",
+                "alt": "",
+                "id": "quality"
+              },
+              "title": "Baked at dawn",
+              "caption": "Out of the oven before you wake."
+            },
+            {
+              "icon": {
+                "src": "/images/energy.svg",
+                "alt": "",
+                "id": "energy"
+              },
+              "title": "Local flour",
+              "caption": "Milled twenty miles away."
+            },
+            {
+              "icon": {
+                "src": "/images/personalisation.svg",
+                "alt": "",
+                "id": "personalisation"
+              },
+              "title": "Made to order",
+              "caption": "Tell us what you want on Friday."
+            }
+          ]
+        },
+        {
+          "type": "process",
+          "heading": "How it works",
+          "items": [
+            {
+              "title": "Order online",
+              "caption": "Pick what you want."
+            },
+            {
+              "title": "We bake",
+              "caption": "Fresh that morning."
+            },
+            {
+              "title": "Collect or deliver",
+              "caption": "Your call."
+            }
+          ]
+        },
+        {
+          "type": "testimonials",
+          "heading": "What people say",
+          "items": [
+            {
+              "name": "Dana",
+              "rating": 5,
+              "content": "Best sourdough in town."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            },
+            {
+              "question": "Gluten free?",
+              "answer": "On Fridays."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "load_page"
+    },
+    {
+      "tool": "move_item"
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft"
+    }
+  ],
+  "flows": [
+    [
+      "interpret",
+      "move_item"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "before": [
+    [
+      "load_page",
+      "move_item"
+    ],
+    [
+      "move_item",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    },
+    {
+      "forbid": "generate_copy"
+    },
+    {
+      "forbid": "select_image"
+    },
+    {
+      "forbid": "generate_schema"
+    },
+    {
+      "forbid": "select_theme"
+    }
+  ]
+}

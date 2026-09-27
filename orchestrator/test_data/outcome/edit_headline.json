@@ -1,0 +1,50 @@
+{
+  "instruction": "Change the hero headline to Baked Before Sunrise",
+  "variants": [
+    "Set the hero headline to Baked Before Sunrise",
+    "The hero heading should read Baked Before Sunrise",
+    "Reword the hero headline as Baked Before Sunrise"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "expect": {
+    "changed": {
+      "pages": {
+        "/maria-s-bakery": {
+          "publish": false,
+          "section_types": "hero,faq",
+          "n_sections": 2,
+          "section_heads": "hero:Baked Before Sunrise;faq:Questions"
+        }
+      }
+    }
+  }
+}

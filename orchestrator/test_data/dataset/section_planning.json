@@ -1,0 +1,42 @@
+{
+  "probe": "plan_sections",
+  "metric": "exact_match",
+  "cases": [
+    {
+      "input": "a landing page for a bakery with a hero and an FAQ",
+      "expect": "hero,faq"
+    },
+    {
+      "input": "a page for a yoga studio with a hero and a special introductory offer",
+      "expect": "hero,promotion"
+    },
+    {
+      "input": "a page for a plumber with a hero, benefits and customer reviews",
+      "expect": "hero,benefits,testimonials"
+    },
+    {
+      "input": "a page for a dentist with just a hero",
+      "expect": "hero"
+    },
+    {
+      "input": "a page for a law firm with benefits and frequently asked questions",
+      "expect": "benefits,faq"
+    },
+    {
+      "input": "a page for a gym with a hero, a discount and an FAQ",
+      "expect": "hero,promotion,faq"
+    },
+    {
+      "input": "a page for a caterer with a hero and a list of advantages",
+      "expect": "hero,benefits"
+    },
+    {
+      "input": "a page for a bootcamp with reviews and questions and answers",
+      "expect": "testimonials,faq"
+    },
+    {
+      "input": "a page for an accountant, only the FAQ and a hero",
+      "expect": "hero,faq"
+    }
+  ]
+}

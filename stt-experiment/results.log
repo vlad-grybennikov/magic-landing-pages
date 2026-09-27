@@ -1,0 +1,344 @@
+======================================================================
+STT EXPERIMENT -- faster-whisper model comparison
+timestamp   : 20260621_210655
+device      : cpu  compute_type: int8
+models      : tiny, base, small, medium, large-v3-turbo
+clips       : 15
+======================================================================
+
+### MODEL: tiny ########################################################
+  (loaded in 0.5s)
+
+  [p01.aifc]  WER=0.000  latency=0.33s  RTF=0.04  dur=7.9s
+     ref : create a landing page for Maria's Bakery targeting young families
+     hyp : Create a landing page for Maria's bakery targeting young families.
+
+  [p02.aifc]  WER=0.308  latency=0.37s  RTF=0.04  dur=8.4s
+     ref : build a page for Apex Plumbing aimed at homeowners to collect quote requests
+     hyp : Build a page for up-explombing aimed at homeowners to collect quarter quests.
+
+  [p03.aifc]  WER=0.455  latency=0.34s  RTF=0.05  dur=6.2s
+     ref : make a landing page for GreenLeaf Yoga Studio for busy professionals
+     hyp : Make a landing page for me if you're a studio for busy professionals.
+
+  [p04.aifc]  WER=0.467  latency=0.41s  RTF=0.05  dur=8.5s
+     ref : I want a site for Nordvik Dental Clinic with a button to book an appointment
+     hyp : I want this side for a Nord-Trick dental clinic, or is a button to book an appointment.
+
+  [p05.aifc]  WER=0.385  latency=0.35s  RTF=0.04  dur=9.3s
+     ref : design a page for Lumina Photography to showcase wedding portfolios and take bookings
+     hyp : Design a page full in photography to showcase wedding for photos and the bookings.
+
+  [p06.aifc]  WER=0.615  latency=0.41s  RTF=0.05  dur=9.0s
+     ref : launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp
+     hyp : Lunch, a landing page for Godforge Academy prompting at 12th week going boot camp.
+
+  [p07.aifc]  WER=0.333  latency=0.37s  RTF=0.05  dur=7.0s
+     ref : set up a page for Bella Vista Trattoria so customers can reserve a table online
+     hyp : Set up a page for Bellawista Traitoria, so customers can reserve a table in line.
+
+  [p08.aifc]  WER=0.364  latency=0.36s  RTF=0.05  dur=6.8s
+     ref : create a page for PetPals Grooming targeting dog owners in Brighton
+     hyp : Great, a page for pet balls grooming targeting dog owners in Brinton.
+
+  [p09.aifc]  WER=0.214  latency=0.36s  RTF=0.05  dur=7.1s
+     ref : build a landing page for Aurora Fitness offering a free seven day trial membership
+     hyp : Build the landing page for Aurora Fitness offering a free 7 day 3L membership.
+
+  [p10.aifc]  WER=0.500  latency=0.34s  RTF=0.06  dur=6.0s
+     ref : make a site for Hendricks and Pearce Law Firm focused on small business clients
+     hyp : Big aside for Hendricks, a very slow film focused on small business clients!
+
+  [p11.aifc]  WER=0.071  latency=0.44s  RTF=0.05  dur=8.4s
+     ref : I need a page for Saffron and Sage Catering for corporate events and weddings
+     hyp : I need a page for Shafron and Sage, catering for corporate events and weddings.
+
+  [p12.aifc]  WER=0.538  latency=0.39s  RTF=0.05  dur=7.5s
+     ref : create a landing page for QuantumLeap Analytics selling a subscription dashboard to startups
+     hyp : Create a landing page for quantum leap analytics,  sell in a subscription, or both two startups.
+
+  [p13.aifc]  WER=0.333  latency=0.34s  RTF=0.05  dur=7.4s
+     ref : build a page for Willowbrook Veterinary Hospital with an emergency contact number
+     hyp : Build a page for fuel-brook veterinary hospital within emergency contact number.
+
+  [p14.aifc]  WER=0.385  latency=0.35s  RTF=0.05  dur=7.6s
+     ref : design a page for Echo Sound Studios renting rehearsal rooms to local bands
+     hyp : Design a page for echo sounds to use rent in rehearsal rooms to local bands.
+
+  [p15.aifc]  WER=1.000  latency=0.55s  RTF=0.06  dur=8.7s
+     ref : make a landing page for Verdant Landscaping offering free garden consultations to collect leads
+     hyp : מי כילאונדים פתיףו עבר חדנט לנסקי פינאופרן פרי גרדים קרסולטי סוץ דוקורת לצד.
+
+  -- tiny means: WER=0.398  latency=0.38s  RTF=0.05
+
+### MODEL: base ########################################################
+  (loaded in 0.3s)
+
+  [p01.aifc]  WER=0.000  latency=0.59s  RTF=0.07  dur=7.9s
+     ref : create a landing page for Maria's Bakery targeting young families
+     hyp : Create a landing page for Maria's bakery targeting young families.
+
+  [p02.aifc]  WER=0.308  latency=0.64s  RTF=0.08  dur=8.4s
+     ref : build a page for Apex Plumbing aimed at homeowners to collect quote requests
+     hyp : Build a page for up-explombing aimed at homeowners to collect quarter quests.
+
+  [p03.aifc]  WER=0.182  latency=0.62s  RTF=0.10  dur=6.2s
+     ref : make a landing page for GreenLeaf Yoga Studio for busy professionals
+     hyp : Make a landing page for green leaf yoga studio for busy professionals.
+
+  [p04.aifc]  WER=0.067  latency=0.65s  RTF=0.08  dur=8.5s
+     ref : I want a site for Nordvik Dental Clinic with a button to book an appointment
+     hyp : I want a site for Nordic Dental Clinic with a button to book an appointment.
+
+  [p05.aifc]  WER=0.154  latency=0.63s  RTF=0.07  dur=9.3s
+     ref : design a page for Lumina Photography to showcase wedding portfolios and take bookings
+     hyp : Design a page for limine photography to showcase wedding portfolios and the bookings.
+
+  [p06.aifc]  WER=0.231  latency=0.73s  RTF=0.08  dur=9.0s
+     ref : launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp
+     hyp : Launch a landing page for Godforage Academy prompting a 12-week coding bootcamp.
+
+  [p07.aifc]  WER=0.000  latency=0.64s  RTF=0.09  dur=7.0s
+     ref : set up a page for Bella Vista Trattoria so customers can reserve a table online
+     hyp : Set up a page for Bella Vista Trattoria so customers can reserve a table online.
+
+  [p08.aifc]  WER=0.273  latency=0.62s  RTF=0.09  dur=6.8s
+     ref : create a page for PetPals Grooming targeting dog owners in Brighton
+     hyp : Create a page for pet balls grooming targeting dog owners in Brinton.
+
+  [p09.aifc]  WER=1.000  latency=0.88s  RTF=0.12  dur=7.1s
+     ref : build a landing page for Aurora Fitness offering a free seven day trial membership
+     hyp : Білде лендінг паїч для аврора фітнес-оферін Ф3-7-Дей-3Л-Мембаршіп.
+
+  [p10.aifc]  WER=0.357  latency=0.62s  RTF=0.10  dur=6.0s
+     ref : make a site for Hendricks and Pearce Law Firm focused on small business clients
+     hyp : Make a site for hundreds of bare-slow film focused on small business clients.
+
+  [p11.aifc]  WER=0.143  latency=0.66s  RTF=0.08  dur=8.4s
+     ref : I need a page for Saffron and Sage Catering for corporate events and weddings
+     hyp : I need a page for chaffron and sage catering for corporate events and readiness.
+
+  [p12.aifc]  WER=0.538  latency=0.69s  RTF=0.09  dur=7.5s
+     ref : create a landing page for QuantumLeap Analytics selling a subscription dashboard to startups
+     hyp : Create a landing page for quantum bleep analytics selling a subscription to our board to start ups.
+
+  [p13.aifc]  WER=0.250  latency=0.63s  RTF=0.09  dur=7.4s
+     ref : build a page for Willowbrook Veterinary Hospital with an emergency contact number
+     hyp : Build a page for a fellow Brook Veterinary Hospital with an emergency contact number.
+
+  [p14.aifc]  WER=0.154  latency=0.61s  RTF=0.08  dur=7.6s
+     ref : design a page for Echo Sound Studios renting rehearsal rooms to local bands
+     hyp : Design a page for echo sound studios rent in rehearsal rooms to local bands.
+
+  [p15.aifc]  WER=0.571  latency=4.66s  RTF=0.54  dur=8.7s
+     ref : make a landing page for Verdant Landscaping offering free garden consultations to collect leads
+     hyp : Mee Kylondin Peach for Verdandland keepin' of Renfree garden consultations to collect leads.
+
+  -- base means: WER=0.282  latency=0.93s  RTF=0.12
+
+### MODEL: small #######################################################
+  (loaded in 0.8s)
+
+  [p01.aifc]  WER=0.000  latency=1.72s  RTF=0.22  dur=7.9s
+     ref : create a landing page for Maria's Bakery targeting young families
+     hyp : Create a landing page for Maria S. Bakery targeting young families.
+
+  [p02.aifc]  WER=0.385  latency=1.81s  RTF=0.22  dur=8.4s
+     ref : build a page for Apex Plumbing aimed at homeowners to collect quote requests
+     hyp : Build a page for up-explan being aimed at homeowners to collect quarter-quests.
+
+  [p03.aifc]  WER=0.273  latency=1.76s  RTF=0.28  dur=6.2s
+     ref : make a landing page for GreenLeaf Yoga Studio for busy professionals
+     hyp : Make an landing page for Green Leaf Yoga Studio for busy professionals.
+
+  [p04.aifc]  WER=0.000  latency=1.81s  RTF=0.21  dur=8.5s
+     ref : I want a site for Nordvik Dental Clinic with a button to book an appointment
+     hyp : I want a site for Nordvik dental clinic with a button to book an appointment.
+
+  [p05.aifc]  WER=0.154  latency=1.82s  RTF=0.20  dur=9.3s
+     ref : design a page for Lumina Photography to showcase wedding portfolios and take bookings
+     hyp : Design a page for living a photography to showcase wedding portfolios and take bookings.
+
+  [p06.aifc]  WER=0.308  latency=1.84s  RTF=0.21  dur=9.0s
+     ref : launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp
+     hyp : Launch a landing page for Code Forge Academy prompting a 12-week coding bootcamp.
+
+  [p07.aifc]  WER=0.000  latency=1.89s  RTF=0.27  dur=7.0s
+     ref : set up a page for Bella Vista Trattoria so customers can reserve a table online
+     hyp : Set up a page for Bella Vista Trattoria so customers can reserve a table online.
+
+  [p08.aifc]  WER=0.273  latency=1.73s  RTF=0.25  dur=6.8s
+     ref : create a page for PetPals Grooming targeting dog owners in Brighton
+     hyp : Create a page for pet paws grooming targeting dog owners in Brinton.
+
+  [p09.aifc]  WER=0.214  latency=1.80s  RTF=0.25  dur=7.1s
+     ref : build a landing page for Aurora Fitness offering a free seven day trial membership
+     hyp : Build the landing page for Aurora Fitness offering a free 7-day trail membership.
+
+  [p10.aifc]  WER=0.286  latency=1.77s  RTF=0.29  dur=6.0s
+     ref : make a site for Hendricks and Pearce Law Firm focused on small business clients
+     hyp : Make a site for Hendrick's a personal firm focused on small business clients.
+
+  [p11.aifc]  WER=0.071  latency=1.80s  RTF=0.21  dur=8.4s
+     ref : I need a page for Saffron and Sage Catering for corporate events and weddings
+     hyp : I need a page for Chaffron and Sage catering for corporate events and weddings.
+
+  [p12.aifc]  WER=0.385  latency=1.88s  RTF=0.25  dur=7.5s
+     ref : create a landing page for QuantumLeap Analytics selling a subscription dashboard to startups
+     hyp : Create a landing page for quantum leap analytics selling a subscription to our board to startups.
+
+  [p13.aifc]  WER=0.083  latency=1.87s  RTF=0.25  dur=7.4s
+     ref : build a page for Willowbrook Veterinary Hospital with an emergency contact number
+     hyp : Build a page of Willowbrook veterinary hospital with an emergency contact number.
+
+  [p14.aifc]  WER=0.308  latency=1.93s  RTF=0.26  dur=7.6s
+     ref : design a page for Echo Sound Studios renting rehearsal rooms to local bands
+     hyp : Design a page for Echo Sound Studio's Rent-in-rehearsal rooms to local bands.
+
+  [p15.aifc]  WER=1.857  latency=32.03s  RTF=3.68  dur=8.7s
+     ref : make a landing page for Verdant Landscaping offering free garden consultations to collect leads
+     hyp : After the sexualã虡ãto, the  §k´ poneway  gó driver  a  §k´n ca  a  §k §k §ko §k §ka §way idi  ¨móki ho Õæh¨  ªk tōk dê xx
+
+  -- small means: WER=0.306  latency=3.83s  RTF=0.47
+
+### MODEL: medium ######################################################
+  (loaded in 2.4s)
+
+  [p01.aifc]  WER=0.000  latency=4.89s  RTF=0.61  dur=7.9s
+     ref : create a landing page for Maria's Bakery targeting young families
+     hyp : Create a landing page for Maria's bakery targeting young families.
+
+  [p02.aifc]  WER=0.000  latency=4.82s  RTF=0.58  dur=8.4s
+     ref : build a page for Apex Plumbing aimed at homeowners to collect quote requests
+     hyp : Build a page for Apex Plumbing aimed at homeowners to collect quote requests.
+
+  [p03.aifc]  WER=0.000  latency=4.68s  RTF=0.76  dur=6.2s
+     ref : make a landing page for GreenLeaf Yoga Studio for busy professionals
+     hyp : Make a landing page for Greenleaf Yoga Studio for busy professionals.
+
+  [p04.aifc]  WER=0.067  latency=4.81s  RTF=0.56  dur=8.5s
+     ref : I want a site for Nordvik Dental Clinic with a button to book an appointment
+     hyp : I want a site for Nordvik Dental Clinic with a patent to book an appointment.
+
+  [p05.aifc]  WER=0.077  latency=4.74s  RTF=0.51  dur=9.3s
+     ref : design a page for Lumina Photography to showcase wedding portfolios and take bookings
+     hyp : Design a page for limited photography to showcase wedding portfolios and take bookings.
+
+  [p06.aifc]  WER=0.308  latency=4.85s  RTF=0.54  dur=9.0s
+     ref : launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp
+     hyp : Launch a landing page for CodeForge Academy prompting a 12-week coding boot camp.
+
+  [p07.aifc]  WER=0.000  latency=4.83s  RTF=0.69  dur=7.0s
+     ref : set up a page for Bella Vista Trattoria so customers can reserve a table online
+     hyp : Set up a page for Bella Vista Trattoria so customers can reserve a table online.
+
+  [p08.aifc]  WER=0.273  latency=4.75s  RTF=0.70  dur=6.8s
+     ref : create a page for PetPals Grooming targeting dog owners in Brighton
+     hyp : Create a page for Pet Pals grooming targeting dog owners in Brinton.
+
+  [p09.aifc]  WER=0.857  latency=17.56s  RTF=2.47  dur=7.1s
+     ref : build a landing page for Aurora Fitness offering a free seven day trial membership
+     hyp : Создайте паузу на ландинге для Aurora Fitness, которая обеспечит бесплатный 7-день трейл-мембраншип.
+
+  [p10.aifc]  WER=0.286  latency=4.80s  RTF=0.80  dur=6.0s
+     ref : make a site for Hendricks and Pearce Law Firm focused on small business clients
+     hyp : Make a site for Hendrix, a personal firm focused on small business clients.
+
+  [p11.aifc]  WER=0.071  latency=4.82s  RTF=0.57  dur=8.4s
+     ref : I need a page for Saffron and Sage Catering for corporate events and weddings
+     hyp : I need a page for chaffron and sage catering for corporate events and weddings.
+
+  [p12.aifc]  WER=0.385  latency=4.75s  RTF=0.64  dur=7.5s
+     ref : create a landing page for QuantumLeap Analytics selling a subscription dashboard to startups
+     hyp : Create a landing page for Quantum Blip Analytics selling a subscription that are worth to startups.
+
+  [p13.aifc]  WER=0.167  latency=4.75s  RTF=0.64  dur=7.4s
+     ref : build a page for Willowbrook Veterinary Hospital with an emergency contact number
+     hyp : Build a page for Philo Brook Veterinary Hospital with an emergency contact number.
+
+  [p14.aifc]  WER=0.000  latency=4.60s  RTF=0.61  dur=7.6s
+     ref : design a page for Echo Sound Studios renting rehearsal rooms to local bands
+     hyp : Design a page for Echo Sound Studios renting rehearsal rooms to local bands.
+
+  [p15.aifc]  WER=0.286  latency=4.96s  RTF=0.57  dur=8.7s
+     ref : make a landing page for Verdant Landscaping offering free garden consultations to collect leads
+     hyp : Make a landing page for Verdant Landscaping of Renfri Garden Consultations to correct lids.
+
+  -- medium means: WER=0.185  latency=5.64s  RTF=0.75
+
+### MODEL: large-v3-turbo ##############################################
+  (loaded in 2.5s)
+
+  [p01.aifc]  WER=0.000  latency=6.47s  RTF=0.81  dur=7.9s
+     ref : create a landing page for Maria's Bakery targeting young families
+     hyp : Create a landing page for Maria's Bakery targeting young families.
+
+  [p02.aifc]  WER=0.000  latency=6.55s  RTF=0.78  dur=8.4s
+     ref : build a page for Apex Plumbing aimed at homeowners to collect quote requests
+     hyp : Build a page for Apex Plumbing aimed at homeowners to collect quote requests.
+
+  [p03.aifc]  WER=0.000  latency=6.46s  RTF=1.04  dur=6.2s
+     ref : make a landing page for GreenLeaf Yoga Studio for busy professionals
+     hyp : Make a landing page for Greenleaf Yoga Studio for busy professionals.
+
+  [p04.aifc]  WER=0.067  latency=6.48s  RTF=0.76  dur=8.5s
+     ref : I want a site for Nordvik Dental Clinic with a button to book an appointment
+     hyp : I want a site for Nordvik Dental Clinic with a patent to book an appointment.
+
+  [p05.aifc]  WER=0.077  latency=6.52s  RTF=0.70  dur=9.3s
+     ref : design a page for Lumina Photography to showcase wedding portfolios and take bookings
+     hyp : Design a page for liminal photography to showcase wedding portfolios and take bookings.
+
+  [p06.aifc]  WER=0.154  latency=6.76s  RTF=0.75  dur=9.0s
+     ref : launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp
+     hyp : Launch a landing page for CodeForge Academy prompting a 12-week coding bootcamp.
+
+  [p07.aifc]  WER=0.000  latency=6.67s  RTF=0.95  dur=7.0s
+     ref : set up a page for Bella Vista Trattoria so customers can reserve a table online
+     hyp : Set up a page for Bella Vista Trattoria so customers can reserve a table online.
+
+  [p08.aifc]  WER=0.273  latency=6.72s  RTF=0.98  dur=6.8s
+     ref : create a page for PetPals Grooming targeting dog owners in Brighton
+     hyp : Create a page for pet pals grooming targeting dog owners in Brinton.
+
+  [p09.aifc]  WER=0.071  latency=6.61s  RTF=0.93  dur=7.1s
+     ref : build a landing page for Aurora Fitness offering a free seven day trial membership
+     hyp : Build a landing page for Aurora Fitness offering a free 7-day trial membership.
+
+  [p10.aifc]  WER=0.286  latency=6.73s  RTF=1.12  dur=6.0s
+     ref : make a site for Hendricks and Pearce Law Firm focused on small business clients
+     hyp : Make a site for Hendrix, they appear slow firm, focused on small business clients.
+
+  [p11.aifc]  WER=0.000  latency=6.78s  RTF=0.81  dur=8.4s
+     ref : I need a page for Saffron and Sage Catering for corporate events and weddings
+     hyp : I need a page for saffron and sage catering for corporate events and weddings.
+
+  [p12.aifc]  WER=0.231  latency=6.73s  RTF=0.90  dur=7.5s
+     ref : create a landing page for QuantumLeap Analytics selling a subscription dashboard to startups
+     hyp : Create a landing page for quantum blip analytics selling a subscription dartboard to startups.
+
+  [p13.aifc]  WER=0.000  latency=6.73s  RTF=0.91  dur=7.4s
+     ref : build a page for Willowbrook Veterinary Hospital with an emergency contact number
+     hyp : Build a page for Willowbrook Veterinary Hospital with an emergency contact number.
+
+  [p14.aifc]  WER=0.000  latency=6.58s  RTF=0.87  dur=7.6s
+     ref : design a page for Echo Sound Studios renting rehearsal rooms to local bands
+     hyp : Design a page for Echo Sound Studios renting rehearsal rooms to local bands.
+
+  [p15.aifc]  WER=0.286  latency=6.75s  RTF=0.78  dur=8.7s
+     ref : make a landing page for Verdant Landscaping offering free garden consultations to collect leads
+     hyp : Make a London pitch for Verdant landscaping offer and free garden consultations to collect leads.
+
+  -- large-v3-turbo means: WER=0.096  latency=6.64s  RTF=0.87
+
+======================================================================
+SUMMARY (means per model)
+======================================================================
+model             mean_WER    mean_lat_s    mean_RTF  
+----------------------------------------------------
+tiny              0.398       0.38          0.05      
+base              0.282       0.93          0.12      
+small             0.306       3.83          0.47      
+medium            0.185       5.64          0.75      
+large-v3-turbo    0.096       6.64          0.87      
+======================================================================

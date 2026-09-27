@@ -1,0 +1,6027 @@
+{
+  "model": "fixture-oracle",
+  "seconds": 30.2,
+  "results": [
+    {
+      "name": "create_page_default",
+      "stage": "path",
+      "kind": "path",
+      "doc": "Each section is written, illustrated and validated before the page is\n    assembled, and nothing is persisted until it clears the schema gate.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "create_page_default",
+        "runs": 5,
+        "node_f1": 0.9091,
+        "node_precision": 0.8333,
+        "node_recall": 1.0,
+        "edge_f1": 0.8889,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "generate_schema",
+          "plan",
+          "select_theme",
+          "select_layout",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_icon",
+          "select_icon",
+          "select_icon",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "select_brand_mark",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 0.8333,
+            "node_recall": 1.0,
+            "node_f1": 0.9091,
+            "edge_precision": 0.8,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8889,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "generate_copy",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8333,
+            "node_recall": 1.0,
+            "node_f1": 0.9091,
+            "edge_precision": 0.8,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8889,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "generate_copy",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8333,
+            "node_recall": 1.0,
+            "node_f1": 0.9091,
+            "edge_precision": 0.8,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8889,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "generate_copy",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8333,
+            "node_recall": 1.0,
+            "node_f1": 0.9091,
+            "edge_precision": 0.8,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8889,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "generate_copy",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8333,
+            "node_recall": 1.0,
+            "node_f1": 0.9091,
+            "edge_precision": 0.8,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8889,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "generate_copy",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "create_page_collision",
+      "stage": "path",
+      "kind": "path",
+      "doc": "The colliding page is persisted under the suffixed URL, and only after\n    it has been validated.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "create_page_collision",
+        "runs": 5,
+        "node_f1": 0.5882,
+        "node_precision": 0.4167,
+        "node_recall": 1.0,
+        "edge_f1": 0.3333,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "generate_schema",
+          "plan",
+          "select_theme",
+          "select_layout",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_icon",
+          "select_icon",
+          "select_icon",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "select_brand_mark",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 0.4167,
+            "node_recall": 1.0,
+            "node_f1": 0.5882,
+            "edge_precision": 0.2143,
+            "edge_recall": 0.75,
+            "edge_f1": 0.3333,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.4167,
+            "node_recall": 1.0,
+            "node_f1": 0.5882,
+            "edge_precision": 0.2143,
+            "edge_recall": 0.75,
+            "edge_f1": 0.3333,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.4167,
+            "node_recall": 1.0,
+            "node_f1": 0.5882,
+            "edge_precision": 0.2143,
+            "edge_recall": 0.75,
+            "edge_f1": 0.3333,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.4167,
+            "node_recall": 1.0,
+            "node_f1": 0.5882,
+            "edge_precision": 0.2143,
+            "edge_recall": 0.75,
+            "edge_f1": 0.3333,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.4167,
+            "node_recall": 1.0,
+            "node_f1": 0.5882,
+            "edge_precision": 0.2143,
+            "edge_recall": 0.75,
+            "edge_f1": 0.3333,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_icon",
+              "select_icon",
+              "select_icon",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "create_page_named_sections",
+      "stage": "path",
+      "kind": "path",
+      "doc": "Only the two requested sections are generated -- no work is done for\n    sections the user never asked for.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "create_page_named_sections",
+        "runs": 5,
+        "node_f1": 0.9,
+        "node_precision": 0.8182,
+        "node_recall": 1.0,
+        "edge_f1": 0.8571,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "generate_schema",
+          "plan",
+          "select_theme",
+          "select_layout",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "select_brand_mark",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "create_page_promotion_cue",
+      "stage": "path",
+      "kind": "path",
+      "doc": "The described offer is planned and built as a promotion section.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "create_page_promotion_cue",
+        "runs": 5,
+        "node_f1": 0.9,
+        "node_precision": 0.8182,
+        "node_recall": 1.0,
+        "edge_f1": 0.8571,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "generate_schema",
+          "plan",
+          "select_theme",
+          "select_layout",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "select_brand_mark",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.8182,
+            "node_recall": 1.0,
+            "node_f1": 0.9,
+            "edge_precision": 0.75,
+            "edge_recall": 1.0,
+            "edge_f1": 0.8571,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "generate_schema",
+              "plan",
+              "select_theme",
+              "select_layout",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "select_brand_mark",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "interpret",
+                  "then": "generate_schema",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "reject_unsupported_intent",
+      "stage": "path",
+      "kind": "path",
+      "doc": "A refused request must not reach generation or persistence at all.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "reject_unsupported_intent",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "reject_unclear_command",
+      "stage": "path",
+      "kind": "path",
+      "doc": "An unusable transcript is stopped before any model is called, so the\n    refusal costs nothing.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "reject_unclear_command",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "interpret"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "interpret"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "interpret"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "interpret"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "interpret"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "assemble_page"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "save_draft"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "edit_headline",
+      "stage": "path",
+      "kind": "path",
+      "doc": "An edit reads the page, changes it, re-validates it, and only then\n    stores it. Skipping the re-validation would let an edit persist something\n    the generator could never have produced.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "edit_headline",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "edit_content",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "edit_content",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "edit_content",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "edit_content",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "edit_content",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "edit_content",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "edit_content",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "edit_content",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "edit_content",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "edit_content",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "edit_content",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "set_theme",
+      "stage": "path",
+      "kind": "path",
+      "doc": "A recolour is a generation step like any other: the palette is chosen,\n    applied, and re-validated with the page before it is stored.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "set_theme",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "select_theme",
+          "set_theme",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_theme",
+              "set_theme",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_theme",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_theme",
+              "set_theme",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_theme",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_theme",
+              "set_theme",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_theme",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_theme",
+              "set_theme",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_theme",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_theme",
+              "set_theme",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_theme",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "add_section",
+      "stage": "path",
+      "kind": "path",
+      "doc": "Adding a section writes only that section, without re-planning the page\n    or picking a palette again.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "add_section",
+        "runs": 5,
+        "node_f1": 0.9333,
+        "node_precision": 0.875,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "add_section",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "add_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "add_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "add_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "add_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "add_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "remove_section",
+      "stage": "path",
+      "kind": "path",
+      "doc": "Removing a section generates nothing: load, remove, validate, store.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "remove_section",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "remove_section",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "replace_image",
+      "stage": "path",
+      "kind": "path",
+      "doc": "A new photo is retrieved for the named section and nothing is written.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "replace_image",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "select_image",
+          "replace_image",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_image",
+              "replace_image",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_image",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_image",
+              "replace_image",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_image",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_image",
+              "replace_image",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_image",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_image",
+              "replace_image",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_image",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_image",
+              "replace_image",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_image",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "set_variant",
+      "stage": "path",
+      "kind": "path",
+      "doc": "A layout change touches no model at all.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "set_variant",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "set_variant",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "set_variant",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "set_variant",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "set_variant",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "set_variant",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "set_variant",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "move_section",
+      "stage": "path",
+      "kind": "path",
+      "doc": "Reordering touches no model at all.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "move_section",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "move_section",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "add_item",
+      "stage": "path",
+      "kind": "path",
+      "doc": "A new entry is a structural edit, not a generation.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "add_item",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "add_item",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "add_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "add_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "add_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "add_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "add_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "remove_item",
+      "stage": "path",
+      "kind": "path",
+      "doc": "Removing an entry touches no model at all.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "remove_item",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "remove_item",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "remove_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "move_item",
+      "stage": "path",
+      "kind": "path",
+      "doc": "Reordering entries touches no model at all.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "move_item",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "move_item",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "move_item",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "set_icon",
+      "stage": "path",
+      "kind": "path",
+      "doc": "One icon is looked up for the named section; no copy is written.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "set_icon",
+        "runs": 5,
+        "node_f1": 1.0,
+        "node_precision": 1.0,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "select_icon",
+          "set_icon",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_icon",
+              "set_icon",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_icon",
+              "set_icon",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_icon",
+              "set_icon",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_icon",
+              "set_icon",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 1.0,
+            "node_recall": 1.0,
+            "node_f1": 1.0,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "select_icon",
+              "set_icon",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "select_icon",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_copy"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_image"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "rewrite_reviews",
+      "stage": "path",
+      "kind": "path",
+      "doc": "A rewrite writes and validates the one section, without re-planning the\n    page or choosing a palette, and stores only after the page validates.",
+      "passed": true,
+      "error": null,
+      "skipped": false,
+      "measurement": {
+        "name": "rewrite_reviews",
+        "runs": 5,
+        "node_f1": 0.9333,
+        "node_precision": 0.875,
+        "node_recall": 1.0,
+        "edge_f1": 1.0,
+        "order_conformance": 1.0,
+        "redundancy_ratio": 0.0,
+        "policies_passed": true,
+        "missing_ops": [],
+        "observed_ops": [
+          "interpret",
+          "load_page",
+          "generate_copy",
+          "select_image",
+          "assemble_section",
+          "regenerate_section",
+          "assemble_page",
+          "save_draft"
+        ],
+        "policy_failures": [],
+        "per_run": [
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "regenerate_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "generate_copy",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "regenerate_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "generate_copy",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "regenerate_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "generate_copy",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "regenerate_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "generate_copy",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          },
+          {
+            "node_precision": 0.875,
+            "node_recall": 1.0,
+            "node_f1": 0.9333,
+            "edge_precision": 1.0,
+            "edge_recall": 1.0,
+            "edge_f1": 1.0,
+            "order_conformance": 1.0,
+            "redundancy_ratio": 0.0,
+            "observed_ops": [
+              "interpret",
+              "load_page",
+              "generate_copy",
+              "select_image",
+              "assemble_section",
+              "regenerate_section",
+              "assemble_page",
+              "save_draft"
+            ],
+            "missing_ops": [],
+            "policy_results": [
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "assemble_page",
+                  "then": "save_draft",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "require_before",
+                  "first": "load_page",
+                  "then": "generate_copy",
+                  "tool": null
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "generate_schema"
+                },
+                "passed": true,
+                "detail": "ok"
+              },
+              {
+                "assertion": {
+                  "kind": "forbid_call",
+                  "first": null,
+                  "then": null,
+                  "tool": "select_theme"
+                },
+                "passed": true,
+                "detail": "ok"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "episodes_run": 90,
+  "telemetry": {
+    "episodes": 90,
+    "model_calls": {
+      "total": {
+        "calls": 0,
+        "first_attempt_valid": 0,
+        "retried_valid": 0,
+        "exhausted": 0
+      },
+      "by_stage": {}
+    },
+    "step_status": {
+      "ok": 215,
+      "defaulted": 20,
+      "attached": 70
+    },
+    "defaulted_by_tool": {
+      "select_layout": 20
+    }
+  }
+}

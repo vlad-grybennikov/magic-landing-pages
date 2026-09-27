@@ -1,0 +1,147 @@
+{
+  "instruction": "Build a page for Apex Plumbing aimed at homeowners to collect quote requests, with just a hero and an FAQ",
+  "variants": [
+    "Apex Plumbing needs a page for homeowners to collect quote requests \u2014 just a hero and an FAQ",
+    "Put together a page for Apex Plumbing aimed at homeowners, only a hero and questions section, to gather quote requests",
+    "For Apex Plumbing: a homeowner-facing page collecting quote requests, hero and FAQ only"
+  ],
+  "setup": [],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "generate_schema"
+    },
+    {
+      "tool": "plan"
+    },
+    {
+      "tool": "select_theme"
+    },
+    {
+      "tool": "generate_copy",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "select_image",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "assemble_section",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "generate_copy",
+      "where": {
+        "section": "faq"
+      }
+    },
+    {
+      "tool": "select_image",
+      "where": {
+        "section": "faq"
+      }
+    },
+    {
+      "tool": "assemble_section",
+      "where": {
+        "section": "faq"
+      }
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft"
+    }
+  ],
+  "flows": [
+    [
+      "generate_schema",
+      "plan"
+    ],
+    [
+      "generate_schema",
+      "generate_copy"
+    ],
+    [
+      "generate_schema",
+      "select_image"
+    ],
+    [
+      "generate_schema",
+      "assemble_section"
+    ],
+    [
+      "generate_schema",
+      "assemble_page"
+    ],
+    [
+      "interpret",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "interpret",
+      "select_theme"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "before": [
+    [
+      "interpret",
+      "generate_schema"
+    ],
+    [
+      "generate_schema",
+      "plan"
+    ],
+    [
+      "plan",
+      "generate_copy"
+    ],
+    [
+      "generate_copy",
+      "assemble_section"
+    ],
+    [
+      "assemble_section",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    },
+    {
+      "require_before": [
+        "interpret",
+        "generate_schema"
+      ]
+    }
+  ]
+}

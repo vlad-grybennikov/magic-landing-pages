@@ -1,0 +1,47 @@
+STT EXPERIMENT -- RECORDING SCRIPT
+=================================
+
+p01
+create a landing page for Maria's Bakery targeting young families
+
+p02
+build a page for Apex Plumbing aimed at homeowners to collect quote requests
+
+p03
+make a landing page for GreenLeaf Yoga Studio for busy professionals
+
+p04
+I want a site for Nordvik Dental Clinic with a button to book an appointment
+
+p05
+design a page for Lumina Photography to showcase wedding portfolios and take bookings
+
+p06
+launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp
+
+p07
+set up a page for Bella Vista Trattoria so customers can reserve a table online
+
+p08
+create a page for PetPals Grooming targeting dog owners in Brighton
+
+p09
+build a landing page for Aurora Fitness offering a free seven day trial membership
+
+p10
+make a site for Hendricks and Pearce Law Firm focused on small business clients
+
+p11
+I need a page for Saffron and Sage Catering for corporate events and weddings
+
+p12
+create a landing page for QuantumLeap Analytics selling a subscription dashboard to startups
+
+p13
+build a page for Willowbrook Veterinary Hospital with an emergency contact number
+
+p14
+design a page for Echo Sound Studios renting rehearsal rooms to local bands
+
+p15
+make a landing page for Verdant Landscaping offering free garden consultations to collect leads

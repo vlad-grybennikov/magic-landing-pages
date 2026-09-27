@@ -1,0 +1,15 @@
+{
+  "instruction": "Remove the second question",
+  "variants": [
+    "Take out the second FAQ entry",
+    "Delete the second question in the FAQ",
+    "Drop question two"
+  ],
+  "expect": {
+    "intent": "removeItem",
+    "slots": {
+      "section": "faq",
+      "path": "items.1"
+    }
+  }
+}

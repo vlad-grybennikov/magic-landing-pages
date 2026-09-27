@@ -1,0 +1,14 @@
+{
+  "instruction": "Swap the hero photo",
+  "variants": [
+    "Change the picture in the hero",
+    "Use a different hero image",
+    "Put another photo on the banner"
+  ],
+  "expect": {
+    "intent": "replaceImage",
+    "slots": {
+      "section": "hero"
+    }
+  }
+}

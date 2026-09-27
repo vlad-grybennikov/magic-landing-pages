@@ -1,0 +1,104 @@
+{
+  "instruction": "Make the page green and fresh",
+  "variants": [
+    "Give the page a fresh green look",
+    "Use a green colour scheme for this page",
+    "Change the colours to something green"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "load_page"
+    },
+    {
+      "tool": "select_theme"
+    },
+    {
+      "tool": "set_theme"
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft"
+    }
+  ],
+  "flows": [
+    [
+      "interpret",
+      "select_theme"
+    ],
+    [
+      "interpret",
+      "set_theme"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "before": [
+    [
+      "load_page",
+      "select_theme"
+    ],
+    [
+      "select_theme",
+      "set_theme"
+    ],
+    [
+      "set_theme",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    },
+    {
+      "require_before": [
+        "load_page",
+        "select_theme"
+      ]
+    }
+  ]
+}

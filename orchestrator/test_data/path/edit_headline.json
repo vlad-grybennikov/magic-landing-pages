@@ -1,0 +1,93 @@
+{
+  "instruction": "Change the hero headline to Baked Before Sunrise",
+  "variants": [
+    "Set the hero headline to Baked Before Sunrise",
+    "The hero heading should read Baked Before Sunrise",
+    "Reword the hero headline as Baked Before Sunrise"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "load_page"
+    },
+    {
+      "tool": "edit_content"
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft"
+    }
+  ],
+  "flows": [
+    [
+      "interpret",
+      "edit_content"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "before": [
+    [
+      "load_page",
+      "edit_content"
+    ],
+    [
+      "edit_content",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    },
+    {
+      "require_before": [
+        "load_page",
+        "edit_content"
+      ]
+    }
+  ]
+}

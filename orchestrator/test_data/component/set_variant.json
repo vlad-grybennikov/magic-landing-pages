@@ -1,0 +1,15 @@
+{
+  "instruction": "Show the hero full bleed",
+  "variants": [
+    "Make the hero full-bleed",
+    "Switch the hero to the full-bleed layout",
+    "Try the full bleed layout on the hero"
+  ],
+  "expect": {
+    "intent": "setVariant",
+    "slots": {
+      "section": "hero",
+      "variant": "full-bleed"
+    }
+  }
+}

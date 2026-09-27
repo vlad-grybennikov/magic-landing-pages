@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "contracts": "openapi-typescript src/generated/openapi.json -o src/generated/api.d.ts",
+    "contracts:check": "openapi-typescript src/generated/openapi.json -o /tmp/mlp-api.d.ts && diff -q /tmp/mlp-api.d.ts src/generated/api.d.ts",
+    "test": "node --experimental-strip-types --no-warnings --test src/lib/*.test.ts",
+    "e2e": "node e2e/lifecycle.mjs"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.13.5",
+    "lucide-react": "^1.22.0",
+    "mongodb": "^7.4.0",
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-colorful": "^5.8.1",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "openapi-typescript": "^7.13.0",
+    "puppeteer-core": "^25.10.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+
+  --primary: #4f46e5;
+  --primary-strong: #4338ca;
+  --primary-light: #818cf8;
+  --primary-foreground: #f8fafc;
+
+  --accent: #4338ca;
+  --accent-foreground: #f8fafc;
+
+  --muted: #f8fafc;
+  --muted-foreground: #475569;
+
+  --border: #e2e8f0;
+
+  --sec-radius: 1rem;
+  --sec-heading-weight: 600;
+  --sec-heading-tracking: -0.024em;
+  --sec-pad: clamp(3.5rem, 7vw, 6rem);
+  --sec-align: center;
+  --sec-items: center;
+  --sec-btn-radius: 9999px;
+
+  --font-heading: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --ui-canvas: #f5f6f8;
+  --ui-surface: #ffffff;
+  --ui-inset: #f2f4f7;
+  --ui-border: #e4e7ec;
+  --ui-border-strong: #d0d5dd;
+  --ui-text: #101828;
+  --ui-muted: #5b6472;
+  --ui-faint: #98a2b3;
+  --ui-accent: #4f46e5;
+  --ui-accent-hover: #4338ca;
+  --ui-accent-soft: #eef2ff;
+  --ui-accent-2: #7c3aed;
+  --ui-danger: #b42318;
+  --ui-danger-soft: #fef3f2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-light: var(--primary-light);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --color-ui-canvas: var(--ui-canvas);
+  --color-ui-surface: var(--ui-surface);
+  --color-ui-inset: var(--ui-inset);
+  --color-ui-border: var(--ui-border);
+  --color-ui-border-strong: var(--ui-border-strong);
+  --color-ui-text: var(--ui-text);
+  --color-ui-muted: var(--ui-muted);
+  --color-ui-faint: var(--ui-faint);
+  --color-ui-accent: var(--ui-accent);
+  --color-ui-accent-hover: var(--ui-accent-hover);
+  --color-ui-accent-soft: var(--ui-accent-soft);
+  --color-ui-accent-2: var(--ui-accent-2);
+  --color-ui-danger: var(--ui-danger);
+  --color-ui-danger-soft: var(--ui-danger-soft);
+
+  --font-sans: var(--font-open-sans);
+  --font-ui: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+.panel {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  border-radius: 14px;
+  box-shadow:
+    0 1px 2px rgba(16, 24, 40, 0.04),
+    0 1px 3px rgba(16, 24, 40, 0.06);
+}
+
+.brand-gradient {
+  background-image: linear-gradient(
+    135deg,
+    var(--ui-accent) 0%,
+    var(--ui-accent-2) 100%
+  );
+}
+
+.brand-field {
+  background-image:
+    radial-gradient(60% 55% at 50% 0%, color-mix(in srgb, var(--ui-accent) 9%, transparent) 0%, transparent 70%),
+    linear-gradient(to right, var(--ui-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--ui-border) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    32px 32px,
+    32px 32px;
+  -webkit-mask-image: radial-gradient(75% 65% at 50% 35%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(75% 65% at 50% 35%, #000 30%, transparent 100%);
+}
+
+.mlp-picker.react-colorful {
+  width: 100%;
+  height: 140px;
+  gap: 10px;
+}
+.mlp-picker .react-colorful__saturation {
+  border-radius: 10px;
+  border-bottom: none;
+}
+.mlp-picker .react-colorful__hue {
+  height: 12px;
+  border-radius: 999px;
+}
+.mlp-picker .react-colorful__pointer {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+@keyframes message-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-message {
+  animation: message-in 0.15s ease-out;
+}
+
+[data-selecting] [data-el] {
+  outline: 1px dashed color-mix(in oklab, var(--ui-accent) 35%, transparent);
+  outline-offset: 4px;
+  transition: outline-color 120ms ease, box-shadow 120ms ease;
+}
+[data-selecting] [data-el]:hover {
+  outline: 1px solid var(--ui-accent);
+  cursor: pointer;
+}
+[data-selecting] [data-el][data-chosen],
+[data-selecting] [data-path][data-chosen],
+[data-selecting] [data-role][data-chosen] {
+  outline: 2px solid color-mix(in oklab, var(--ui-accent) 75%, transparent);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 7px color-mix(in oklab, var(--ui-accent) 12%, transparent);
+}
+
+[data-editable] {
+  border-radius: 3px;
+  outline-offset: 3px;
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+  cursor: text;
+  white-space: pre-wrap;
+}
+[data-editable]:hover {
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--ui-accent) 16%, transparent);
+  background-color: color-mix(in oklab, var(--ui-accent) 7%, transparent);
+}
+[data-editable]:focus {
+  outline: 2px solid var(--ui-accent);
+  background-color: color-mix(in oklab, var(--ui-accent) 5%, transparent);
+}
+a[data-editable],
+button[data-editable] {
+  cursor: text;
+}
+
+@keyframes progress-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+.animate-progress-slide {
+  animation: progress-slide 1.1s ease-in-out infinite;
+}

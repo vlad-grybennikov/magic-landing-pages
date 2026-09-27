@@ -1,0 +1,15 @@
+{
+  "instruction": "Move the FAQ up",
+  "variants": [
+    "Move the questions section up one",
+    "Shift the FAQ higher",
+    "FAQ one step up"
+  ],
+  "expect": {
+    "intent": "moveSection",
+    "slots": {
+      "section": "faq",
+      "position": "up"
+    }
+  }
+}

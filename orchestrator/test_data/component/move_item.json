@@ -1,0 +1,33 @@
+{
+  "instruction": "Swap the first two steps",
+  "variants": [
+    "Move the first step down one",
+    {
+      "text": "Put Order online after We bake",
+      "slots": {
+        "path": {
+          "$any": [
+            "items.0",
+            "items.order online"
+          ]
+        },
+        "position": {
+          "$any": [
+            "down",
+            "after items.we bake",
+            "after we bake"
+          ]
+        }
+      }
+    },
+    "The first step should be second"
+  ],
+  "expect": {
+    "intent": "moveItem",
+    "slots": {
+      "section": "process",
+      "path": "items.0",
+      "position": "down"
+    }
+  }
+}

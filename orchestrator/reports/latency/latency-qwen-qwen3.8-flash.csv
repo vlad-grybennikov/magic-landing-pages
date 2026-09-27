@@ -1,0 +1,55 @@
+case,repeat,text,action,outcome,seconds,model_calls,retried,exhausted,steps
+create_page_default,0,Create a landing page for Maria's Bakery targeting young families to take online orders,createPage,done,49.36,17,0,0,38
+create_page_named_sections,0,"Build a page for Apex Plumbing aimed at homeowners to collect quote requests, with just a hero and an FAQ",createPage,done,16.88,6,0,0,14
+create_page_promotion_cue,0,"Make a landing page for GreenLeaf Yoga Studio for busy professionals to sign up for classes, with a hero and a special introductory offer",createPage,done,16.19,7,0,0,14
+create_page_collision,0,Create a landing page for Maria's Bakery targeting young families to take online orders,createPage,done,47.88,17,0,0,38
+reject_unsupported_intent,0,What is the weather forecast for Paris tomorrow afternoon?,unsupported,rejected:intent,1.13,1,0,0,1
+reject_unclear_command,0,Thank you.,rejected,rejected:command,0.01,0,0,0,0
+edit_headline,0,Change the hero headline to Baked Before Sunrise,editContent,done,2.45,1,0,0,5
+add_section,0,Add a testimonials section,addSection,done,6.06,2,0,0,8
+remove_section,0,Remove the FAQ section,removeSection,done,1.81,1,0,0,5
+set_theme,0,Make the page green and fresh,setTheme,done,4.11,2,0,0,6
+replace_image,0,Swap the hero photo,replaceImage,done,2.27,1,0,0,6
+set_variant,0,Show the hero full bleed,setVariant,done,3.04,1,0,0,5
+move_section,0,Move the FAQ up,moveSection,done,3.08,1,0,0,5
+add_item,0,Add another benefit,addItem,done,1.31,1,0,0,5
+remove_item,0,Remove the second question,removeItem,done,2.02,1,0,0,5
+move_item,0,Swap the first two steps,moveItem,done,3.37,1,0,0,5
+set_icon,0,Use a star icon for the first benefit,setIcon,done,1.68,1,0,0,6
+rewrite_reviews,0,Make these reviews sound more real,regenerateSection,done,6.44,2,0,0,8
+create_page_default,1,"I need a website for Maria's Bakery, aimed at young families, so they can order online",createPage,done,45.16,17,0,0,38
+create_page_named_sections,1,Apex Plumbing needs a page for homeowners to collect quote requests — just a hero and an FAQ,createPage,done,15.44,6,0,0,14
+create_page_promotion_cue,1,"GreenLeaf Yoga Studio wants a page for busy professionals to sign up for classes, with a hero and an introductory deal",createPage,done,18.97,6,0,0,14
+create_page_collision,1,"I need another page for Maria's Bakery, still targeting young families for online orders",createPage,done,51.36,17,0,0,38
+reject_unsupported_intent,1,How much does a first-class stamp cost these days?,unsupported,rejected:intent,1.37,1,0,0,1
+reject_unclear_command,1,Thanks for watching.,rejected,rejected:command,0.0,0,0,0,0
+edit_headline,1,Set the hero headline to Baked Before Sunrise,editContent,done,2.42,1,0,0,5
+add_section,1,I'd like a section with customer reviews,addSection,done,5.3,2,0,0,8
+remove_section,1,Delete the FAQ,removeSection,done,1.51,1,0,0,5
+set_theme,1,Give the page a fresh green look,setTheme,done,3.94,2,0,0,6
+replace_image,1,Change the picture in the hero,replaceImage,done,1.32,1,0,0,6
+set_variant,1,Make the hero full-bleed,setVariant,done,2.09,1,0,0,5
+move_section,1,Move the questions section up one,moveSection,done,1.48,1,0,0,5
+add_item,1,Add one more benefit,addItem,done,4.01,1,0,0,5
+remove_item,1,Take out the second FAQ entry,removeItem,done,2.47,1,0,0,5
+move_item,1,Move the first step down one,moveItem,done,1.86,1,0,0,5
+set_icon,1,Change the first benefit's icon to a star,setIcon,done,1.56,1,0,0,6
+rewrite_reviews,1,Generate real reviews here,regenerateSection,done,6.28,2,0,0,8
+create_page_default,2,Set up a landing page for Maria's Bakery so young families can place orders on the web,createPage,done,50.69,16,0,0,37
+create_page_named_sections,2,"Put together a page for Apex Plumbing aimed at homeowners, only a hero and questions section, to gather quote requests",createPage,done,15.44,6,0,0,14
+create_page_promotion_cue,2,"Create a page for GreenLeaf Yoga Studio targeting busy professionals joining classes, hero plus a starter discount",createPage,done,17.66,6,0,0,14
+create_page_collision,2,Set up a second Maria's Bakery page aimed at young families to take online orders,createPage,done,54.48,17,0,0,38
+reject_unsupported_intent,2,Book me a table at the Italian place for Friday night,unsupported,rejected:intent,2.32,1,0,0,1
+reject_unclear_command,2,Um.,rejected,rejected:command,0.0,0,0,0,0
+edit_headline,2,The hero heading should read Baked Before Sunrise,editContent,done,2.44,1,0,0,5
+add_section,2,Put some testimonials on the page,addSection,done,5.75,2,0,0,8
+remove_section,2,Take the questions section off the page,removeSection,done,1.69,1,0,0,5
+set_theme,2,Use a green colour scheme for this page,setTheme,done,4.37,2,0,0,6
+replace_image,2,Use a different hero image,replaceImage,done,1.55,1,0,0,6
+set_variant,2,Switch the hero to the full-bleed layout,setVariant,done,2.22,1,0,0,5
+move_section,2,Shift the FAQ higher,moveSection,done,5.28,1,0,0,5
+add_item,2,Put a fourth benefit in,addItem,done,1.6,1,0,0,5
+remove_item,2,Delete the second question in the FAQ,removeItem,done,3.07,1,0,0,5
+move_item,2,Put Order online after We bake,moveItem,done,2.08,1,0,0,5
+set_icon,2,Put a star on the first benefit,setIcon,done,1.67,1,0,0,6
+rewrite_reviews,2,Can you change the reviews in this section to be more real,regenerateSection,done,5.95,2,0,0,8

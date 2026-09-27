@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Three-Level Suite -- qwen/qwen3.5-27b</title>
+<style>:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --line: #dcdcdc;
+  --muted: #6b6b6b;
+  --fail: #c0392b;
+}
+
+* { box-sizing: border-box; font: inherit;}
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Roboto, sans-serif;
+}
+
+.wrap { max-width: 1180px; margin: 0 auto; }
+
+h1 { font-size: 1.35rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.05rem; margin: 2rem 0 .75rem; }
+.meta { color: var(--muted); margin: 0 0 1.5rem; }
+
+.scroll { overflow-x: auto; }
+
+table { border-collapse: separate; border-spacing: 3px; }
+th, td { padding: .5rem .6rem; text-align: center; white-space: nowrap; }
+th { font-weight: 600; font-size: .8rem; }
+th.group { font-size: .95rem; padding-bottom: .1rem; }
+
+td.case, th.case {
+  text-align: left;
+  font-size: .85rem;
+}
+
+td.cell {
+  color: #fff;
+  border-radius: 3px;
+  font-variant-numeric: tabular-nums;
+  min-width: 64px;
+}
+td.blank { color: var(--muted); }
+
+.sep { border-left: 2px solid var(--fg); }
+
+.bad { color: var(--fail); font-weight: 700; }
+
+.datasets td.left { text-align: left; color: var(--muted); }
+.datasets td { font-variant-numeric: tabular-nums; }
+
+.failures li { margin-bottom: .6rem; }
+.failures code {
+  background: rgba(128, 128, 128, .14);
+  padding: .1rem .3rem;
+  border-radius: 3px;
+  font-family: inherit;
+  font-weight: 600;
+}
+.doc { color: var(--muted); font-size: .85rem; }
+
+.telemetry h3 { font-size: .85rem; font-weight: 600; margin: 1.25rem 0 .25rem; }
+.telemetry td { font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Three-Level Suite</h1>
+  <p class="meta">
+    qwen/qwen3.5-27b &middot; 57 passed, 5 failed &middot;
+    90 episodes &middot; 649.7s
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th class="case"></th>
+          <th class="group" colspan="2">
+            scope
+          </th>
+          <th class="group sep" colspan="1">
+            Outcome
+          </th>
+          <th class="group sep" colspan="5">
+            Path
+          </th>
+          <th class="group sep" colspan="4">
+            Component
+          </th>
+        </tr>
+        <tr>
+          <th class="case">case</th>
+          <th>n</th>
+          <th>runs</th>
+          <th class="sep">pass^5</th>
+          <th class="sep">node F1</th>
+          <th>edge F1</th>
+          <th>order</th>
+          <th>redund.</th>
+          <th>policy</th>
+          <th class="sep">intent</th>
+          <th>slots</th>
+          <th>sections</th>
+          <th>image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="case">create_page_default</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(68,149,78)">0.91</td>
+          <td class="cell" style="background:rgb(98,148,68)">0.83</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+        </tr>
+        <tr>
+          <td class="case">create_page_named_sections</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(72,149,77)">0.90</td>
+          <td class="cell" style="background:rgb(228,117,26)">0.38</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(133,148,56)">0.75</td>
+        </tr>
+        <tr>
+          <td class="case"><span class="bad">&#10007; </span>create_page_promotion_cue</td>
+          <td class="blank">4</td>
+          <td class="blank">4/5</td>
+          <td class="cell sep" style="background:rgb(192,57,43)">0.00</td>
+          <td class="cell sep" style="background:rgb(75,149,76)">0.89</td>
+          <td class="cell" style="background:rgb(222,123,27)">0.42</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(133,148,56)">0.75</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+        </tr>
+        <tr>
+          <td class="case">create_page_collision</td>
+          <td class="blank">3</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(202,148,30)">0.59</td>
+          <td class="cell" style="background:rgb(228,107,28)">0.32</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+        </tr>
+        <tr>
+          <td class="case">reject_unsupported_intent</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">reject_unclear_command</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">edit_headline</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">add_section</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(59,149,81)">0.93</td>
+          <td class="cell" style="background:rgb(85,149,73)">0.87</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(133,148,56)">0.75</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">remove_section</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">set_theme</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(111,148,64)">0.80</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">replace_image</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(133,148,56)">0.75</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">set_variant</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case"><span class="bad">&#10007; </span>move_section</td>
+          <td class="blank">4</td>
+          <td class="blank">4/5</td>
+          <td class="cell sep" style="background:rgb(192,57,43)">0.00</td>
+          <td class="cell sep" style="background:rgb(66,149,79)">0.91</td>
+          <td class="cell" style="background:rgb(111,148,64)">0.80</td>
+          <td class="cell" style="background:rgb(111,148,64)">0.80</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(82,149,74)">0.88</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">add_item</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">remove_item</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(59,149,81)">0.93</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">move_item</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">set_icon</td>
+          <td class="blank">4</td>
+          <td class="blank">5/5</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case"><span class="bad">&#10007; </span>rewrite_reviews</td>
+          <td class="blank">4</td>
+          <td class="blank">4/5</td>
+          <td class="cell sep" style="background:rgb(192,57,43)">0.00</td>
+          <td class="cell sep" style="background:rgb(59,149,81)">0.93</td>
+          <td class="cell" style="background:rgb(85,149,73)">0.87</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">0.00</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell sep" style="background:rgb(33,150,90)">1.00</td>
+          <td class="cell" style="background:rgb(133,148,56)">0.75</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">intent_classification</td>
+          <td class="blank">173</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="cell sep" style="background:rgb(43,150,87)">0.97</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">brief_slots</td>
+          <td class="blank">10</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="cell" style="background:rgb(33,150,90)">1.00</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case"><span class="bad">&#10007; </span>section_planning</td>
+          <td class="blank">9</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="cell sep" style="background:rgb(133,148,56)">0.75</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">image_recall_at_5</td>
+          <td class="blank">30</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="cell" style="background:rgb(72,149,77)">0.90</td>
+        </tr>
+        <tr>
+          <td class="case">image_recall_at_1</td>
+          <td class="blank">30</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="cell" style="background:rgb(126,148,58)">0.77</td>
+        </tr>
+        <tr>
+          <td class="case">edit_slots</td>
+          <td class="blank">10</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="cell" style="background:rgb(72,149,77)">0.90</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">rewrite_slots</td>
+          <td class="blank">10</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="cell" style="background:rgb(65,149,79)">0.92</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+        <tr>
+          <td class="case">structure_slots</td>
+          <td class="blank">10</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank sep">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+          <td class="blank sep">--</td>
+          <td class="cell" style="background:rgb(51,150,84)">0.95</td>
+          <td class="blank">--</td>
+          <td class="blank">--</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="failures">
+    <h2>Failures</h2>
+    <ul>
+      <li>
+        <code>create_page_promotion_cue</code> (outcome) -- assertion failed
+<div class="doc">A described offer counts as naming a section: it becomes a promotion,
+    and no extra sections are invented alongside it.</div>        <ul><li class="doc">pages//greenleaf-yoga-studio.section_types: expected &#39;header,hero,promotion,footer&#39;, got &#39;header,hero,about,benefits,process,testimonials,pricing,promotion,faq,contact,footer&#39;</li><li class="doc">pages//greenleaf-yoga-studio.n_sections: expected 4, got 11</li></ul>
+      </li>
+      <li>
+        <code>move_section</code> (outcome) -- [&#34;pages//maria-s-bakery.section_variants: expected &#39;hero:-,benefits:-,process:-,faq:-,testimonials:-&#39;, got &#39;hero:-,benefits:-,process:-,testimonials:-,faq:-&#39;&#34;, &#34;pages//maria-s-bakery.item_counts: expected &#39;benefits:3,process:3,faq:2,testimonials:1&#39;, got &#39;benefits:3,process:3,testimonials:1,faq:2&#39;&#34;, &#34;pages//maria-s-bakery.item_heads: expected &#39;benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;faq:Do you deliver?|Gluten free?;testimonials:Dana&#39;, got &#39;benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;testimonials:Dana;faq:Do you deliver?|Gluten free?&#39;&#34;, &#39;pages//maria-s-bakery.section_heads: expected &#34;hero:Fresh bread daily;benefits:Why Maria\&#39;s;process:How it works;faq:Questions;testimonials:What people say&#34;, got &#34;hero:Fresh bread daily;benefits:Why Maria\&#39;s;process:How it works;testimonials:What people say;faq:Questions&#34;&#39;, &#34;pages//maria-s-bakery.section_types: expected &#39;hero,benefits,process,faq,testimonials&#39;, got &#39;hero,benefits,process,testimonials,faq&#39;&#34;]
+<div class="doc">Moving a section reorders the page without adding, dropping or editing
+    anything.</div>        <ul><li class="doc">pages//maria-s-bakery.section_variants: expected &#39;hero:-,benefits:-,process:-,faq:-,testimonials:-&#39;, got &#39;hero:-,benefits:-,process:-,testimonials:-,faq:-&#39;</li><li class="doc">pages//maria-s-bakery.item_counts: expected &#39;benefits:3,process:3,faq:2,testimonials:1&#39;, got &#39;benefits:3,process:3,testimonials:1,faq:2&#39;</li><li class="doc">pages//maria-s-bakery.item_heads: expected &#39;benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;faq:Do you deliver?|Gluten free?;testimonials:Dana&#39;, got &#39;benefits:Baked at dawn|Local flour|Made to order;process:Order online|We bake|Collect or deliver;testimonials:Dana;faq:Do you deliver?|Gluten free?&#39;</li><li class="doc">pages//maria-s-bakery.section_heads: expected &#34;hero:Fresh bread daily;benefits:Why Maria&#39;s;process:How it works;faq:Questions;testimonials:What people say&#34;, got &#34;hero:Fresh bread daily;benefits:Why Maria&#39;s;process:How it works;testimonials:What people say;faq:Questions&#34;</li></ul>
+      </li>
+      <li>
+        <code>rewrite_reviews</code> (outcome) -- [&#34;pages//maria-s-bakery.section_variants: expected &#39;hero:-,benefits:-,process:-,testimonials:-,faq:-&#39;, got &#39;hero:-,benefits:-,process:-,testimonials:bordered-list,faq:-&#39;&#34;]
+<div class="doc">Asking for the reviews to be written again keeps the page&#39;s structure;
+    what the reviews say is the model&#39;s, and is judged elsewhere.</div>        <ul><li class="doc">pages//maria-s-bakery.section_variants: expected &#39;hero:-,benefits:-,process:-,testimonials:-,faq:-&#39;, got &#39;hero:-,benefits:-,process:-,testimonials:bordered-list,faq:-&#39;</li></ul>
+      </li>
+      <li>
+        <code>move_section</code> (path) -- missing operations: [&#39;assemble_page&#39;, &#39;move_section&#39;, &#39;save_draft&#39;]
+<div class="doc">Reordering touches no model at all.</div>        <ul><li class="doc">missing operations: assemble_page, move_section, save_draft</li></ul>
+      </li>
+      <li>
+        <code>section_planning</code> (component) -- errors: [{&#39;input&#39;: &#39;a page for a law firm with benefits and frequently asked questions&#39;, &#39;expected&#39;: &#39;benefits,faq&#39;, &#39;predicted&#39;: &#39;hero,benefits,faq&#39;}, {&#39;input&#39;: &#39;a page for a bootcamp with reviews and questions and answers&#39;, &#39;expected&#39;: &#39;testimonials,faq&#39;, &#39;predicted&#39;: &#39;hero,testimonials,faq&#39;}]
+<div class="doc">The layout chosen for a brief, as a comma-joined section list.</div>        <ul><li class="doc">benefits,faq -&gt; hero,benefits,faq   &#39;a page for a law firm with benefits and frequent&#39;</li><li class="doc">testimonials,faq -&gt; hero,testimonials,faq   &#39;a page for a bootcamp with reviews and questions&#39;</li></ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="telemetry">
+    <h2>Telemetry</h2>
+    <h3>model_calls</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="case"></th>
+<th>calls</th><th>first_attempt_valid</th><th>retried_valid</th><th>exhausted</th>        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="case">total</td>
+<td>323</td><td>322</td><td>1</td><td>0</td>        </tr>
+      </tbody>
+    </table>
+    <h3>model_calls / by_stage</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="case"></th>
+<th>calls</th><th>first_attempt_valid</th><th>retried_valid</th><th>exhausted</th>        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="case">Interpretation</td>
+<td>92</td><td>92</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">SectionPlan</td>
+<td>20</td><td>20</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">ThemeChoice</td>
+<td>25</td><td>25</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">LayoutPlan</td>
+<td>20</td><td>20</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">HeroCopy</td>
+<td>20</td><td>20</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">AboutCopy</td>
+<td>11</td><td>11</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">BenefitsCopy</td>
+<td>11</td><td>11</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">IconChoice</td>
+<td>39</td><td>39</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">ServicesCopy</td>
+<td>10</td><td>10</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">GalleryCopy</td>
+<td>10</td><td>10</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">TestimonialsCopy</td>
+<td>21</td><td>21</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">PromotionCopy</td>
+<td>15</td><td>15</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">FAQCopy</td>
+<td>16</td><td>16</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">ContactCopy</td>
+<td>11</td><td>11</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">ProcessCopy</td>
+<td>1</td><td>1</td><td>0</td><td>0</td>        </tr>
+        <tr>
+          <td class="case">PricingCopy</td>
+<td>1</td><td>0</td><td>1</td><td>0</td>        </tr>
+      </tbody>
+    </table>
+    <h3>step_status</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="case"></th>
+<th>ok</th><th>attached</th><th>defaulted</th><th>repaired</th>        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="case"></td>
+<td>286</td><td>115</td><td>2</td><td>2</td>        </tr>
+      </tbody>
+    </table>
+    <h3>defaulted_by_tool</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="case"></th>
+<th>select_icon</th>        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="case"></td>
+<td>2</td>        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

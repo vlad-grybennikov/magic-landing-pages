@@ -1,0 +1,125 @@
+{
+  "instruction": "Add a testimonials section",
+  "variants": [
+    "I'd like a section with customer reviews",
+    "Put some testimonials on the page",
+    "Include a reviews section"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "load_page"
+    },
+    {
+      "tool": "generate_copy",
+      "where": {
+        "section": "testimonials"
+      }
+    },
+    {
+      "tool": "assemble_section",
+      "where": {
+        "section": "testimonials"
+      }
+    },
+    {
+      "tool": "add_section"
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft"
+    }
+  ],
+  "flows": [
+    [
+      "interpret",
+      "generate_copy"
+    ],
+    [
+      "interpret",
+      "select_image"
+    ],
+    [
+      "interpret",
+      "assemble_section"
+    ],
+    [
+      "interpret",
+      "add_section"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "before": [
+    [
+      "load_page",
+      "generate_copy"
+    ],
+    [
+      "generate_copy",
+      "assemble_section"
+    ],
+    [
+      "assemble_section",
+      "add_section"
+    ],
+    [
+      "add_section",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    },
+    {
+      "forbid": "generate_schema"
+    },
+    {
+      "forbid": "select_theme"
+    }
+  ]
+}

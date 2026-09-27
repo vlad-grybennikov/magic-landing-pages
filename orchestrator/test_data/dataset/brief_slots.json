@@ -1,0 +1,46 @@
+{
+  "probe": "classify",
+  "metric": "slot_accuracy",
+  "cases": [
+    {
+      "input": "Create a landing page for Maria's Bakery targeting young families to take online orders",
+      "expect": { "business": "Maria's Bakery", "audience": "young families", "goal": "take online orders" }
+    },
+    {
+      "input": "Build a page for Apex Plumbing aimed at homeowners to collect quote requests",
+      "expect": { "business": "Apex Plumbing", "audience": "homeowners", "goal": "collect quote requests" }
+    },
+    {
+      "input": "Make a landing page for GreenLeaf Yoga Studio for busy professionals to sign up for classes",
+      "expect": { "business": "GreenLeaf Yoga Studio", "audience": "busy professionals", "goal": "sign up for classes" }
+    },
+    {
+      "input": "I want a site for Nordvik Dental Clinic for local families with a button to book an appointment",
+      "expect": { "business": "Nordvik Dental Clinic", "audience": "local families", "goal": "book an appointment" }
+    },
+    {
+      "input": "Design a page for Lumina Photography to showcase wedding portfolios to engaged couples and take bookings",
+      "expect": { "business": "Lumina Photography", "audience": "engaged couples", "goal": "take bookings" }
+    },
+    {
+      "input": "Set up a page for Bella Vista Trattoria so diners can reserve a table online",
+      "expect": { "business": "Bella Vista Trattoria", "audience": "diners", "goal": "reserve a table online" }
+    },
+    {
+      "input": "Create a page for PetPals Grooming targeting dog owners in Brighton to book grooming slots",
+      "expect": { "business": "PetPals Grooming", "audience": "dog owners", "goal": "book grooming slots" }
+    },
+    {
+      "input": "Build a landing page for Aurora Fitness offering newcomers a free seven day trial membership",
+      "expect": { "business": "Aurora Fitness", "audience": "newcomers", "goal": "free seven day trial membership" }
+    },
+    {
+      "input": "Home Canada installs windows and doors in Toronto, create a landing page for local homeowners that collects enquiries",
+      "expect": { "business": "Home Canada", "audience": "local homeowners", "goal": "collects enquiries" }
+    },
+    {
+      "input": "I need a page for Saffron and Sage Catering for corporate clients to request event quotes",
+      "expect": { "business": "Saffron and Sage Catering", "audience": "corporate clients", "goal": "request event quotes" }
+    }
+  ]
+}

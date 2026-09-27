@@ -1,0 +1,21 @@
+{
+  "instruction": "Build a page for Apex Plumbing aimed at homeowners to collect quote requests, with just a hero and an FAQ",
+  "variants": [
+    "Apex Plumbing needs a page for homeowners to collect quote requests \u2014 just a hero and an FAQ",
+    "Put together a page for Apex Plumbing aimed at homeowners, only a hero and questions section, to gather quote requests",
+    "For Apex Plumbing: a homeowner-facing page collecting quote requests, hero and FAQ only"
+  ],
+  "setup": [],
+  "expect": {
+    "created": {
+      "pages": {
+        "/apex-plumbing": {
+          "name": "Apex Plumbing",
+          "publish": false,
+          "section_types": "header,hero,faq,footer",
+          "n_sections": 4
+        }
+      }
+    }
+  }
+}

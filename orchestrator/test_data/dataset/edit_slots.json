@@ -1,0 +1,86 @@
+{
+  "probe": "classify",
+  "metric": "slot_accuracy",
+  "cases": [
+    {
+      "input": "Change the hero headline to Baked Before Sunrise",
+      "expect": {
+        "section": "hero",
+        "field": "title",
+        "value": "Baked Before Sunrise"
+      }
+    },
+    {
+      "input": "Change the email to order@openfarm.com",
+      "expect": {
+        "section": "contact",
+        "path": "details.email.value",
+        "value": "order@openfarm.com"
+      }
+    },
+    {
+      "input": "The standard plan is now £49",
+      "expect": {
+        "section": "pricing",
+        "path": "plans.standard.price",
+        "value": "£49"
+      }
+    },
+    {
+      "input": "Make the hero button say Order now",
+      "expect": {
+        "section": "hero",
+        "field": "button",
+        "value": "Order now"
+      }
+    },
+    {
+      "input": "Set the promotion description to Free delivery on orders over £20",
+      "expect": {
+        "section": "promotion",
+        "field": "description",
+        "value": "Free delivery on orders over £20"
+      }
+    },
+    {
+      "input": "Rename the Standard plan to Essential",
+      "expect": {
+        "section": "pricing",
+        "path": "plans.standard.name",
+        "value": "Essential"
+      }
+    },
+    {
+      "input": "The opening hours are 8 to 6 on weekdays",
+      "expect": {
+        "section": "contact",
+        "path": "details.opening hours.value",
+        "value": "8 to 6 on weekdays"
+      }
+    },
+    {
+      "input": "Change the FAQ heading to Common questions",
+      "expect": {
+        "section": "faq",
+        "field": "title",
+        "value": "Common questions"
+      }
+    },
+    {
+      "input": "Put Fresh Bread Every Morning as the headline",
+      "expect": {
+        "section": "hero",
+        "field": "title",
+        "value": "Fresh Bread Every Morning"
+      }
+    },
+    {
+      "input": "Set the eyebrow on the about section to Since 1998",
+      "expect": {
+        "section": "about",
+        "field": "eyebrow",
+        "value": "Since 1998"
+      }
+    }
+  ]
+}

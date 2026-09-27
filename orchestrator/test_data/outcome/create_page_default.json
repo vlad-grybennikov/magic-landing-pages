@@ -1,0 +1,33 @@
+{
+  "instruction": "Create a landing page for Maria's Bakery targeting young families to take online orders",
+  "variants": [
+    "I need a website for Maria's Bakery, aimed at young families, so they can order online",
+    "Set up a landing page for Maria's Bakery so young families can place orders on the web",
+    "Build Maria's Bakery a page targeting young families that takes online orders"
+  ],
+  "setup": [],
+  "expect": {
+    "created": {
+      "pages": {
+        "/maria-s-bakery": {
+          "name": "Maria's Bakery",
+          "publish": false,
+          "section_types": {
+            "$startswith": "header,hero",
+            "$contains": [
+              "benefits",
+              "testimonials",
+              "faq"
+            ]
+          },
+          "n_sections": {
+            "$between": [
+              7,
+              11
+            ]
+          }
+        }
+      }
+    }
+  }
+}

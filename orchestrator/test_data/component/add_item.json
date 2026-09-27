@@ -1,0 +1,14 @@
+{
+  "instruction": "Add another benefit",
+  "variants": [
+    "Add one more benefit",
+    "Put a fourth benefit in",
+    "Another entry in the benefits list"
+  ],
+  "expect": {
+    "intent": "addItem",
+    "slots": {
+      "section": "benefits"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "instruction": "Remove the FAQ section",
+  "variants": [
+    "Delete the FAQ",
+    "Take the questions section off the page",
+    "Get rid of the FAQ block"
+  ],
+  "expect": {
+    "intent": "removeSection",
+    "slots": {
+      "section": "faq"
+    }
+  }
+}

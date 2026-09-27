@@ -1,0 +1,20 @@
+{
+  "instruction": "Make a landing page for GreenLeaf Yoga Studio for busy professionals to sign up for classes, with a hero and a special introductory offer",
+  "variants": [
+    "GreenLeaf Yoga Studio wants a page for busy professionals to sign up for classes, with a hero and an introductory deal",
+    "Create a page for GreenLeaf Yoga Studio targeting busy professionals joining classes, hero plus a starter discount",
+    "Landing page for GreenLeaf Yoga Studio, busy professionals signing up for classes, a hero and a first-timer offer"
+  ],
+  "expect": {
+    "intent": "createPage",
+    "slots": {
+      "business": "GreenLeaf Yoga Studio",
+      "audience": "busy professionals"
+    },
+    "sections": [
+      "hero",
+      "promotion"
+    ],
+    "image": "yoga studio"
+  }
+}

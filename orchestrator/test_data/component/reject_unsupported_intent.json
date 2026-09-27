@@ -1,0 +1,11 @@
+{
+  "instruction": "What is the weather forecast for Paris tomorrow afternoon?",
+  "variants": [
+    "How much does a first-class stamp cost these days?",
+    "Book me a table at the Italian place for Friday night",
+    "What time does the last train to Manchester leave?"
+  ],
+  "expect": {
+    "intent": "unsupported"
+  }
+}

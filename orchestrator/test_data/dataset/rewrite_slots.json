@@ -1,0 +1,80 @@
+{
+  "probe": "classify",
+  "metric": "slot_accuracy",
+  "cases": [
+    {
+      "input": "Make these reviews sound more real",
+      "expect": {
+        "section": "testimonials",
+        "path": "items",
+        "query": "more real"
+      }
+    },
+    {
+      "input": "Rewrite the testimonials",
+      "expect": {
+        "section": "testimonials"
+      }
+    },
+    {
+      "input": "Shorten the hero headline",
+      "expect": {
+        "section": "hero",
+        "field": "title",
+        "query": "shorter"
+      }
+    },
+    {
+      "input": "Redo the about copy, warmer",
+      "expect": {
+        "section": "about",
+        "query": "warmer"
+      }
+    },
+    {
+      "input": "Generate real reviews here",
+      "expect": {
+        "section": "testimonials",
+        "path": "items"
+      }
+    },
+    {
+      "input": "Fix the typo in the promotion title",
+      "expect": {
+        "section": "promotion",
+        "field": "title",
+        "query": "typo"
+      }
+    },
+    {
+      "input": "Update the promotion description to mention free delivery",
+      "expect": {
+        "section": "promotion",
+        "field": "description",
+        "query": "free delivery"
+      }
+    },
+    {
+      "input": "Give the FAQ answers a friendlier tone",
+      "expect": {
+        "section": "faq",
+        "path": "items",
+        "query": "friendlier"
+      }
+    },
+    {
+      "input": "Can you reword the benefits heading",
+      "expect": {
+        "section": "benefits",
+        "field": "title"
+      }
+    },
+    {
+      "input": "Redo the second step",
+      "expect": {
+        "section": "process",
+        "path": "items.1"
+      }
+    }
+  ]
+}

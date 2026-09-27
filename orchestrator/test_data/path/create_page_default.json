@@ -1,0 +1,192 @@
+{
+  "instruction": "Create a landing page for Maria's Bakery targeting young families to take online orders",
+  "variants": [
+    "I need a website for Maria's Bakery, aimed at young families, so they can order online",
+    "Set up a landing page for Maria's Bakery so young families can place orders on the web",
+    "Build Maria's Bakery a page targeting young families that takes online orders"
+  ],
+  "setup": [],
+  "require": [
+    {
+      "tool": "interpret"
+    },
+    {
+      "tool": "generate_schema"
+    },
+    {
+      "tool": "plan"
+    },
+    {
+      "tool": "select_theme"
+    },
+    {
+      "tool": "generate_copy",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "select_image",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "assemble_section",
+      "where": {
+        "section": "hero"
+      }
+    },
+    {
+      "tool": "generate_copy",
+      "where": {
+        "section": "benefits"
+      }
+    },
+    {
+      "tool": "select_icon",
+      "where": {
+        "section": "benefits",
+        "item": 1
+      }
+    },
+    {
+      "tool": "select_icon",
+      "where": {
+        "section": "benefits",
+        "item": 2
+      }
+    },
+    {
+      "tool": "select_icon",
+      "where": {
+        "section": "benefits",
+        "item": 3
+      }
+    },
+    {
+      "tool": "assemble_section",
+      "where": {
+        "section": "benefits"
+      }
+    },
+    {
+      "tool": "assemble_page"
+    },
+    {
+      "tool": "save_draft"
+    }
+  ],
+  "flows": [
+    [
+      "generate_schema",
+      "plan"
+    ],
+    [
+      "generate_schema",
+      "generate_copy"
+    ],
+    [
+      "generate_schema",
+      "select_image"
+    ],
+    [
+      "generate_schema",
+      "select_icon"
+    ],
+    [
+      "generate_copy",
+      "select_icon"
+    ],
+    [
+      "select_icon",
+      "select_icon"
+    ],
+    [
+      "generate_schema",
+      "assemble_section"
+    ],
+    [
+      "generate_schema",
+      "assemble_page"
+    ],
+    [
+      "interpret",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "interpret",
+      "select_theme"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "before": [
+    [
+      "interpret",
+      "generate_schema"
+    ],
+    [
+      "generate_schema",
+      "plan"
+    ],
+    [
+      "plan",
+      "generate_copy"
+    ],
+    [
+      "plan",
+      "select_icon"
+    ],
+    [
+      "generate_copy",
+      "select_icon"
+    ],
+    [
+      "generate_copy",
+      "assemble_section"
+    ],
+    [
+      "assemble_section",
+      "assemble_page"
+    ],
+    [
+      "assemble_page",
+      "save_draft"
+    ],
+    [
+      "plan",
+      "select_theme"
+    ],
+    [
+      "select_theme",
+      "assemble_page"
+    ]
+  ],
+  "policies": [
+    {
+      "require_before": [
+        "assemble_page",
+        "save_draft"
+      ]
+    },
+    {
+      "require_before": [
+        "interpret",
+        "generate_schema"
+      ]
+    },
+    {
+      "require_before": [
+        "generate_copy",
+        "select_icon"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "instruction": "Make these reviews sound more real",
+  "variants": [
+    "Generate real reviews here",
+    "Can you change the reviews in this section to be more real",
+    "Rewrite the reviews so they feel more real"
+  ],
+  "expect": {
+    "intent": "regenerateSection",
+    "slots": {
+      "section": "testimonials",
+      "path": "items",
+      "query": "more real"
+    }
+  }
+}

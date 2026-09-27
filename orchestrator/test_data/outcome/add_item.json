@@ -1,0 +1,119 @@
+{
+  "instruction": "Add another benefit",
+  "variants": [
+    "Add one more benefit",
+    "Put a fourth benefit in",
+    "Another entry in the benefits list"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "benefits",
+          "heading": "Why Maria's",
+          "items": [
+            {
+              "icon": {
+                "src": "/images/quality.svg",
+                "alt": "",
+                "id": "quality"
+              },
+              "title": "Baked at dawn",
+              "caption": "Out of the oven before you wake."
+            },
+            {
+              "icon": {
+                "src": "/images/energy.svg",
+                "alt": "",
+                "id": "energy"
+              },
+              "title": "Local flour",
+              "caption": "Milled twenty miles away."
+            },
+            {
+              "icon": {
+                "src": "/images/personalisation.svg",
+                "alt": "",
+                "id": "personalisation"
+              },
+              "title": "Made to order",
+              "caption": "Tell us what you want on Friday."
+            }
+          ]
+        },
+        {
+          "type": "process",
+          "heading": "How it works",
+          "items": [
+            {
+              "title": "Order online",
+              "caption": "Pick what you want."
+            },
+            {
+              "title": "We bake",
+              "caption": "Fresh that morning."
+            },
+            {
+              "title": "Collect or deliver",
+              "caption": "Your call."
+            }
+          ]
+        },
+        {
+          "type": "testimonials",
+          "heading": "What people say",
+          "items": [
+            {
+              "name": "Dana",
+              "rating": 5,
+              "content": "Best sourdough in town."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            },
+            {
+              "question": "Gluten free?",
+              "answer": "On Fridays."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "expect": {
+    "changed": {
+      "pages": {
+        "/maria-s-bakery": {
+          "publish": false,
+          "section_types": "hero,benefits,process,testimonials,faq",
+          "n_sections": 5,
+          "section_variants": "hero:-,benefits:-,process:-,testimonials:-,faq:-",
+          "item_counts": "benefits:4,process:3,testimonials:1,faq:2",
+          "item_heads": "benefits:Baked at dawn|Local flour|Made to order|New benefit;process:Order online|We bake|Collect or deliver;testimonials:Dana;faq:Do you deliver?|Gluten free?",
+          "item_icons": "benefits:/images/quality.svg|/images/energy.svg|/images/personalisation.svg|/icons/badge-check.svg"
+        }
+      }
+    }
+  }
+}

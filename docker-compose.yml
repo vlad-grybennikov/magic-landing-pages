@@ -1,0 +1,72 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    volumes:
+      - ollama-models:/root/.ollama
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list >/dev/null 2>&1 || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  orchestrator:
+    build: ./orchestrator
+    restart: unless-stopped
+    environment:
+      MONGO_URL: mongodb://mongo:27017
+      MONGO_DB: ${MONGO_DB:-vlp}
+      MLP_LLM: ${MLP_LLM:-ollama}
+      MLP_LLM_MODEL: ${MLP_LLM_MODEL:-}
+      MLP_LLM_MODELS: ${MLP_LLM_MODELS:-}
+      MLP_LLM_FALLBACKS: ${MLP_LLM_FALLBACKS:-}
+      OLLAMA_URL: http://ollama:11434
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      MLP_STT: ${MLP_STT:-local}
+      MLP_STT_LANG: ${MLP_STT_LANG:-en}
+      MLP_STT_MODEL: ${MLP_STT_MODEL:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      MLP_ENV: ${MLP_ENV:-development}
+      MLP_CORS_ORIGINS: ${MLP_CORS_ORIGINS:-*}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      MLP_JWT_SECRET: ${MLP_JWT_SECRET:-}
+      MLP_MAX_COMMANDS: ${MLP_MAX_COMMANDS:-2}
+    volumes:
+      - model-cache:/models
+    ports:
+      - "8000:8000"
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_ORCHESTRATOR_URL: ${PUBLIC_ORCHESTRATOR_URL:-http://localhost:8000}
+    restart: unless-stopped
+    environment:
+      MONGODB_URI: mongodb://mongo:27017
+      MONGODB_DB: ${MONGO_DB:-vlp}
+    ports:
+      - "3000:3000"
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+volumes:
+  mongo-data:
+  ollama-models:
+  model-cache:

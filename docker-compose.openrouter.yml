@@ -1,0 +1,7 @@
+services:
+  ollama:
+    profiles: ["never"]
+
+  orchestrator:
+    environment:
+      MLP_LLM: openrouter

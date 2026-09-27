@@ -1,0 +1,62 @@
+{
+  "instruction": "Add a testimonials section",
+  "variants": [
+    "I'd like a section with customer reviews",
+    "Put some testimonials on the page",
+    "Include a reviews section"
+  ],
+  "setup": [
+    {
+      "version": 1,
+      "name": "Maria's Bakery",
+      "url": "/maria-s-bakery",
+      "sections": [
+        {
+          "type": "hero",
+          "headline": "Fresh bread daily",
+          "image": {
+            "src": "/images/hero-section.jpg",
+            "alt": ""
+          },
+          "button": {
+            "label": "Order"
+          }
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "question": "Do you deliver?",
+              "answer": "Yes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "expect": {
+    "changed": {
+      "pages": {
+        "/maria-s-bakery": {
+          "publish": false,
+          "section_types": "hero,testimonials,faq",
+          "n_sections": 3
+        }
+      }
+    }
+  },
+  "ignore_fields": {
+    "pages": [
+      "sections",
+      "versions",
+      "theme",
+      "item_counts",
+      "item_heads",
+      "section_variants",
+      "section_heads",
+      "item_icons",
+      "section_images"
+    ]
+  }
+}

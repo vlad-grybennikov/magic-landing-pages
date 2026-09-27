@@ -1,0 +1,3 @@
+# recorded audio and run outputs -- keep the code, not the artifacts
+speech_files/*.wav
+results_*.log

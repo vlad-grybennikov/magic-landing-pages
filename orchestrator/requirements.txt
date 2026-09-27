@@ -1,0 +1,25 @@
+# Orchestrator runtime
+fastapi==0.136.3
+uvicorn==0.48.0
+python-multipart==0.0.29
+pydantic==2.13.4
+faster-whisper==1.2.1
+pymongo==4.17.0
+httpx==0.28.1
+python-dotenv==1.2.2
+PyJWT==2.10.1
+google-auth==2.38.0
+
+# Experiments and benchmarks
+jiwer==4.0.0
+soundfile==0.14.0
+tabulate==0.10.0
+datasets==5.0.0
+requests==2.34.2
+
+# Reporting
+jinja2==3.1.6
+
+# Tests
+pytest==9.1.1
+mongomock==4.3.0

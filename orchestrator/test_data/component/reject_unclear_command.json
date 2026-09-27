@@ -1,0 +1,11 @@
+{
+  "instruction": "Thank you.",
+  "variants": [
+    "Thanks for watching.",
+    "Um.",
+    "Okay"
+  ],
+  "expect": {
+    "intent": "unsupported"
+  }
+}

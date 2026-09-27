@@ -1,0 +1,21 @@
+{
+  "instruction": "Make a landing page for GreenLeaf Yoga Studio for busy professionals to sign up for classes, with a hero and a special introductory offer",
+  "variants": [
+    "GreenLeaf Yoga Studio wants a page for busy professionals to sign up for classes, with a hero and an introductory deal",
+    "Create a page for GreenLeaf Yoga Studio targeting busy professionals joining classes, hero plus a starter discount",
+    "Landing page for GreenLeaf Yoga Studio, busy professionals signing up for classes, a hero and a first-timer offer"
+  ],
+  "setup": [],
+  "expect": {
+    "created": {
+      "pages": {
+        "/greenleaf-yoga-studio": {
+          "name": "GreenLeaf Yoga Studio",
+          "publish": false,
+          "section_types": "header,hero,promotion,footer",
+          "n_sections": 4
+        }
+      }
+    }
+  }
+}

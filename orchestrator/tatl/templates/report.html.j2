@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Three-Level Suite -- {{ model }}</title>
+<style>{{ css }}</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Three-Level Suite</h1>
+  <p class="meta">
+    {{ model }} &middot; {{ passed }} passed, {{ failed }} failed &middot;
+    {{ episodes }} episodes &middot; {{ seconds }}s
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th class="case"></th>
+          {% for group in groups %}
+          <th class="group{% if not loop.first %} sep{% endif %}" colspan="{{ group.span }}">
+            {{ group.label }}
+          </th>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th class="case">case</th>
+          {% for column in columns %}
+          <th{% if column.sep %} class="sep"{% endif %}>{{ column.label }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr>
+          <td class="case">{% if not row.ok %}<span class="bad">&#10007; </span>{% endif %}{{ row.name }}</td>
+          {% for cell in row.cells %}
+          {% if cell.color %}
+          <td class="cell{% if cell.sep %} sep{% endif %}" style="background:{{ cell.color }}">{{ cell.text }}</td>
+          {% else %}
+          <td class="blank{% if cell.sep %} sep{% endif %}">{{ cell.text }}</td>
+          {% endif %}
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {% if failures %}
+  <div class="failures">
+    <h2>Failures</h2>
+    <ul>
+      {% for failure in failures %}
+      <li>
+        <code>{{ failure.name }}</code> ({{ failure.stage }}) -- {{ failure.error }}
+        {% if failure.doc %}<div class="doc">{{ failure.doc }}</div>{% endif %}
+        {% if failure.details %}
+        <ul>{% for detail in failure.details %}<li class="doc">{{ detail }}</li>{% endfor %}</ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if telemetry %}
+  <div class="telemetry">
+    <h2>Telemetry</h2>
+    {% for table in telemetry %}
+    <h3>{{ table.title }}</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="case"></th>
+          {% for column in table.columns %}<th>{{ column }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in table.rows %}
+        <tr>
+          <td class="case">{{ row[0] }}</td>
+          {% for value in row[1:] %}<td>{{ value }}</td>{% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+</body>
+</html>
